@@ -1,4 +1,4 @@
-# Clustering Made Easy: MarvinDocs
+# HPC Made Easy: MarvinDocs
 
 MarvinDocs is a comprehensive documentation repository designed to help users learn, use, and master the HPC Marvin cluster at LNBio/CNPEM. This repository includes essential resources, such as tutorials, guides, policies, and examples that allow users to streamline their research and gain deeper insights into high-performance computing.
 
