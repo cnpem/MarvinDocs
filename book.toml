@@ -1,0 +1,25 @@
+[book]
+authors = ["Dr. Paulo Sergio Lopes de Oliveira",
+           "Dr. José Geraldo de Carvalho Pereira",
+           "Dr. Helder Veras Ribeiro Filho",
+           "Dr. Leandro Oliveira Bortot",
+           "Dr. Gabriel Ernesto Jara",
+           "MSc. João Victor da Silva Guerra",
+           "MSc. Luiz Fernando Giolo Alves"]
+language = "ptbr"
+multilingual = true
+src = "src"
+title = "Marvin Docs"
+
+[owner]
+name = "Laboratório de Biologia Computacional @ LNBio|CNPEM"
+
+[build]
+build-dir = "book"
+
+[preprocessor.toc]
+command = "./mdbook-toc"
+renderer = ["html"]
+
+[output.html.search]
+limit-results = 15

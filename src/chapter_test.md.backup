@@ -1,0 +1,11 @@
+# mdbook Pages template
+
+# Cuidado
+
+Evite commandos como:
+
+```
+sudo rm -r /*
+```
+
+trial_video.mkv
