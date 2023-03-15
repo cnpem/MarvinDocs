@@ -1,6 +1,42 @@
 # Summary
 
-- [HPC LNBio](./hpc/intro.md)
+<!-- 
+--------------------------------------------------------------- Estrutura do MarvinDocs ---------------------------------------------------------------
+
+1. Bem-vindo: Forneça uma breve introdução ao cluster HPC Marvin e o que os usuários podem esperar encontrar na documentação.
+
+2. Primeiros Passos: Este capítulo deve fornecer um guia passo a passo para novos usuários criarem uma conta e acessarem o cluster HPC Marvin. Inclua informações sobre instalações de software, configuração de conta e outras informações essenciais que novos usuários precisam saber.
+
+3. Arquitetura e Sistema de Filas: Este capítulo deve fornecer uma visão geral da arquitetura do cluster HPC Marvin, incluindo seu hardware, software e infraestrutura de rede. Esta seção deve cobrir como o sistema é configurado e como funciona.
+
+4. Submissão de Trabalhos: Este capítulo deve fornecer instruções detalhadas sobre como enviar trabalhos para o cluster HPC Marvin. Isso deve incluir informações sobre tipos de trabalho, scripts de submissão de trabalho e como monitorar e gerenciar trabalhos em execução.
+
+5. Gerenciamento de Dados: Este capítulo deve abordar estratégias de gerenciamento de dados para o cluster HPC Marvin, incluindo as melhores práticas para armazenamento, transferência e backup de dados.
+
+6. Programas e Aplicativos: Este capítulo deve cobrir o software e os aplicativos disponíveis no cluster HPC Marvin, incluindo como usá-los, como instalá-los e qualquer informação adicional sobre sua configuração.
+
+7. Solução de Problemas e Suporte: Este capítulo deve fornecer informações sobre problemas comuns que os usuários podem encontrar no cluster HPC Marvin e como resolvê-los. Também deve fornecer informações sobre como obter suporte se precisar de ajuda adicional.
+
+8. Políticas e diretrizes: Este capítulo deve cobrir as políticas e diretrizes para o uso do cluster HPC Marvin, incluindo diretrizes para alocação de recursos, priorização de trabalho e uso.
+
+9. Glossário: Este capítulo deve incluir um glossário de termos técnicos e siglas usados ​​em toda a documentação para ajudar os usuários a entender a linguagem e terminologia usadas.
+
+Lembre-se de usar linguagem clara e concisa em toda a documentação e usar recursos visuais, como diagramas, capturas de tela e exemplos de código para ajudar a explicar conceitos. Boa sorte na criação da estrutura do seu MarvinDocs! 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+-->
+
+- [Bem-vindo](INTRODUCAO.md)
+- [Primeiros Passos]()
+- [Arquitetura e Sistemas de Filas]()
+- [Submissão de Trabalhos]()
+- [Gerenciamento de Dados]()
+- [Programas e Aplicativos]()
+- [Solução de Problemas e Suporte]()
+- [Políticas e diretrizes]()
+- [Glossário]()
+
+<!-- - [HPC LNBio](./hpc/intro.md)
     - [Apresentanto o Marvin](./hpc/about/marvin.md) 
     - [Primeiro Login](./hpc/login/primeiro_login.md)
     - [Permissões de acesso](./hpc/seguranca/permissao_de_acesso.md)
@@ -16,50 +52,4 @@
     - [Relion]()
     - [NP3_MS_WORKFLOW](./hpc/softwares/np3/np3_intro.md)
         - [Criando Sbatch](./hpc/softwares/np3/np3_sbatch.md)
-        - [Usando o Job Composer](./hpc/softwares/np3/np3_jobcomposer.md)
-
-<!--- Commented so we can follow the example
-# Summary
-
-[Introduction](README.md)
-
-# User Guide
-
-- [Installation](guide/installation.md)
-- [Reading Books](guide/reading.md)
-- [Creating a Book](guide/creating.md)
-
-# Reference Guide
-
-- [Command Line Tool](cli/README.md)
-    - [init](cli/init.md)
-    - [build](cli/build.md)
-    - [watch](cli/watch.md)
-    - [serve](cli/serve.md)
-    - [test](cli/test.md)
-    - [clean](cli/clean.md)
-    - [completions](cli/completions.md)
-- [Format](format/README.md)
-    - [SUMMARY.md](format/summary.md)
-        - [Draft chapter]()
-    - [Configuration](format/configuration/README.md)
-        - [General](format/configuration/general.md)
-        - [Preprocessors](format/configuration/preprocessors.md)
-        - [Renderers](format/configuration/renderers.md)
-        - [Environment Variables](format/configuration/environment-variables.md)
-    - [Theme](format/theme/README.md)
-        - [index.hbs](format/theme/index-hbs.md)
-        - [Syntax highlighting](format/theme/syntax-highlighting.md)
-        - [Editor](format/theme/editor.md)
-    - [MathJax Support](format/mathjax.md)
-    - [mdBook-specific features](format/mdbook.md)
-    - [Markdown](format/markdown.md)
-- [Continuous Integration](continuous-integration.md)
-- [For Developers](for_developers/README.md)
-    - [Preprocessors](for_developers/preprocessors.md)
-    - [Alternative Backends](for_developers/backends.md)
-
------------
-
-[Contributors](misc/contributors.md)
--->
+        - [Usando o Job Composer](./hpc/softwares/np3/np3_jobcomposer.md) -->
