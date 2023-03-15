@@ -87,7 +87,3 @@ Por hora esta autorização é feita manualmente, então assim que precisar mand
   </video>
 </figure>
 
-
-* lbc@lnbio.cnpem.br
-* luiz.alves@lnbio.cnpem.br
-* jose.pereira@lnbio.cnpem.br
