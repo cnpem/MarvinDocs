@@ -1,4 +1,4 @@
-¨# Primeiros Passos
+# Primeiros Passos
 
 Antes de começar a utilizar o HPC Marvin, é importante seguir alguns passos iniciais para garantir que tudo esteja configurado corretamente. Este capítulo irá guiá-los pelos primeiros passos necessários para começar a utilizar o sistema.
 
@@ -10,7 +10,7 @@ _Exemplo_: Se você é a Marie Skłodowska-Curie e seu usuário é marie.curie, 
 
 ## Primeiro Acesso🚪
 
-Para acessar o HPC Marvin, comece abrindo o terminal. Se estiver usando Windows, abra o PowerShell <img src="imagens/powershell_icon.png" alt="PowerShell logo" width="2%"></img>; se estiver usando Linux ou MacOS, abra o terminal <img src="imagens/terminal_icon.png" alt="Terminal logo" width="2.3%"></img>. Para acessar o HPC Marvin, use o comando:
+Para acessar o HPC Marvin, comece abrindo o terminal. Se estiver usando Windows, abra o PowerShell `<img src="imagens/powershell_icon.png" alt="PowerShell logo" width="2%"></img>`; se estiver usando Linux ou MacOS, abra o terminal `<img src="imagens/terminal_icon.png" alt="Terminal logo" width="2.3%"></img>`. Para acessar o HPC Marvin, use o comando:
 
 ```bash
 ssh <seu.login.cnpem>@hpc-lnbio.cnpem.br
@@ -45,7 +45,7 @@ Digite `yes` e pressione **enter**. Se tudo correu bem, você verá o cursor pis
 
 Digite o comando `ls` para verificar o conteúdo do diretório, e você deverá ver uma pasta chamada "ondemand". Confirme se a pasta está presente.
 
-## Acesso pelo navegador <img src="imagens/browser_icons.png" alt="Browser Icons"  width="15%"></img>
+## Acesso pelo navegador `<img src="imagens/browser_icons.png" alt="Browser Icons"  width="15%"></img>`
 
 Para acessar o cluster pelo navegador, abra o seu navegador e digite o seguinte endereço na barra de endereços:
 
