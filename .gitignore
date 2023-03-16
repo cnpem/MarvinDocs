@@ -1,5 +1,7 @@
-book
+# mdbook
+book/
+theme/
 
-# Added by cargo
+# Rust
 Cargo.lock
 /target

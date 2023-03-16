@@ -8,6 +8,8 @@ assignees: ''
 <!---
 Por favor, leia isto!
 
+NÃO INSIRA NENHUMA INFORMAÇÃO SIGILOSA OU SENSÍVEL NESTA ISSUE! NÃO INSIRA E-MAILS OU SENHAS INSTITUCIONAIS!
+
 Antes de abrir uma nova issue, certifique-se de procurar por palavras-chave nas issues filtradas pela etiqueta "bug" e verifique se a issue que você está prestes a enviar não é um duplicado.
 --->
 
