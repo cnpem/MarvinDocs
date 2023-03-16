@@ -1,4 +1,6 @@
-# Bem-vindo ao mundo de Marvin
+# Bem-vindo ao mundo de Marvin <img src="imagens/marvin.png" alt="Marvin bit art"  width="3%"/>
+
+<p align="center"><img width=600 alt="Banner" src="imagens/banner-1.png"></img></p>
 
 Bem-vindo à documentação do HPC Marvin! Este manual foi criado para ajudar os usuários e mantenedores do sistema a entenderem como utilizar e administrar o HPC Marvin, um sistema de computação de alto desempenho que permite aos usuários realizar cálculos computacionais intensivos em uma plataforma de cluster de servidores. O sistema oferece uma ampla variedade de ferramentas e recursos para apoiar a pesquisa científica e a descoberta. Apesar de ser um pouco mal-humorado às vezes, Marvin está sempre disposto a te ajudar!
 

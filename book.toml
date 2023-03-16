@@ -18,8 +18,14 @@ name = "Laboratório de Biologia Computacional @ LNBio|CNPEM"
 build-dir = "book"
 
 [preprocessor.toc]
-command = "./mdbook-toc"
+command = "mdbook-toc"
 renderer = ["html"]
+
+[preprocessor.catppuccin]
+assets_version = "0.1.1" # DO NOT EDIT: Managed by `mdbook-catppuccin install`
+
+[output.html]
+additional-css = ["./theme/catppuccin.css", "./theme/catppuccin-highlight.css"]
 
 [output.html.search]
 limit-results = 15

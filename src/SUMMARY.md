@@ -26,8 +26,8 @@ Lembre-se de usar linguagem clara e concisa em toda a documentação e usar recu
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 -->
 
-- [Bem-vindo](INTRODUCAO.md)
-- [Primeiros Passos]()
+- [Bem-vindo](BEM-VINDO.md)
+- [Primeiros Passos](PRIMEIROS-PASSOS.md)
 - [Arquitetura e Sistemas de Filas]()
 - [Submissão de Trabalhos]()
 - [Gerenciamento de Dados]()
