@@ -10,17 +10,24 @@ _Exemplo_: Se você é a Marie Skłodowska-Curie e seu usuário é marie.curie, 
 
 ## Primeiro Acesso🚪
 
-Para acessar o cluster, comece abrindo o terminal. Se estiver usando Windows, abra o PowerShell <img src="imagens/powershell_icon.png" alt="PowerShell logo"  width="2%"/><br>; se estiver usando Linux ou MacOS, abra o terminal <img src="imagens/terminal_icon.png" alt="Terminal logo"  width="2.3%"/><br>. Use o comando `ssh <seu.login.cnpem>@hpc-lnbio.cnpem.br` para acessar o cluster. 
+Para acessar o cluster, comece abrindo o terminal. Se estiver usando Windows, abra o PowerShell `<img src="imagens/powershell_icon.png" alt="PowerShell logo"  width="2%"/><br>`; se estiver usando Linux ou MacOS, abra o terminal `<img src="imagens/terminal_icon.png" alt="Terminal logo"  width="2.3%"/><br>`. Use o comando `ssh <seu.login.cnpem>@hpc-lnbio.cnpem.br` para acessar o cluster.
 
 Se estiver no Windows e receber o seguinte erro, tente usar outro computador ou peça ajuda ao TIC para instalar o `ssh`.
 
-<center>
-  <img src="imagens/powershell_no_ssh_error.png" alt="PowerShell Error"  width="80%"/><br>
-</center>
+```PowerShell
+ssh: O termo 'ssh' não é reconhecido como nome de cmdlet, função, arquivo de script
+ou programa operável. Verifique a grafia do nome ou, se um caminho tiver sido incluído,
+veja se o caminho está correto e tente novamente.
+Na linha:1 caractere:1
++ ssh marie.curie@hpc-lnbio.cnpem.br
++ ~~~
+    + CategoryInfo          : ObjectNotFound (ssh:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+```
 
 Quando solicitado, digite sua **senha institucional**. Dependendo do seu terminal, você pode não ver nada na tela quando digita sua senha por motivos de segurança. Isso é normal. Se cometer algum erro, tente novamente.
 
-Você pode receber um aviso solicitando sua confirmação antes de continuar conectando. 
+Você pode receber um aviso solicitando sua confirmação antes de continuar conectando.
 
 ```
 [...] Are you sure you want to continue connecting (yes/no/[fingerprint])?
@@ -34,7 +41,7 @@ Digite `yes` e pressione **enter**. Se tudo correu bem, você verá o cursor pis
 
 Digite o comando `ls` para verificar o conteúdo do diretório, e você deverá ver uma pasta chamada "ondemand". Confirme se a pasta está presente.
 
-## Acesso pelo navegador <img src="imagens/browser_icons.png" alt="Browser Icons"  width="15%"/>
+## Acesso pelo navegador `<img src="imagens/browser_icons.png" alt="Browser Icons"  width="15%"/>`
 
 Para acessar o cluster pelo navegador, abra o seu navegador e digite o seguinte endereço na barra de endereços:
 
