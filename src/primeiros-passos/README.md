@@ -84,3 +84,5 @@ Por hora esta autorização é feita manualmente, então assim que precisar mand
     <source src="videos/1stlogin.mp4" type="video/mp4">
   </video>
 </figure>
+
+Completar essas etapas iniciais é essencial para garantir que você possa utilizar o HPC Marvin de forma eficiente. Se você tiver alguma dúvida ou precisar de ajuda, não hesite em entrar em contato com a equipe de suporte do sistema.

@@ -11,7 +11,7 @@ O HPC Marvin fornece armazenamento em disco para os usuários. Este tópico apre
 - Práticas recomendadas de gerenciamento de espaço em disco.
 - Gerenciamento de permissões de acesso a arquivos.
 
-## Transferência de Arquivos 📁🔄💻 
+## Transferência de Arquivos 📁🔄💻
 
 Para começar a utilizar o HPC Marvin, é necessário transferir seus arquivos para o sistema. Isso pode ser feito de várias maneiras, como usando o comando `scp` (secure copy)[^note1], o comando `rsync`[^note2] ou usando um cliente FTP (File Transfer Protocol). Para transferir seus arquivos, siga as instruções fornecidas abaixo:
 
@@ -41,17 +41,11 @@ No entanto, em alguns casos, você pode precisar permitir o acesso a determinado
 ### Passo-a-passo básico
 
 1. Para compartilhar um diretório com outros usuários, você precisa alterar as permissões do diretório HOME para 711. Para isso, digite o comando `chmod 711 /home/<seu_nome_de_usuário>` no terminal.
-
 2. Em seguida, utilize o comando `setfacl` para adicionar permissões de acesso a outros usuários. Por exemplo, para conceder permissão de leitura ao usuário "usuario1" no diretório "pasta_compartilhada", use o comando `setfacl -m u:usuario1:r /caminho/da/pasta_compartilhada`.
-
 3. Para adicionar mais permissões, você pode usar outras opções como "w" para escrita e "x" para execução. Por exemplo, para dar ao usuário "usuario1" permissão de escrita e execução na pasta "pasta_compartilhada", use o comando `setfacl -m u:usuario1:rwx /caminho/da/pasta_compartilhada`.
-
 4. Para verificar as permissões atuais do diretório, você pode usar o comando `getfacl` seguido do caminho do diretório. Por exemplo, para verificar as permissões atuais do diretório "pasta_compartilhada", você usaria o comando `getfacl /caminho/da/pasta_compartilhada`. Isso mostrará uma lista de usuários e suas respectivas permissões.
-
 5. Se você quiser remover as permissões de acesso de um usuário específico, utilize o comando `setfacl -x` seguido do usuário desejado. Por exemplo, para remover as permissões de acesso do usuário "usuario1" no diretório "pasta_compartilhada", você usaria o comando `setfacl -x u:usuario1 /caminho/da/pasta_compartilhada`.
-
 6. Para remover todas as permissões de acesso, você pode usar o comando `setfacl -b` seguido do caminho do diretório. Por exemplo, para remover todas as permissões de acesso no diretório "pasta_compartilhada", use comando `setfacl -b /caminho/da/pasta_compartilhada`.
-
 7. Após remover as permissões, é recomendável verificar novamente as permissões com o comando `getfacl` para garantir que as permissões foram removidas corretamente.
 
 ### Para melhor compreensão
@@ -70,5 +64,3 @@ Além disso, as páginas de manual (man pages) são excelentes recursos que est�
 - acl
 - setfacl
 - getfacl
-
-Completar essas etapas iniciais é essencial para garantir que você possa utilizar o HPC Marvin de forma eficiente. Se você tiver alguma dúvida ou precisar de ajuda, não hesite em entrar em contato com a equipe de suporte do sistema.
