@@ -1,4 +1,4 @@
-# Primeiros Passos
+¨# Primeiros Passos
 
 Antes de começar a utilizar o HPC Marvin, é importante seguir alguns passos iniciais para garantir que tudo esteja configurado corretamente. Este capítulo irá guiá-los pelos primeiros passos necessários para começar a utilizar o sistema.
 
@@ -84,10 +84,3 @@ Por hora esta autorização é feita manualmente, então assim que precisar mand
     <source src="videos/1stlogin.mp4" type="video/mp4">
   </video>
 </figure>
-
-<!-- ## Configuração do Ambiente de Trabalho
-
-Após conectar-se ao HPC Marvin, você precisará configurar seu ambiente de trabalho. Isso inclui a instalação de softwares adicionais que você possa precisar para sua pesquisa e a configuração de variáveis de ambiente. Para configurar seu ambiente de trabalho, siga as instruções fornecidas abaixo:
-
-1. Instale os softwares necessários para sua pesquisa
-2. Defina as variáveis de ambiente necessárias, como $PATH, $LD_LIBRARY_PATH, etc. -->
