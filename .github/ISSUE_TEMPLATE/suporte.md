@@ -1,6 +1,6 @@
 ---
 name: Suporte do HPC Marvin
-about: Create a report to help us improve
+about: Criar um relatório para nos ajudar a melhorar o HPC Marvin
 title: ''
 labels: ''
 assignees: ''
