@@ -17,7 +17,7 @@ Os possíveis resultados são:
 - - - -
 ## Tutorial em vídeo
 
-- [Tutorial 1](https://youtu.be/gtPhn5hPuuQ): Brief introduction, 'Getting Started' section and a [M+H]+ analysis
+- [Tutorial 1](https://youtu.be/gtPhn5hPuuQ): Brief introduction, 'Getting Started' section and a \[M+H\]+ analysis
 
 <center>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/gtPhn5hPuuQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen poster="images/np3_youtube_thumb.png"></iframe>

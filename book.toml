@@ -1,11 +1,13 @@
 [book]
-authors = ["Dr. Paulo Sergio Lopes de Oliveira",
-           "Dr. José Geraldo de Carvalho Pereira",
-           "Dr. Helder Veras Ribeiro Filho",
-           "Dr. Leandro Oliveira Bortot",
-           "Dr. Gabriel Ernesto Jara",
-           "MSc. João Victor da Silva Guerra",
-           "MSc. Luiz Fernando Giolo Alves"]
+authors = [
+    "Dr. Paulo Sergio Lopes de Oliveira",
+    "Dr. José Geraldo de Carvalho Pereira",
+    "Dr. Helder Veras Ribeiro Filho",
+    "Dr. Leandro Oliveira Bortot",
+    "Dr. Gabriel Ernesto Jara",
+    "MSc. João Victor da Silva Guerra",
+    "MSc. Luiz Fernando Giolo Alves",
+]
 language = "ptbr"
 multilingual = true
 src = "src"

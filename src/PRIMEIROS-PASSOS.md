@@ -1,6 +1,6 @@
 # Primeiros Passos
 
-Antes de começar a utilizar o HPC Marvin, é importante seguir alguns passos iniciais para garantir que tudo esteja configurado corretamente. Este capítulo irá guiá-lo(a) pelos primeiros passos necessários para começar a utilizar o sistema.
+Antes de começar a utilizar o HPC Marvin, é importante seguir alguns passos iniciais para garantir que tudo esteja configurado corretamente. Este capítulo irá guiá-los pelos primeiros passos necessários para começar a utilizar o sistema.
 
 Para ativar seu usuário no sistema no HPC Marvin é preciso, fazer um primeiro acesso via terminal no `ssh` (Secury SHell), que é um protocolo de rede seguro que permite a comunicação com servidores remotos. Para se conectar ao sistema, siga as instruções abaixo.
 
@@ -10,70 +10,63 @@ _Exemplo_: Se você é a Marie Skłodowska-Curie e seu usuário é marie.curie, 
 
 ## Primeiro Acesso🚪
 
-Primeiramente, abra o terminal. 
- - Windows: abra o PowerShell <img src="imagens/powershell_icon.png" alt="PowerShell logo"  width="2%"/><br>
- - Linux e MacOS: abra o terminal <img src="imagens/terminal_icon.png" alt="Terminal logo"  width="2.3%"/><br>
+Para acessar o cluster, comece abrindo o terminal. Se estiver usando Windows, abra o PowerShell <img src="imagens/powershell_icon.png" alt="PowerShell logo"  width="2%"/><br>; se estiver usando Linux ou MacOS, abra o terminal <img src="imagens/terminal_icon.png" alt="Terminal logo"  width="2.3%"/><br>. Use o comando `ssh <seu.login.cnpem>@hpc-lnbio.cnpem.br` para acessar o cluster. 
 
-Nele vamos usar o `ssh` para acessar o *cluster*, então digite o seguinte comando:<br>
-```
-ssh <seu.login.cnpem>@hpc-lnbio.cnpem.br
-```
+Se estiver no Windows e receber o seguinte erro, tente usar outro computador ou peça ajuda ao TIC para instalar o `ssh`.
 
-Caso esteja no Windows, pode ser que apareça o seguinte erro:
 <center>
   <img src="imagens/powershell_no_ssh_error.png" alt="PowerShell Error"  width="80%"/><br>
 </center>
 
-Se ocorrer tente outro computador ou peça para o **TIC** instalar o **ssh** na máquina que você está usuando.
+Quando solicitado, digite sua **senha institucional**. Dependendo do seu terminal, você pode não ver nada na tela quando digita sua senha por motivos de segurança. Isso é normal. Se cometer algum erro, tente novamente.
 
-Continuando, digite a sua senha **institucional** quando solicitada.
-Observe que, dependendo do seu terminal, pode ser que nada apareça na tela quando você digitar a senha por motivos de segurança. Isso é normal. Se você errar, tente novamente.
+Você pode receber um aviso solicitando sua confirmação antes de continuar conectando. 
 
-É possível que um aviso com os dizeres semelhantes aos abaixo apareça
 ```
 [...] Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ```
-Digite `yes` e aperte **enter**
 
-Se tudo ocorreu bem, você verá o cursor piscando no terminal com dizeres similares ao seguinte:
+Digite `yes` e pressione **enter**. Se tudo correu bem, você verá o cursor piscando no terminal, com um texto semelhante a:
 
 ```
 [<seu.login.cnpem>@marvin ~]$
 ```
 
-Ao digitar o comando ls para listar o conteúdo do diretório, você verá que já está criada uma pasta chamada ondemand. Verifique por favor...
+Digite o comando `ls` para verificar o conteúdo do diretório, e você deverá ver uma pasta chamada "ondemand". Confirme se a pasta está presente.
 
 ## Acesso pelo navegador <img src="imagens/browser_icons.png" alt="Browser Icons"  width="15%"/>
 
-Agora vamos ao seu navegador <img src="fig/browser_icons.png" alt="Main Browsers"  width="10%"/>
-
-Na barra de endereços entre no seguinte site
+Para acessar o cluster pelo navegador, abra o seu navegador e digite o seguinte endereço na barra de endereços:
 
 ```
 https://hpc-lnbio.cnpem.br
 ```
-Lembre-se, este site só estará disponível na rede interna, se você estiver em casa é preciso usar a **VPN**. Caso não tenha este acesso à VPN, favor solicitar à **TIC**.
 
-No site acessado, mais uma vez, será preciso logar com o sua **senha institucional**.</br>
-(Não é preciso colocar o email completo, o que vem antes do @ é o suficiente)
+Lembre-se, este site só estará disponível na rede interna. Para acessá-lo de fora do centro, é necessário usar a **VPN**. Caso não tenha este acesso à VPN, entre em contato com o **TIC**.
+
+Na página que abrir, faça login com a sua **senha institucional**. Você só precisa digitar o que vem antes do '@' do seu email.
+
 <center>
     <img src="imagens/ood_firefox.png" alt="Open on Demand @ firefox"  width="85%"/>
 </center>
 
-Se tudo der certo você verá a tela abaixo:
+Se tudo der certo, você verá a tela de _login_ abaixo:
 
 <center>
     <img src="imagens/ood_loggedin.png" alt="Open on Demand logged in"  width="85%"/>
 </center>
 
 ### IMPORTANTE
+
+Depois de fazer o primeiro login, você poderá ver e gravar arquivos na aba `Files` do Open OnDemand (ood), mas ainda não conseguirá criar jobs ou usar os `Interactive Apps`. Essa autorização é feita manualmente, então, se precisar, envie um email para um dos mantenedores (ou chame via TEAMS).
+
 Após este primeiro login você já está apto a ver e gravar arquivos na aba `Files` do Open OnDemand (ood), mas ainda não vai conseguir criar jobs ou usar o `Interactive Apps`.
 
 Por hora esta autorização é feita manualmente, então assim que precisar mande um email para um destes endereços (ou chame via TEAMS)
 
-### ATENÇÃO, DEPOIS DE FEITO O PRIMEIRO LOGIN, SE QUISER É POSSÍVE USAR APENAS VIA NAVEGADOR!
+**ATENÇÃO: DEPOIS DO PRIMEIRO ACESSO, É POSSÍVEL ACESSAR O HPC MARVIN EXCLUSIVAMENTE PELO NAVEGADOR!**
 
-## Vídeo Resumo
+### Vídeo Resumo
 
 <!-- (vou regravar em FullHD, mas por enquanto vou deixar aqui para receber feedbacks sobre o formato) -->
 
@@ -89,12 +82,3 @@ Após conectar-se ao HPC Marvin, você precisará configurar seu ambiente de tra
 
 1. Instale os softwares necessários para sua pesquisa
 2. Defina as variáveis de ambiente necessárias, como $PATH, $LD_LIBRARY_PATH, etc. -->
-
-## Transferência de Arquivos 📁💻 
-
-Para começar a utilizar o HPC Marvin, você precisará transferir seus arquivos para o sistema. Isso pode ser feito de várias maneiras, como usando o comando `scp` (secure copy) ou usando um cliente FTP (File Transfer Protocol). Para transferir seus arquivos, siga as instruções fornecidas abaixo:
-
-1. Abra um terminal em seu computador
-2. Use o comando `scp` ou um cliente FTP para transferir seus arquivos para o sistema
-
-Completar essas etapas iniciais é essencial para garantir que você possa utilizar o HPC Marvin de forma eficiente. Se você tiver alguma dúvida ou precisar de ajuda, não hesite em entrar em contato com a equipe de suporte do sistema.
