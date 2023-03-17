@@ -13,14 +13,39 @@ O HPC Marvin fornece armazenamento em disco para os usuários. Este tópico apre
 
 ## Transferência de Arquivos 📁🔄💻
 
-Para começar a utilizar o HPC Marvin, é necessário transferir seus arquivos para o sistema. Isso pode ser feito de várias maneiras, como usando o comando `scp` (secure copy)[^note1], o comando `rsync`[^note2] ou usando um cliente FTP (File Transfer Protocol). Para transferir seus arquivos, siga as instruções fornecidas abaixo:
+Para começar a utilizar o HPC Marvin, é necessário transferir seus arquivos para o sistema. Para transferir seus arquivos, use os comandos:
 
-1. Abra um terminal em seu computador
-2. Use o comando `scp`, o comando `rsync`, ou um cliente FTP para transferir seus arquivos para o sistema
+1. [SFTP](https://linux.die.net/man/1/sftp) (SSH File Transfer Protocol): O SFTP é um protocolo seguro que usa a criptografia SSH para transferir arquivos. Ele é útil quando você precisa transferir arquivos entre sistemas operacionais diferentes ou quando a transferência precisa ser segura. Para transferir um arquivo usando SFTP
 
-[^note1] [https://linux.die.net/man/1/scp](https://linux.die.net/man/1/scp)
+```bash
+sftp <seu.login.cnpem>@hpc-lnbio.cnpem.br
+```
 
-[^note2] [https://linux.die.net/man/1/rsync](https://linux.die.net/man/1/rsync)
+Isso irá se conectar ao host especificado como o usuário especificado. Uma vez conectado, você pode usar comandos como `ls`, `cd`, `put` e `get` para listar, navegar e transferir arquivos.
+
+2. [SCP](https://linux.die.net/man/1/scp) (Secure Copy Protocol)[^2]: SCP é outro protocolo seguro que usa a criptografia SSH para transferir arquivos. Ele é semelhante ao SFTP, mas é mais simples de usar e não tem recursos de navegação.
+
+Para transferir um arquivo usando SCP, use o comando:
+
+```bash
+scp file.txt <seu.login.cnpem>@hpc-lnbio.cnpem.br:/caminho/de/destino/
+```
+
+Para transferir um diretório usando SCP, use o comando:
+
+```bash
+scp -r directory/ <seu.login.cnpem>@hpc-lnbio.cnpem.br:/caminho/de/destino/
+```
+
+Isso irá copiar o arquivo `file.txt` e o diretório `directory` para o diretório especificado no HPC Marvin (hpc-lnbio.cnpem.br) pelo login do usuário.
+
+3. [Rsync](https://linux.die.net/man/1/rsync): O Rsync é um protocolo de transferência de arquivos que pode sincronizar diretórios entre hosts. Ele usa uma conexão segura SSH e é útil para transferir grandes quantidades de dados ou sincronizar arquivos entre sistemas. Para usar o Rsync, use o comando:
+
+```bash
+rsync -avz origem/ <seu.login.cnpem>@hpc-lnbio.cnpem.br:/caminho/de/destino/
+```
+
+Isso irá sincronizar o diretório source com o diretório destination no host especificado como o usuário especificado. O `-a` mantém as permissões de arquivos, o `-v` mostra o progresso da transferência e o `-z` comprime os dados antes de transferi-los.
 
 ## Backup de Dados 💾
 
