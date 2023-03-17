@@ -51,18 +51,26 @@ Parte dessa organização ocorre por meio de **filas** de execução, chamadas d
 <!-- incluindo filas para processamento de longa duração, filas para processamento de -->
 <!-- curta duração, dentre outras. -->
 
-No Marvin temos filas específicas de acordo com o recurso desejado pelo usuário: apenas CPU, CPU+GPU(5GB) ou CPU+GPU(40GB). Também dividimos pelo tempo de execução que o usuário deseja reservar para a tarefa: até 15 min, 12 horas, 5 dias e 15 dias. 
+No Marvin temos filas específicas de acordo com o recurso desejado pelo usuário: apenas CPU, CPU+GPU(5GB) ou CPU+GPU(40GB). Também dividimos pelo tempo de execução que o usuário deseja reservar para a tarefa: até 30 min, 12 horas, 5 dias e 15 dias. 
 
 Assim as filas são:
 
-| Fila            | tempo limite |   |   |   |
-|-----------------|--------------|---|---|---|
-| short-cpu       | 5 dias       |   |   |   |
-| long-cpu        | 15 dias      |   |   |   |
-| short-gpu-small | 5 dias       |   |   |   |
-| long-gpu-small  | 15 dias      |   |   |   |
-|                 |              |   |   |   |
-|                 |              |   |   |   |
+| Fila | Tempo limite | mem-per-cpu (default) | mem-per-cpu (limite) | tem GPU? |
+|------|--------------|-----------------------|----------------------|----------|
+| debug-cpu | 30 minutos | 1GB | 2GB | |
+| gui-cpu | 12 horas | 1GB | 4GB | |
+| short-cpu | 5 dias | 1GB | 4GB | |
+| long-cpu | 15 dias | 1GB | 4GB | |
+| debug-gpu-small | 30 minutos | 1GB | 2GB | Sim (5GB) |
+| gui-gpu-small | 12 horas | 1GB | 4GB | Sim (5GB) |
+| short-gpu-small | 5 dias | 1GB | 8GB | Sim (5GB) |
+| long-gpu-small | 15 dias | 1GB | 8GB | Sim (5GB) |
+| debug-gpu-big | 30 minutos | 1GB | 2GB | Sim (40GB) |
+| gui-gpu-big | 12 horas | 1GB | 4GB | Sim (40GB) |
+| short-gpu-big | 5 dias | 1GB | 8GB | Sim (40GB) |
+| long-gpu-big | 15 dias | 1GB | 8GB | Sim (40GB) |
+
+As filas *debug* tem limitação de 2 cores.
 
 ### Políticas de filas
 
