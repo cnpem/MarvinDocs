@@ -45,7 +45,7 @@ Em ambientes HPC, múltiplos usuários podem estar logados simultaneamente. Na t
 
 Parte dessa organização ocorre por meio de **filas** de execução, chamadas de _partitions_ no SLURM. Essas filas guardam as tarefas que os usuários submetem e, assim que houver recurso disponíveis, iniciam a sua execução. 
 
-### Tipos de filas
+### As filas do Marvin
 
 <!-- Aqui, apresentaremos os diferentes tipos de filas disponíveis no HPC Marvin, -->
 <!-- incluindo filas para processamento de longa duração, filas para processamento de -->
@@ -66,9 +66,18 @@ Assim as filas são:
 
 ### Políticas de filas
 
-Nesta seção, descreveremos as políticas de filas utilizadas no HPC Marvin para
-determinar a ordem em que as solicitações são processadas, incluindo a política
-de prioridade e a política de justiça.
+Até o momento, nossa opção tem sido por estimular boas práticas ao invés de estabelecer regras mais restritivas.
+
+Abaixo estão algumas dicas em relação a escolha e uso das filas:
+
+- Cada fila tem uma quantidade de recursos reservados por padrão (_default_). Normalmente os valores são bem inferiores ao limite máximo de recursos que fila permite reservar por tarefa. Tente escolher sempre a fila capaz de fornecer os recursos necessário para atender a execução da sua tarefa, faça os ajustes e evite deperdícios!  
+- Se a tarefa não utiliza a GPU o usuário deve preferir as filas **cpu** como `short-cpu` e `long-cpu`. 
+- Se o usuário deseja identificar um erro que está ocorrendo em uma tarefa (_debugar_) é preferível que sejam utilizadas as filas de **debug** como `debug-cpu`, `debug-gpu-small` e `debug-gpu-big`.
+- Tarefas executadas de forma interativas, o que é mais comum quando se utiliza interface gráfica como VNC, RStudio e Jupyter, são menos eficientes no uso de recurso computacionais, mas podem ser úteis para análises rápidas de resultados e preparação de tarefas. Por esses motivos foram criadas as filas **gui** (_Graphical User Interface_). Intencionalmente elas tem tempo limite de 12 horas para que os usuários não esqueçam tarefas ativas e ociosas de um dia para o outro.
+- O usuário deve evitar submeter muitos jobs simultaneamente a fim de evitar uma monopolização das filas por um longo período.
+- Nas filas **short-cpu** e **short-gpu** é possível alocar, respectivamente, até 4GB e 8GB de memória RAM **por cpu** (parâmetro _mem-per-cpu_ do SLURM), mas por padrão são alocados 1GB por cpu. Ajuste esse parâmetro e o número de cpus da tarefa antes de pensar em utilizar as filas **bigmen** e **highmem**.
+- Ainda sobre as filas **bigmen** e **highmem**, elas são para **casos excepcionais**, pois reservam uma quantidade enorme de memória por cpu, até 132GB, o que pode impactar outros usuários.  
+
 
 ### Submissão de trabalhos
 
