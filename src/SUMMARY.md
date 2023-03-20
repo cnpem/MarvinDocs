@@ -43,7 +43,7 @@ para ajudar a explicar conceitos. Boa sorte na criação da estrutura do seu Mar
 - [Programas e Aplicativos](programas-e-aplicativos/README.md)
   - [AlphaFold](programas-e-aplicativos/alphafold/README.md)
   - [OpenFold](programas-e-aplicativos/openfold/README.md)
-  - [NP3_MS_WORKFLOW](programas-e-aplicativos/np3_ms_workflow/README.md)
+  - [NP³ MS WORKFLOW](programas-e-aplicativos/np3_ms_workflow/README.md)
     - [Criando Sbatch](programas-e-aplicativos/np3_ms_workflow/np3_sbatch.md)
     - [Usando o Job Composer](programas-e-aplicativos/np3_ms_workflow/np3_jobcomposer.md)
   <!-- Planejados
