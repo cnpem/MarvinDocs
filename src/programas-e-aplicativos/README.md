@@ -20,7 +20,7 @@ O HPC Marvin oferece muitos aplicativos para uso pelos usuários em uma ampla va
 
 - [AlphaFold](./alphafold/index.html)
 - [OpenFold](./openfold/index.html)
-- [NP3_MS_WORKFLOW](./np3_ms_workflow/index.html)
+- [NP³ MS WORKFLOW](./np3_ms_workflow/index.html)
 
 ## Outros Softwares
 
