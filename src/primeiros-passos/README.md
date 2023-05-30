@@ -13,7 +13,7 @@ _Exemplo_: Se você é a Marie Skłodowska-Curie e seu usuário é marie.curie, 
 Para acessar o HPC Marvin, comece abrindo o terminal. Se estiver usando Windows, abra o PowerShell <img src="imagens/powershell_icon.png" alt="PowerShell logo" width="2%"></img>; se estiver usando Linux ou MacOS, abra o terminal <img src="imagens/terminal_icon.png" alt="Terminal logo" width="2.3%"></img>. Para acessar o HPC Marvin, use o comando:
 
 ```bash
-ssh <seu.login.cnpem>@hpc-lnbio.cnpem.br
+ssh <seu.login.cnpem>@marvin.cnpem.br
 ```
 
 Se estiver no Windows e receber o seguinte erro, tente usar outro computador ou peça ajuda ao TIC para instalar o `ssh`.
@@ -23,7 +23,7 @@ ssh: O termo 'ssh' não é reconhecido como nome de cmdlet, função, arquivo de
 ou programa operável. Verifique a grafia do nome ou, se um caminho tiver sido incluído,
 veja se o caminho está correto e tente novamente.
 Na linha:1 caractere:1
-+ ssh marie.curie@hpc-lnbio.cnpem.br
++ ssh marie.curie@marvin.cnpem.br
 + ~~~
     + CategoryInfo          : ObjectNotFound (ssh:String) [], CommandNotFoundException
     + FullyQualifiedErrorId : CommandNotFoundException
@@ -50,7 +50,7 @@ Digite o comando `ls` para verificar o conteúdo do diretório, e você deverá 
 Para acessar o cluster pelo navegador, abra o seu navegador e digite o seguinte endereço na barra de endereços:
 
 ```
-https://hpc-lnbio.cnpem.br
+https://marvin.cnpem.br
 ```
 
 Lembre-se, este site só estará disponível na rede interna. Para acessá-lo de fora do centro, é necessário usar a **VPN**. Caso não tenha este acesso à VPN, entre em contato com o **TIC**.

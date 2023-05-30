@@ -6,7 +6,7 @@ Ele também é capaz de modelar multímeros e complexos.
 Para mais informações sobre o uso do AlphaFold acesse o [repositório](
 https://github.com/deepmind/alphafold/).
 
-Abaixo descrevemos resumidamente como rodar o AlphaFold no **MARVIN** (hpc-lnbio.cnpem.br). Está nos planos tornar a 
+Abaixo descrevemos resumidamente como rodar o AlphaFold no **MARVIN** (marvin.cnpem.br). Está nos planos tornar a 
 tarefa mais fácil e amigável aos usuários, por isso, essa página irá mudar ao longo do tempo. 
 
 ## Como usar
