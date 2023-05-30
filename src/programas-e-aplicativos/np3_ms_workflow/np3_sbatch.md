@@ -86,6 +86,7 @@ Conteúdo final do `my_np3_awsome_run.sh`:
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --partition=short-cpu
+#SBATCH --mem-per-cpu=4G
 
 # Execute o script Python create_overlay.py 500 MB de espaço
 python3 /opt/images/NP3/ms_workflow/create_overlay.py 500
