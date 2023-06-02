@@ -24,8 +24,8 @@ Abaixo um exemplo da tarefa para submissão. Após salvar o arquivo (ex. `nova_t
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
 #SBATCH --partition=short-gpu-small
-#SBATCH --gpus=1
 #SBATCH --mem-per-cpu=8G
+#SBATCH --gres=gpu:1g.5gb:1
 
 # essa variável aponta para o banco de dados utilizado pelo alphafold (NÃO ALTERE)   
 ALPHAFOLD_DB=/public/alphafold_db_20220825

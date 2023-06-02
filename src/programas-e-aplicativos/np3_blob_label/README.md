@@ -12,7 +12,8 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --partition=short-gpu-small
-#SBATCH --mem-per-cpu=4G
+#SBATCH --mem-per-cpu=8G
+#SBATCH --gres=gpu:1g.5gb:1
 
 # altere o caminho abaixo para as pastas onde estão os dados
 DATA_FOLDER=./Cristalografia/20230510_Bertonha/NP3_Blob_Label/NP3BlobLabel_05_2023/
