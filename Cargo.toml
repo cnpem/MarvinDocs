@@ -7,5 +7,5 @@ edition = "2021"
 
 [dependencies]
 mdbook = "0.4.28"
-mdbook-toc = "0.11.2"
+mdbook-toc = "0.13.0"
 mdbook-catppuccin = "0.1.1"
