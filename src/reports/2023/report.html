@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt_BR" xml:lang="pt_BR">
+<head>
+<!-- 2024-01-09 Tue 16:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Relatório de uso do Marvin (HPC-LNBio)</title>
+<meta name="author" content="Laboratório de Biologia Computacional - Computação Científica - LNBio" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Relatório de uso do Marvin (HPC-LNBio)
+<br />
+<span class="subtitle">Período: 2023</span>
+</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga02dfc0">1. Introdução</a></li>
+<li><a href="#org9e37f06">2. Uso do armazenamento de dados</a></li>
+<li><a href="#org10512e7">3. Número de usuários</a></li>
+<li><a href="#org03938ac">4. Uso do processamento</a>
+<ul>
+<li><a href="#org784bcb2">4.1. Número de jobs</a></li>
+<li><a href="#org9f5448f">4.2. Tempo de execução dos jobs</a></li>
+<li><a href="#orge7d973b">4.3. Tempo de jobs na fila de espera</a></li>
+</ul>
+</li>
+<li><a href="#org97d5bbe">5. Informação por grupos de pesquisa do LNBio</a></li>
+<li><a href="#orge4d5973">6. Discussão</a>
+<ul>
+<li><a href="#org887463e">6.1. Armazenamento</a></li>
+<li><a href="#org217301b">6.2. Usuários</a></li>
+<li><a href="#orga95385a">6.3. Processamento</a></li>
+</ul>
+</li>
+<li><a href="#org14bc8ff">7. Conclusão</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga02dfc0" class="outline-2">
+<h2 id="orga02dfc0"><span class="section-number-2">1.</span> Introdução</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Este relatório tem como objetivo fornecer uma visão do uso do cluster de alta performance Marvin (HPC-LNBio) em 2023. O relatório cobre o uso do armazenamento de dados na storage, o crescimento do número de usuários, o uso dos recursos de processamento de dados e o uso estratificado para cada grupo. 
+</p>
+</div>
+</div>
+<div id="outline-container-org9e37f06" class="outline-2">
+<h2 id="org9e37f06"><span class="section-number-2">2.</span> Uso do armazenamento de dados</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+O armazenamento de dados cresceu de modo significativo no HPC-LNBio, partindo de ~40TB em fevereiro de 2023 para 132TB em dezembro de 2023 (Figura <a href="#org80ec0bf">1</a>). Isso corresponde a um crescimento de aproximadamente 9TB por mês.
+</p>
+
+<p>
+A previsão atual, considerando que a taxa de crescimento seja linear, é que a capacidade máxima da storage será atingida em 18 meses (junho de 2025) e a <b><b>capacidade de 80%</b></b> - limite considerando uma margem de segurança - será atingida em <b><b>dezembro de 2024</b></b>. 
+</p>
+
+
+
+<div id="org80ec0bf" class="figure">
+<p><img src="images/disk_usage.png" alt="disk_usage.png" />
+</p>
+<p><span class="figure-number">Figura 1: </span>Gráfico do armazenamento de dados no HPC</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org10512e7" class="outline-2">
+<h2 id="org10512e7"><span class="section-number-2">3.</span> Número de usuários</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+O número de usuários ativos indica a utilização pelos grupos de pesquisa do LNBio.
+</p>
+
+<p>
+O Marvin iniciou o ano de 2023 com 24 usuários ativos e em dezembro de 2023, há 70 usuários ativos (Figura <a href="#org476e0a7">2</a>). Observando a figura <a href="#org476e0a7">2</a>, notamos uma taxa de crescimento aparentemente linear, com média de 5 usuários novos/mês.
+</p>
+
+
+<div id="org476e0a7" class="figure">
+<p><img src="images/user_stats.png" alt="user_stats.png" />
+</p>
+<p><span class="figure-number">Figura 2: </span>Número de usuários ativos e ingresso de novos usuários.</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org03938ac" class="outline-2">
+<h2 id="org03938ac"><span class="section-number-2">4.</span> Uso do processamento</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org784bcb2" class="outline-3">
+<h3 id="org784bcb2"><span class="section-number-3">4.1.</span> Número de jobs</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+O processamento computacional em HPCs como o Marvin é realizado através da submissão de <b><b>jobs</b></b>. Nesses jobs, o usuário descreve os recursos computacionais que ele deseja utilizar - a quantidade de CPUs, GPUs e memória RAM - e os scripts e programas que serão executados. Assim, ao observarmos o número de jobs submetidos (Figura <a href="#orgfd678a2">3</a>), podemos estimar como os usuários tem utilizado os recursos computacionais disponíveis.
+</p>
+
+<p>
+Observando a figura <a href="#orgfd678a2">3</a> é possível notar que a demanda por jobs não foi uniforme ao longo do ano, mas apresentou picos em alguns meses.
+</p>
+
+
+<div id="orgfd678a2" class="figure">
+<p><img src="images/jobs.png" alt="jobs.png" />
+</p>
+<p><span class="figure-number">Figura 3: </span>Número de jobs submetidos por mês no período analisado.</p>
+</div>
+
+<p>
+Os jobs exibidos na figura <a href="#orgfd678a2">3</a> são submetidos para diferentes partições do SLURM. Os que utilizam processamento em GPU são submetidos para as partições <i>&lowast;-gpu-&lowast;</i> e os que utilizam apenas processamento em CPU para as partições <i>&lowast;-cpu-&lowast;</i>. Os jobs submetidos para as partições <i>gui-&lowast;-&lowast;</i> são sessões gráficas (VNC, Jupyter ou RStudio) inicializadas através do OpenOnDemand.
+</p>
+
+<p>
+Na figura <a href="#org0ebf88c">4</a> observamos essa distribuição de jobs por diferentes partições. A maior demanda foi para a partição (fila) <i>short-gpu-big</i> a qual possui uma placa NVIDIA A100 40GB. A segunda partição com maior demanda foi a <i>short-cpu</i> e a terceira maior demanda foi para a partição <i>short-gpu-small</i> a qual fornece uma gpu NVIDIA de 5GB. As partições <i>gui-&lowast;-&lowast;</i> executaram, em conjunto, 346 jobs iniciados vias OpenOnDemand. A classe de partições <i>long-&lowast;-&lowast; e /debug-&lowast;</i> foram as menos utilizadas. 
+</p>
+
+
+<div id="org0ebf88c" class="figure">
+<p><img src="images/jobs_per_partition.png" alt="jobs_per_partition.png" />
+</p>
+<p><span class="figure-number">Figura 4: </span>Número de jobs por servidor (GPU ou CPU) e em cada partição.</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org9f5448f" class="outline-3">
+<h3 id="org9f5448f"><span class="section-number-3">4.2.</span> Tempo de execução dos jobs</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+Na figura <a href="#orgcc88620">5</a> podemos observar o tempo acumulado de processamento de cada uma das partições. Esse tempo corresponde a soma do tempo de execução dos jobs. Juntamente com os dados acima, isso nos permite ter uma visão da utilização do HPC e das partições mais utilizadas.
+</p>
+
+
+<div id="orgcc88620" class="figure">
+<p><img src="images/jobs_runtime.png" alt="jobs_runtime.png" />
+</p>
+<p><span class="figure-number">Figura 5: </span>Tempo acumulado de execução de jobs por partição.</p>
+</div>
+
+<p>
+Na figura <a href="#org87b2c86">6</a> podemos observar a distribuição do tempo de execução dos jobs.
+</p>
+
+<p>
+Observamos que a maior parte dos jobs tiveram duração inferior a 30 minutos.
+</p>
+
+<p>
+A duração média dos jobs com tempo de execução maior que 30 minutos foi de aproximadamente 9.6 horas e a mediana foi de 4.6 horas. Apenas 10% desses jobs duraram mais que 20 horas.
+</p>
+
+
+<div id="org87b2c86" class="figure">
+<p><img src="images/jobs_runtime_hist.png" alt="jobs_runtime_hist.png" />
+</p>
+<p><span class="figure-number">Figura 6: </span>Distribuição do tempo de execução dos jobs.</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orge7d973b" class="outline-3">
+<h3 id="orge7d973b"><span class="section-number-3">4.3.</span> Tempo de jobs na fila de espera</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+Quando um usuário submete um job para ser processado em uma partição do SLURM, o job entra na fila de execução. Caso outros jobs estejam sendo executados e consumindo os recursos disponíveis, como CPUs, GPUs e memória, o job permanece na fila aguardando que outros jobs sejam concluídos e, consequentemente, que os recursos necessários para sua execução sejam liberados.
+</p>
+
+<p>
+Por isso, o tempo que os jobs permanecem na fila de espera indicam a competição dos usuários por recursos e nos dão uma ideia de quão suficiente são os recursos atuais para atender a demanda.
+</p>
+
+<p>
+No ano de 2023, ~54% dos jobs permaneceram por um período inferior a 1 minuto. No outro extremo, aproximadamente ~10% dos jobs ficaram aguardando na fila por mais de 24 horas. Do restante, ~13% ficaram na fila de 1 a 8 horas e ~19% ficaram na fila entre 8 e 24 horas (Figura <a href="#org7a44045">7</a>).  
+</p>
+
+
+<div id="org7a44045" class="figure">
+<p><img src="images/jobs_waiting.png" alt="jobs_waiting.png" />
+</p>
+<p><span class="figure-number">Figura 7: </span>Tempo de espera dos jobs até o início da execução.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org97d5bbe" class="outline-2">
+<h2 id="org97d5bbe"><span class="section-number-2">5.</span> Informação por grupos de pesquisa do LNBio</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+A figura <a href="#orgfdb75ec">8</a> mostra o número de usuários do Marvin por grupos de pesquisa do LNBio e outros como, usuários de teste, de suporte - TI/CNPEM e ATOS - e usuários inativos como ex-alunos e ex-colaboradores.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">report.fig_users_per_group(user_group)
+</pre>
+</div>
+
+
+<div id="orgfdb75ec" class="figure">
+<p><img src="images/users_groups.png" alt="users_groups.png" />
+</p>
+<p><span class="figure-number">Figura 8: </span>Número de usuários por grupo de pesquisa. São considerados usuários inativos aqueles que não estão mais no CNPEM.</p>
+</div>
+
+<p>
+A figura <a href="#org3ea4310">9</a> mostra o volume de dados armazenados pelos usuários de acordo com o grupo de pesquisa que integram <sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>.
+</p>
+
+<p>
+O grupo com maior volume de dados armazenado é o de Genômica e Metabolômica (<i>genomica</i>), seguido dos grupos de Farmacologia Molecular (<i><i>farmacologia</i></i>), Biologia Computacional - Computação Científica (<i>computacao</i>), Virologia, Bioimagem, Biologia do Câncer e Proteômica (Figura <a href="#org3ea4310">9</a>).  
+</p>
+
+
+<div id="org3ea4310" class="figure">
+<p><img src="images/groups_storage.png" alt="groups_storage.png" />
+</p>
+<p><span class="figure-number">Figura 9: </span>Uso de armazenamento por grupo de pesquisa.</p>
+</div>
+
+<p>
+A figura <a href="#org306e043">10</a> mostra o tempo acumulado de execução dos jobs para cada grupo de pesquisa. É possível notar que devido a diversidade dos softwares utilizados e das análises feitas pelos grupos há uma grande diferença entre o processamento em GPU e CPU.
+</p>
+
+<p>
+O grupo que apresentou maior utilização de tempo de processamento foi a Biologia Computacional - Computação Científica, seguido da Virologia, Farmacologia Molecular e, Genômica e Metabolômica, este último, com todo o processamento nas partições de CPU.
+</p>
+
+
+<div id="org306e043" class="figure">
+<p><img src="images/jobs_runtime_per_group.png" alt="jobs_runtime_per_group.png" />
+</p>
+<p><span class="figure-number">Figura 10: </span>Tempo de execução de jobs por grupo de pesquisa.</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orge4d5973" class="outline-2">
+<h2 id="orge4d5973"><span class="section-number-2">6.</span> Discussão</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org887463e" class="outline-3">
+<h3 id="org887463e"><span class="section-number-3">6.1.</span> Armazenamento</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+A taxa de crescimento do armazenamento de dados na storage está dentro das previsões feitas pelo grupo de Computação Científica com base nas entrevistas realizadas com os grupos de pesquisa em 2022 para o "Projeto EXA". No planejamento para 2024, enfatizamos a necessidade de uma expansão da storage através da adição de um servidor com capacidade aproximada para 1PB (PetaByte), o que também era previsto.
+</p>
+
+<p>
+Futuramente, acreditamos que a taxa de armazenamento tenderá a aumentar devido a aquisição e modernização de equipamentos experimentais e ao crescimento da demanda pelos grupos do LNBio. Um exemplo próximo é a implantação do software OMERO que possibilitará o armazenamento de imagens de HTS e de microscopia, a maior parte dessas armazenadas atualmente no servidor do Columbus.
+</p>
+</div>
+</div>
+<div id="outline-container-org217301b" class="outline-3">
+<h3 id="org217301b"><span class="section-number-3">6.2.</span> Usuários</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+O número de usuários tem crescido organicamente, independente de ações de treinamento, devido as necessidades dos grupos de pesquisa.
+</p>
+</div>
+</div>
+<div id="outline-container-orga95385a" class="outline-3">
+<h3 id="orga95385a"><span class="section-number-3">6.3.</span> Processamento</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+Dentre os dados coletados de processamento, o que mais atraiu nossa atenção foi a grande variação observada para o tempo de espera na fila entre os dados anteriores - Jan a Ago de 2023 - e os dados anuais de 2023. Nas estatísticas coletadas de janeiro até agosto de 2023, 95% dos jobs submetidos esperavam menos de 1mim. Atualmente essa porcentagem caiu para 54% e 10% dos jobs esperaram mais que 24 horas na fila.
+</p>
+
+<p>
+Outros pontos que chamaram nossa atenção foram que a partição de maior demanda foi a <i>short-gpu-big</i> e que as filas <i>long</i> e <i>debug</i> tem sido subutilizadas. Essas observações, juntamente com os dados que indicam que apenas 10% dos jobs tem duração maior que 20 horas, sugere que podemos fazer alguns ajustes a fim de otimizar o uso.
+</p>
+
+<p>
+Dentre as ajustes que iremos analisar nas próximas semanas estão:
+</p>
+<ul class="org-ul">
+<li>Alteração dos recursos de GPU de 5 "big" (40GB) e 21 "small" (5GB) para, respectivamente, 6 e 14 <sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>.</li>
+<li>Alteração do tempo máximo de execução nas filas dos atuais 5 dias para a "short" e 15 dias para a "long" para, respectivamente, 1 dia e 3 dias.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org14bc8ff" class="outline-2">
+<h2 id="org14bc8ff"><span class="section-number-2">7.</span> Conclusão</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+O relatório de uso anual de 2023 forneceu informações importantes para a administração do HPC/LNBio, que serão úteis para atender melhor as necessidades dos grupos de pesquisa. Acreditamos que os próximos relatórios poderão ser emitidos com maior frequência, semestralmente ou trimestralmente. Além da utilidade operacional, esperamos que tais relatórios contribuam para o planejamento e tomada de decisões no LNBio. 
+</p>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Notas de Rodap&eacute;: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">A informação do grupo do usuário foi obtida via "groups" do AD ou adicionada manualmente para os usuários que não possuíam essa informação</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">Essa mudança é feita via configuração. O servidor possui 8 NVIDIA A100 40GB e cada uma pode ser particionada em 7 de 5GB</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="date">Data: 2024-01-04 Thu 00:00</p>
+<p class="author">Autor: Laboratório de Biologia Computacional - Computação Científica - LNBio</p>
+<p class="date">Criado em: 2024-01-09 Tue 16:02</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

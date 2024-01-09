@@ -24,10 +24,10 @@ command = "mdbook-toc"
 renderer = ["html"]
 
 [preprocessor.catppuccin]
-assets_version = "0.1.1" # DO NOT EDIT: Managed by `mdbook-catppuccin install`
+assets_version = "2.1.0" # DO NOT EDIT: Managed by `mdbook-catppuccin install`
 
 [output.html]
-additional-css = ["./theme/catppuccin.css", "./theme/catppuccin-highlight.css"]
+additional-css = ["./theme/catppuccin.css", "./theme/catppuccin-highlight.css", "./theme/catppuccin-admonish.css"]
 
 [output.html.search]
 limit-results = 15

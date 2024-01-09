@@ -58,3 +58,8 @@ para ajudar a explicar conceitos. Boa sorte na criação da estrutura do seu Mar
 - [Solução de Problemas e Suporte](solucao-de-problemas-e-suporte/README.md)
 - [Políticas e diretrizes](politicas-e-diretrizes/README.md)
 - [Glossário](glossario/README.md)
+
+---
+
+- [Relatórios de uso](reports/README.md)
+  - [2023](reports/2023/README.md)
