@@ -79,7 +79,7 @@ Até o momento, nossa opção tem sido por estimular boas práticas ao invés de
 Abaixo estão algumas dicas em relação a escolha e uso das filas:
 
 - Cada fila tem uma quantidade de recursos reservados por padrão (_default_). Normalmente os valores são bem inferiores ao limite máximo de recursos que fila permite reservar por tarefa. Tente escolher sempre a fila capaz de fornecer os recursos necessário para atender a execução da sua tarefa, faça os ajustes e evite deperdícios!  
-- Se a tarefa não utiliza a GPU o usuário deve preferir as filas **cpu** como `short-cpu` e `long-cpu`. 
+- Se a tarefa não utiliza a GPU o usuário deve preferir as filas **cpu** como `short-cpu` e `long-cpu`.
 - Se o usuário deseja identificar um erro que está ocorrendo em uma tarefa (_debugar_) é preferível que sejam utilizadas as filas de **debug** como `debug-cpu`, `debug-gpu-small` e `debug-gpu-big`.
 - Tarefas executadas de forma interativas, o que é mais comum quando se utiliza interface gráfica como VNC, RStudio e Jupyter, são menos eficientes no uso de recurso computacionais, mas podem ser úteis para análises rápidas de resultados e preparação de tarefas. Por esses motivos foram criadas as filas **gui** (_Graphical User Interface_). Intencionalmente elas tem tempo limite de 12 horas para que os usuários não esqueçam tarefas ativas e ociosas de um dia para o outro.
 - O usuário deve evitar submeter muitos jobs simultaneamente a fim de evitar uma monopolização das filas por um longo período.

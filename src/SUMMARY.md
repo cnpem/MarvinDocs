@@ -55,7 +55,7 @@ para ajudar a explicar conceitos. Boa sorte na criação da estrutura do seu Mar
   - [Amber]()
   - [Relion]() 
   -->
-- [Solução de Problemas e Suporte](solucao-de-problemas-e-suporte/README.md)
+- [Suporte e Solução de Problemas](suporte-e-solucao-de-problemas/README.md)
 - [Políticas e diretrizes](politicas-e-diretrizes/README.md)
 - [Glossário](glossario/README.md)
 
