@@ -1,6 +1,6 @@
 # mdbook
 book/
-theme/
+# theme/
 
 # Rust
 Cargo.lock
