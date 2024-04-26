@@ -31,13 +31,12 @@ computacionais dos usuários.
 
 ### Sistema Operacional
 
-Nesta seção, descreveremos o sistema operacional utilizado no HPC Marvin,
-incluindo sua versão e principais recursos.
-
+O sistema operacional utilizado no Marvin é o Rocky Linux 8.5.
 ### Programas e Aplicativos
 
-Aqui, forneceremos uma lista dos principais softwares instalados no HPC Marvin,
-como compiladores, bibliotecas e ferramentas de programação.
+Os usuários são estimulados a utilizarem programas instalados em containers singularity ou em ambientes virtuais como conda.
+
+Em `/opt/images` o usuário encontrará imagens do singularity (.sif) para algumas aplicações. Essas imagens foram feitas pela nossa equipe ou por usuários. Aliás, ficamos muito felizes quando usuários pedem para compartilharmos as imagens que eles criaram!
 
 ## Sistema de Filas 📋
 
