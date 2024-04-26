@@ -36,11 +36,7 @@ O sistema operacional utilizado no Marvin é o Rocky Linux 8.5.
 
 Os usuários são estimulados a utilizarem programas instalados em containers singularity ou em ambientes virtuais como conda.
 
-<<<<<<< HEAD
 Em `/opt/images` o usuário encontrará imagens do singularity (.sif) para algumas aplicações. Essas imagens foram feitas pela nossa equipe ou por usuários. Aliás, ficamos muito felizes quando usuários pedem para compartilharmos as imagens que eles criaram!
-=======
-Em `/opt/images` o usuário encontrará imagens do singularity (.sif) para algumas aplicações. Essas imagens foram feitas pela nossa equipe ou por usuários. Aliás, ficamos muito felizes quando usuários pedem compartilharmos as imagens que eles criaram!
->>>>>>> origin/main
 
 ## Sistema de Filas 📋
 
