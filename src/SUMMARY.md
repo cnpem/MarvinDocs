@@ -47,6 +47,8 @@ para ajudar a explicar conceitos. Boa sorte na criação da estrutura do seu Mar
     - [Criando Sbatch](programas-e-aplicativos/np3_ms_workflow/np3_sbatch.md)
     - [Usando o Job Composer](programas-e-aplicativos/np3_ms_workflow/np3_jobcomposer.md)
   - [NP³ Blob Label](programas-e-aplicativos/np3_blob_label/README.md)
+  - [OMERO](programas-e-aplicativos/omero/README.md)
+
   <!-- Planejados
   - [Cellprofiler]()
   - [ilastik]()
