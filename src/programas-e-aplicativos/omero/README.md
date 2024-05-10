@@ -38,8 +38,6 @@ Se o login for bem-sucedido, você verá a tela do _webapp_ abaixo:
 
 Após fazer login e acessar a página de visualização de arquivos, você verá no canto superior esquerdo um icone de duas pessoas (👥) indicando o grupo que está visualizando. Clique nele para listar todos grupos dos quais faz parte. Ao passar o mouse sobre um grupo, você verá os usuários inclusos.
 
-As 
-
 <center>
     <img src="images/omero_web_groups.jpeg" alt="OMERO.web group"  width="90%"/>
 </center>
