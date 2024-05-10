@@ -1,7 +1,9 @@
 [package]
 name = "MarvinDocs"
-version = "0.2.1"
+version = "0.3.0"
 edition = "2021"
+readme = "README.md"
+license = "CC-BY-4.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
