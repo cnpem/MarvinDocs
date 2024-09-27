@@ -8,6 +8,26 @@ Nos tutoriais, utilizaremos o <> para indicar variáveis. Sempre que aparecer al
 
 _Exemplo_: Se você é a Marie Skłodowska-Curie e seu usuário é marie.curie, ao ver `<seu.login.cnpem>@lnbio.cnmpem.br`, digite `marie.curie@lnbio.cnpem.br` para executar.
 
+<div class="warning">
+
+IMPORTANTE
+
+Após o primeiro login você já está apto a ler e gravar arquivos na aba `Files` do Open OnDemand (ood), mas ainda não vai conseguir criar jobs ou usar o `Interactive Apps`.
+
+A autorização é feita manualmente, para garantir as permissões entre em contato os administradores
+
+- **Via Teams**
+  - Pablo Wesley - `pablo.silva@lnbio.cnpem.br`
+  - João Guerra - `joao.guerra@lnbio.cnpem.br`
+  - José Geraldo - `jose.pereira@lnbio.cnpem.br`
+
+- **Via Email**
+  - `edb@lnbio.cnpem.br` com o assunto **Recursos HPC-Marvin**
+
+</div>
+
+**DEPOIS DO PRIMEIRO ACESSO, É POSSÍVEL ACESSAR O HPC MARVIN EXCLUSIVAMENTE PELO NAVEGADOR!**
+
 ## Primeiro Acesso🚪
 
 Para acessar o HPC Marvin, comece abrindo o terminal. Se estiver usando Windows, abra o PowerShell <img src="imagens/powershell_icon.png" alt="PowerShell logo" width="2%"></img>; se estiver usando Linux ou MacOS, abra o terminal <img src="imagens/terminal_icon.png" alt="Terminal logo" width="2.3%"></img>. Para acessar o HPC Marvin, use o comando:
@@ -66,16 +86,6 @@ Se tudo der certo, você verá a tela de _login_ abaixo:
 <center>
     <img src="imagens/ood_loggedin.png" alt="Open on Demand logged in"  width="85%"/>
 </center>
-
-### IMPORTANTE
-
-Depois de fazer o primeiro login, você poderá ver e gravar arquivos na aba `Files` do Open OnDemand (ood), mas ainda não conseguirá criar jobs ou usar os `Interactive Apps`. Essa autorização é feita manualmente, então, se precisar, envie um email para um dos mantenedores (ou chame via TEAMS).
-
-Após este primeiro login você já está apto a ver e gravar arquivos na aba `Files` do Open OnDemand (ood), mas ainda não vai conseguir criar jobs ou usar o `Interactive Apps`.
-
-Por hora esta autorização é feita manualmente, então assim que precisar mande um email para um destes endereços (ou chame via TEAMS)
-
-**ATENÇÃO: DEPOIS DO PRIMEIRO ACESSO, É POSSÍVEL ACESSAR O HPC MARVIN EXCLUSIVAMENTE PELO NAVEGADOR!**
 
 ### Vídeo Resumo
 
