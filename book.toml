@@ -1,9 +1,9 @@
 [book]
 authors = [
-    "Dr. José Geraldo de Carvalho Pereira",
-    "Dr. João Victor da Silva Guerra",
-    "MSc. Luiz Fernando Giolo Alves",
-    "Pablo Wesley de Aguiar e Silva"
+    "Dr. José G. C. Pereira",
+    "Dr. João V. S. Guerra",
+    "MSc. Luiz F. G. Alves",
+    "Pablo W. A. Silva"
 ]
 language = "ptbr"
 multilingual = true
@@ -19,12 +19,6 @@ build-dir = "book"
 [preprocessor.toc]
 command = "mdbook-toc"
 renderer = ["html"]
-
-[preprocessor.catppuccin]
-assets_version = "2.1.0" # DO NOT EDIT: Managed by `mdbook-catppuccin install`
-
-[output.html]
-additional-css = ["./theme/catppuccin.css", "./theme/catppuccin-admonish.css"]
 
 [output.html.search]
 limit-results = 15
