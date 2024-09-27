@@ -12,9 +12,9 @@ _Exemplo_: Se você é a Marie Skłodowska-Curie e seu usuário é marie.curie, 
 
 IMPORTANTE
 
-Após o primeiro login você já está apto a ler e gravar arquivos na aba `Files` do Open OnDemand (ood), mas ainda não vai conseguir criar jobs ou usar o `Interactive Apps`.
+Após o primeiro login, você já está apto a ler e gravar arquivos na aba `Files` do Open OnDemand (ood), mas ainda não vai conseguir criar jobs ou usar o `Interactive Apps`.
 
-A autorização é feita manualmente, para garantir as permissões entre em contato os administradores
+A autorização é feita manualmente, para garantir as permissões entre em contato os administradores:
 
 - **Via Teams**
   - Pablo Wesley - `pablo.silva@lnbio.cnpem.br`
