@@ -6,7 +6,7 @@ authors = [
     "Pablo W. A. Silva"
 ]
 language = "ptbr"
-multilingual = true
+multilingual = false
 src = "src"
 title = "Marvin Docs"
 
@@ -19,6 +19,11 @@ build-dir = "book"
 [preprocessor.toc]
 command = "mdbook-toc"
 renderer = ["html"]
+
+[output.html]
+default-theme = "latte"
+preferred-dark-theme = "ayu"
+additional-css = ["./theme/catppuccin.css", "./theme/catppuccin-admonish.css"]
 
 [output.html.search]
 limit-results = 15
