@@ -10,4 +10,4 @@ license = "CC-BY-4.0"
 [dependencies]
 mdbook = "0.4.40"
 mdbook-toc = "0.14.2"
-mdbook-catppuccin = "2.1.0"
+mdbook-catppuccin = "3.0.0"
