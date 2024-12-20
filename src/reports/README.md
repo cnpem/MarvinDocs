@@ -1,4 +1,3 @@
-# Relatórios periódicos de uso do Marvin.
+# Relatórios periódicos de uso do Marvin
 
-- [Relatório anual de 2023](/reports/2023/report.html)
-
+- [Relatório anuais](https://cnpem.github.io/marvin-reports/): disponíveis para os anos 2023 e 2024.
