@@ -54,22 +54,20 @@ No Marvin temos filas específicas de acordo com o recurso desejado pelo usuári
 
 Assim as filas são:
 
-| Fila | Tempo limite | mem-per-cpu (default) | mem-per-cpu (limite) | tem GPU? |
-|------|--------------|-----------------------|----------------------|----------|
-| debug-cpu | 30 minutos | 1GB | 2GB | |
-| gui-cpu | 12 horas | 1GB | 4GB | |
-| short-cpu | 5 dias | 1GB | 4GB | |
-| long-cpu | 15 dias | 1GB | 4GB | |
-| debug-gpu-small | 30 minutos | 1GB | 2GB | Sim (5GB) |
-| gui-gpu-small | 12 horas | 1GB | 4GB | Sim (5GB) |
-| short-gpu-small | 5 dias | 1GB | 8GB | Sim (5GB) |
-| long-gpu-small | 15 dias | 1GB | 8GB | Sim (5GB) |
-| debug-gpu-big | 30 minutos | 1GB | 2GB | Sim (40GB) |
-| gui-gpu-big | 12 horas | 1GB | 4GB | Sim (40GB) |
-| short-gpu-big | 5 dias | 1GB | 8GB | Sim (40GB) |
-| long-gpu-big | 15 dias | 1GB | 8GB | Sim (40GB) |
-
-As filas *debug* tem limitação de 2 cores.
+| Fila             | Tempo limite | cpus-per-task (limite) | mem-per-cpu (default) | mem-per-cpu (limite) | GPU         |
+|------------------|:------------:|:----------------------:|:---------------------:|:--------------------:|:-----------:|
+| debug-cpu        | 30 minutos   |           2            |          1GB          |         2GB          |     Não     |
+| gui-cpu          | 12 horas     |           8            |          1GB          |         4GB          |     Não     |
+| short-cpu        | 5 dias       |           64           |          1GB          |         4GB          |     Não     |
+| long-cpu         | 15 dias      |           32           |          1GB          |         4GB          |     Não     |
+| debug-gpu-small  | 30 minutos   |           2            |          1GB          |         2GB          |   Sim (5GB) |
+| gui-gpu-small    | 12 horas     |           8            |          1GB          |         4GB          |   Sim (5GB) |
+| short-gpu-small  | 5 dias       |           64           |          1GB          |         8GB          |   Sim (5GB) |
+| long-gpu-small   | 15 dias      |           32           |          1GB          |         8GB          |   Sim (5GB) |
+| debug-gpu-big    | 30 minutos   |           2            |          1GB          |         2GB          |  Sim (40GB) |
+| gui-gpu-big      | 12 horas     |           8            |          1GB          |         4GB          |  Sim (40GB) |
+| short-gpu-big    | 5 dias       |           64           |          1GB          |         8GB          |  Sim (40GB) |
+| long-gpu-big     | 15 dias      |           32           |          1GB          |         8GB          |  Sim (40GB) |
 
 ### Políticas de filas
 
