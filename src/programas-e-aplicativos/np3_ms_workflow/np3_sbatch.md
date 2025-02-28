@@ -29,24 +29,10 @@ Exemplo de cabeçalho:
 
 ## Corpo
 
-Para gerar o corpo deste processamento no MARVIN é obrigatório colocar ao menos **dois** comandos.
-
-    1. A camada de memória chamada overlay;
-    2. Os comandados de execução do NP³ (geralmente pre_process e/ou run).
-
-### Camada de overlay
-
-O Overlay é uma camada temporária de momória para armazenar temporariamente os arquivos de execução (mas não os de saída) do processamento.
-Recomenda-se colocar como expaço um número cerca de 1,1 * o tamanho de sua pasta de mzxml.
-Abaixo um exemplo para que se crie um overlay de 500 MB
-
-```python
-python3 /opt/images/NP3/ms_workflow/create_overlay.py 500
-```
+No corpo do arquivo colocamos os comandos que serão executados. Nesse caso, é o comando para executar o **np3_ms_workflow** instalado dentro de um container do singularity e os parâmetros para execução.
 
 ### Execução do NP³
 
-Com o overlay criado, basta agora colocar o seu pre_process ou run.
 Depois de ter enviado seus arquivos MZXML e metadado à sua área do OpenOnDemand, basta construir seu comando de processamento utilizando os endereços completos dos diretórios
 
 Abaixo um exemplo para o run:
@@ -60,8 +46,7 @@ Abaixo um exemplo para o run:
 Note que para quebrar a linha, e ficar mais legível, basta colcoar uma `\` logo antes da quebra que o programa interpreta como estivesse tudo na mesma linha
 
 ```bash
-singularity exec --overlay $HOME/overlay.img /opt/images/NP3/ms_workflow/np3.sif \
-node /opt/NP3_MS_Workflow/np3_workflow.js run \
+singularity run /opt/images/NP3/ms_workflow/np3_ms_workflow.sif run \
 -n NPTrial \
 -o /home/marie.curie/tmps/ \
 -m /home/marie.curie/Documentos/NPTest/marine_bacteria_lib_metadata.csv \
@@ -88,12 +73,8 @@ Conteúdo final do `my_np3_awsome_run.sh`:
 #SBATCH --partition=short-cpu
 #SBATCH --mem-per-cpu=4G
 
-# Execute o script Python create_overlay.py 500 MB de espaço
-python3 /opt/images/NP3/ms_workflow/create_overlay.py 500
-
-# Execute a imagem Singularity com o comado NP3 e a juncao do overlay
-singularity exec --overlay $HOME/overlay.img /opt/images/NP3/ms_workflow/np3.sif \
-node /opt/NP3_MS_Workflow/np3_workflow.js run \
+# Execute a imagem Singularity com o comado NP3
+singularity run /opt/images/NP3/ms_workflow/np3_ms_workflow.sif run \
 -n NPTrial \
 -o /home/marie.curie/tmps/ \
 -m /home/marie.curie/Documentos/NPTest/marine_bacteria_lib_metadata.csv \

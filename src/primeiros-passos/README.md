@@ -2,7 +2,7 @@
 
 Antes de começar a utilizar o HPC Marvin, é importante seguir alguns passos iniciais para garantir que tudo esteja configurado corretamente. Este capítulo irá guiá-los pelos primeiros passos necessários para começar a utilizar o sistema.
 
-Para ativar seu usuário no sistema no HPC Marvin é preciso, fazer um primeiro acesso via terminal no `ssh` (Secury SHell), que é um protocolo de rede seguro que permite a comunicação com servidores remotos. Para se conectar ao sistema, siga as instruções abaixo.
+Para ativar seu usuário no Marvin é preciso fazer um primeiro acesso via `ssh` (Secury SHell), que é um protocolo de rede seguro que permite a comunicação com servidores remotos. Para se conectar ao sistema, siga as instruções abaixo.
 
 Nos tutoriais, utilizaremos o <> para indicar variáveis. Sempre que aparecer algo entre <>, subistitua pelo valor adequado, (sem digitar o <>).
 
@@ -12,9 +12,9 @@ _Exemplo_: Se você é a Marie Skłodowska-Curie e seu usuário é marie.curie, 
 
 IMPORTANTE
 
-Após o primeiro login, você já está apto a ler e gravar arquivos na aba `Files` do Open OnDemand (ood), mas ainda não vai conseguir criar jobs ou usar o `Interactive Apps`.
+Após o primeiro login, você já está apto a ler e gravar arquivos na aba `Files` do Open OnDemand (ood), mas **ainda não irá conseguir criar jobs, submeter jobs ao SLURM ou usar o `Interactive Apps`.**
 
-A autorização é feita manualmente, para garantir as permissões entre em contato os administradores:
+A autorização é feita manualmente. Peça por email ou pelo Teams para um dos administradores:
 
 - **Via Teams**
   - Pablo Wesley - `pablo.silva@lnbio.cnpem.br`
@@ -25,8 +25,6 @@ A autorização é feita manualmente, para garantir as permissões entre em cont
   - `edb@lnbio.cnpem.br` com o assunto **Recursos HPC-Marvin**
 
 </div>
-
-**DEPOIS DO PRIMEIRO ACESSO, É POSSÍVEL ACESSAR O HPC MARVIN EXCLUSIVAMENTE PELO NAVEGADOR!**
 
 ## Primeiro Acesso🚪
 
@@ -66,6 +64,8 @@ Digite `yes` e pressione **enter**. Se tudo correu bem, você verá o cursor pis
 Digite o comando `ls` para verificar o conteúdo do diretório, e você deverá ver uma pasta chamada "ondemand". Confirme se a pasta está presente.
 
 ## Acesso pelo navegador <img src="imagens/browser_icons.png" alt="Browser Icons"  width="15%"></img>
+
+IMPORTANTE: o acesso pelo navegador funcionará apenas após um primeiro acesso via `ssh` (ver [Primeiro Acesso](##primeiro-acesso)).
 
 Para acessar o cluster pelo navegador, abra o seu navegador e digite o seguinte endereço na barra de endereços:
 
