@@ -1,17 +1,12 @@
 [book]
 authors = [
-    "Dr. José G. C. Pereira",
-    "Dr. João V. S. Guerra",
-    "MSc. Luiz F. G. Alves",
+    "José G. C. Pereira",
+    "João V. S. Guerra",
+    "Luiz F. G. Alves",
     "Pablo W. A. Silva"
 ]
-language = "ptbr"
-multilingual = false
 src = "src"
 title = "Marvin Docs"
-
-[owner]
-name = "LNBio|CNPEM"
 
 [build]
 build-dir = "book"
@@ -19,11 +14,3 @@ build-dir = "book"
 [preprocessor.toc]
 command = "mdbook-toc"
 renderer = ["html"]
-
-[output.html]
-default-theme = "latte"
-preferred-dark-theme = "ayu"
-additional-css = ["./theme/catppuccin.css", "./theme/catppuccin-admonish.css"]
-
-[output.html.search]
-limit-results = 15
