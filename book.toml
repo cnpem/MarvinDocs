@@ -1,12 +1,15 @@
 [book]
+title = "MarvinDocs"
 authors = [
     "José G. C. Pereira",
     "João V. S. Guerra",
     "Luiz F. G. Alves",
     "Pablo W. A. Silva"
 ]
+description = "Documentação do HPCC Marvin"
 src = "src"
-title = "Marvin Docs"
+language = "pt-br"
+text-direction = "ltr"
 
 [build]
 build-dir = "book"
