@@ -7,7 +7,7 @@ O cluster é composto por um conjunto de servidores, chamados de nós, organizad
 - `01` nó de login (_head node_): ponto de entrada dos usuários, onde comandos são executados e _jobs_ são submetidos.
 - `01` nó de computação em CPU (_CPU node_): dedicado à execução de _jobs_ que requerem alto desempenho de processamento em CPU.
 - `01` nó de computação em GPU (_GPU node_): dedicado à execução de _jobs_ que se beneficiam de aceleração por GPU.
-- `01` sistema de armazenamento de alta performance (_high performance storage system_): sistema de arquivos compartilhado baseado em [Lustre](https://www.lustre.org/) , voltado para I/O paralelo de alta velocidade.
+- `01` sistema de armazenamento de alta performance (_high performance storage system_): sistema de arquivos compartilhado baseado em [Lustre](https://www.lustre.org/), voltado para I/O paralelo de alta velocidade.
 
 As especificações técnicas de cada nó estão apresentadas na tabela a seguir:
 
