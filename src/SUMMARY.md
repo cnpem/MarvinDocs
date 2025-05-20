@@ -3,9 +3,14 @@
 - [Bem-vindo](bem-vindo/README.md)
 - [Primeiros Passos](primeiros-passos/README.md)
 <!-- - [Arquitetura e Sistema de Filas](arquitetura-e-sistema-de-filas/README.md) -->
-- [Descrição do HPC Marvin](descricao-marvin/README.md)
-- [Sistema de Filas](sistema-de-filas/README.md)
-- [Submissão de Trabalhos](submissao-de-trabalhos/README.md)
+- [Arquitetura](arquitetura/README.md)
+  - [Hardware](arquitetura/hardware/README.md)
+  - [Sistema Operacional](arquitetura/so/README.md)
+  - [Sistema de filas](arquitetura/sistema-de-filas/README.md)
+  - [Submissão de trabalhos](arquitetura/submissao-de-trabalhos/README.md)
+<!-- - [Descrição do HPC Marvin](descricao-marvin/README.md) -->
+<!-- - [Sistema de Filas](sistema-de-filas/README.md) -->
+<!-- - [Submissão de Trabalhos](submissao-de-trabalhos/README.md) -->
 - [Gerenciamento de Dados](gerenciamento-de-dados/README.md)
   - [Compartilhamento de pastas](gerenciamento-de-dados/pastas-compartilhadas/README.md)
 - [Programas e Aplicativos](programas-e-aplicativos/README.md)
