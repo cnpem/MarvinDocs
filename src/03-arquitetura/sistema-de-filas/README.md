@@ -3,10 +3,10 @@
 Em ambientes HPC, é comum que múltiplos usuários estejam logados e executando _jobs_ simultaneamente. Para gerenciar eficientemente a alocação de recursos (CPU, GPU, memória, etc)
 e a ordem de execução desses _jobs_, são usados sistemas de gerenciamento de filas.
 
-O gerenciador de filas usado éo [SLURM](https://slurm.schedmd.com/overview.html) v21.08.8-2, que organiza a execução por meio de filas, chamadas de _partitions_, que armazenam os _jobs_ submetidos pelos usuários. Assim que os recursos solicitados estão disponíveis, o SLURM inicia a execução dessas tarefas de forma automática.
+O gerenciador de filas usado é o [SLURM](https://slurm.schedmd.com/overview.html) v21.08.8-2, que organiza a execução por meio de filas, chamadas de _partitions_, que armazenam os _jobs_ submetidos pelos usuários. Assim que os recursos solicitados estão disponíveis, o SLURM inicia a execução dessas tarefas de forma automática.
 
-<div class="warning"> 
-Todos os <i>jobs</i> devem ser submetidos através do SLURM.
+<div class="warning">
+    <br>Todos os <i>jobs</i> devem ser submetidos através do SLURM.<br>
 </div>
 
 As filas de execução do HPCC Marvin são:

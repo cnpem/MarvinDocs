@@ -32,7 +32,7 @@ Digite `yes` e pressione **enter**. Se tudo correu bem, você verá o cursor pis
 
 Após o primeiro login, você já poderá ler e gravar arquivos na aba <code>Files</code> do Open OnDemand (OOD), porém <strong>ainda não terá permissão para criar jobs, submeter tarefas ao SLURM ou utilizar os <code>Interactive Apps</code></strong>.
 
-Essa autorização é concedida manualmente. Para solicitá-la, envie um e-mail para <code>edb@lnbio.cnpem.br</code> com o assunto <strong>[Recursos] HPCC Marvin</strong>.
+Essa autorização é concedida manualmente. Para solicitá-la, envie um e-mail para <code>edb@lnbio.cnpem.br</code> com o assunto <strong>[Marvin] Primeiro acesso</strong>.
 
 </div>
 
