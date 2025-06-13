@@ -2,6 +2,8 @@
 
 Os dados são gerenciados a nível de usuário no HPCC Marvin.
 
+Essa seção apresenta informações sobre gerenciamento de dados, com informações detalhadas sobre:
+
 - [Armazenamento de dados](armazenamento-de-dados.md)
 - [Transferência de dados](transferencia-de-arquivos.md)
 - [Compartilhamento de dados](compartilhamento-de-dados.md)
