@@ -11,3 +11,5 @@ Para garantir o uso eficiente do sistema e evitar problemas durante a execução
 - **Faça testes com jobs menores:** Teste seu pipeline com dados ou tempos reduzidos antes de escalar para execuções maiores.
 
 - **Evite sobrecarga de I/O:** Reduza o número de acessos simultâneos ao sistema de arquivos compartilhado sempre que possível.
+
+- **Não processar dados no nó de login:** Execute seus scripts e comandos de processamento de dados apenas dentro de um _job_ para evitar sobrecarga no nó de login.
