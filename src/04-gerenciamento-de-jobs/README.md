@@ -1,5 +1,3 @@
-# Gerenciamento de jobs
-
 # Gerenciamento de _jobs_
 
 Os _jobs_ no HPCC Marvin são administrados pelo gerenciador de recursos computacionais [SLURM](https://slurm.schedmd.com/overview.html) (_Simple Linux Utility for Resource Management_) v21.08.8-2.
