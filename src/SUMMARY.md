@@ -16,7 +16,7 @@
   - [Boas práticas](04-gerenciamento-de-jobs/boas-praticas.md)
 - [Gerenciamento de dados](05-gerenciamento-de-dados/README.md)
   - [Armazenamento de dados](05-gerenciamento-de-dados/armazenamento-de-dados.md)
-  - [Transferência de arquivos](05-gerenciamento-de-dados/transferencia-de-dados.md)
+  - [Transferência de dados](05-gerenciamento-de-dados/transferencia-de-dados.md)
   - [Compartilhamento de dados](05-gerenciamento-de-dados/compartilhamento-de-dados.md)
   - [Princípios FAIR](05-gerenciamento-de-dados/principios-fair.md)
 - [Programas](06-programas/README.md)

@@ -25,22 +25,3 @@ As filas de execução do HPCC Marvin são:
 | gui-gpu-big      | 12 horas     |           8            |          1GB          |         4GB          |  Sim (40GB) |
 | short-gpu-big    | 5 dias       |           64           |          1GB          |         8GB          |  Sim (40GB) |
 | long-gpu-big     | 15 dias      |           32           |          1GB          |         8GB          |  Sim (40GB) |
-
-## Boas práticas no uso das filas
-
-O Marvin adota uma política de incentivo às boas práticas, ao invés de aplicar restrições rígidas. A seguir, destacamos algumas recomendações importantes:
-
-- **Escolha consciente da fila:** cada fila possui um valor padrão (_default_) e um limite máximo de recursos por tarefa. Escolha a fila que oferece os recursos necessários para sua tarefa e ajuste os parâmetros para evitar desperdícios.
-
-- **Uso adequado das filas CPU:** se a tarefa não requer GPU, prefira as filas exclusivamente CPU, como `short-cpu` e `long-cpu`.
-
-- **Depuração de códigos:** para identificar erros em tarefas, utilize preferencialmente as filas de depuração (`debug-cpu`, `debug-gpu-small`, `debug-gpu-big`), que oferecem retorno rápido.
-
-- **Filas GUI:** filas como `gui-cpu` e `gui-gpu-*` são destinadas ao uso com interfaces gráficas (VNC, RStudio, Jupyter). São menos eficientes para execução contínua, mas úteis para testes rápidos ou preparação de análises. Seu tempo máximo é limitado a 12 horas para evitar processos esquecidos em execução.
-
-- **Evite saturar as filas:** não submeta muitos _jobs_ simultaneamente, para não monopolizar recursos e impactar negativamente outros usuários.
-
-- **Ajuste de memória:** em filas como `short-cpu` e `short-gpu-*`, é possível alocar até 4 GB ou 8 GB de RAM por CPU, respectivamente, utilizando o parâmetro `--mem-per-cpu` no SLURM. O padrão é 1 GB por CPU, portanto, ajuste este valor quando necessário antes de migrar para filas com mais memória.
-
-- **Uso das filas de alta memória:** filas como `bigmem` ou `highmem` (quando disponíveis) devem ser usadas apenas em casos excepcionais, pois alocam até 132 GB de RAM por CPU e podem prejudicar a disponibilidade de recursos para outros usuários.
-
