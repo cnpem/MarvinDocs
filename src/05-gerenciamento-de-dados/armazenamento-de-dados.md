@@ -23,6 +23,5 @@ Esta pasta é criada em um diretório específico, como <code>/shared/groups/&lt
 Para solicitar uma pasta compartilhada, registre um chamado na <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181" target="_blank">[EDB] Central de serviços de dados</a> do Jira em <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181/group/536/create/2155" target="_blank">HPCC Marvin: Suporte ao usuário</a>. Informe o nome do grupo de pesquisa e a sigla que deseja (`/shared/groups/<sigla-do-grupo>`).
 
 <div class="warning">
-Após a criação da pasta, o solicitante deverá compartilhar a pasta com os demais membros do grupo. Para mais informações sobre como compartilhar o acesso a essa pasta compartilhada, consulte a seção de 
-<a href="compartilhamento-de-dados.md">Compartilhamento de dados</a>.
+Após a criação da pasta, o solicitante deverá compartilhar a pasta com os demais membros do grupo. Para mais informações sobre como compartilhar o acesso a essa pasta compartilhada, consulte a seção de <a href="compartilhamento-de-dados.md">Compartilhamento de dados</a>.
 </div>

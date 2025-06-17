@@ -19,23 +19,16 @@
   - [Transferência de dados](05-gerenciamento-de-dados/transferencia-de-dados.md)
   - [Compartilhamento de dados](05-gerenciamento-de-dados/compartilhamento-de-dados.md)
   - [Princípios FAIR](05-gerenciamento-de-dados/principios-fair.md)
-- [Programas](06-programas/README.md)
-  <!-- - [AlphaFold](programas-e-aplicativos/alphafold/README.md) -->
-  <!-- - [OpenFold](programas-e-aplicativos/openfold/README.md) -->
-  <!-- - [NP³ MS WORKFLOW](programas-e-aplicativos/np3_ms_workflow/README.md) -->
-    <!-- - [Criando Sbatch](programas-e-aplicativos/np3_ms_workflow/np3_sbatch.md) -->
-    <!-- - [Usando o Job Composer](programas-e-aplicativos/np3_ms_workflow/np3_jobcomposer.md) -->
-  <!-- - [NP³ Blob Label](programas-e-aplicativos/np3_blob_label/README.md) -->
-  <!-- - [OMERO](programas-e-aplicativos/omero/README.md) -->
-  <!-- - [Cellprofiler]() -->
-  <!-- - [ilastik]() -->
-  <!-- - [Cellpose]() -->
-  <!-- - [Gromacs]() -->
-  <!-- - [Amber]() -->
-  <!-- - [Relion]()  -->
-- [Sistemas](07-sistemas/README.md)
-  - [OMERO](07-sistemas/omero/README.md)
-- [Suporte ao usuário](08-suporte/README.md)
-- [Relatórios de uso](09-reports/README.md)
-
+- [Ambiente de desenvolvimento](06-ambiente-de-desenvolvimento/README.md)
+- [Aplicativos e Programas](07-programas-e-aplicativos/README.md)
+  - [AlphaFold](07-programas-e-aplicativos/alphafold/README.md)
+  - [CellProfiler](07-programas-e-aplicativos/cellprofiler/README.md)
+  - [Ilastik](07-programas-e-aplicativos/ilastik/README.md)
+  - [NP³ MS WORKFLOW](07-programas-e-aplicativos/np3_ms_workflow/README.md)
+    - [Criando Sbatch](07-programas-e-aplicativos/np3_ms_workflow/np3_sbatch.md)
+    - [Usando o Job Composer](07-programas-e-aplicativos/np3_ms_workflow/np3_jobcomposer.md)
+- [Sistemas](08-sistemas/README.md)
+  - [OMERO](08-sistemas/omero/README.md)
+- [Suporte ao usuário](09-suporte/README.md)
+- [Relatórios de uso](10-reports/README.md)
 ---

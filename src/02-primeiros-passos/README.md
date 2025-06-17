@@ -11,8 +11,9 @@ ssh <seu.login.cnpem>@marvin.cnpem.br
 ```
 
 <div class="warning">
-Se você é a Marie Skłodowska-Curie e seu usuário é <code>marie.curie</code>, ao ver <code>&lt;seu.login.cnpem&gt;</code>, digite <code>marie.curie</code>.
+Se você é a Marie Skłodowska-Curie, seu e-mail institucional é <code>marie.curie@lnbio.cnpem.br</code>. Logo, seu usuário é <code>marie.curie</code>. Sempre que encontrar <code>&lt;seu.login.cnpem&gt;</code>, digite <code>marie.curie</code>.
 </div>
+
 
 Quando solicitado, digite sua **senha institucional**.
 
@@ -59,7 +60,7 @@ https://marvin.cnpem.br
 
 <div class="warning">
 
-Lembre-se que este endereço só funcionará na rede interna do CNPEM. Para acessá-lo de fora do centro, é necessário usar a <strong>VPN</strong>. Caso não tenha este acesso à VPN, entre em contato com o <strong>TIC</strong>.
+Lembre-se que este endereço só funcionará na rede interna do CNPEM. Para acessá-lo de fora do centro, é necessário usar a <strong>VPN</strong>. Caso não tenha este acesso à VPN, entre em contato com o <strong>DTI</strong>.
 
 </div>
 
