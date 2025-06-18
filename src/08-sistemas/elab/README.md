@@ -22,11 +22,7 @@ https://elab.cnpem.br
 Lembre-se que este endereço só funcionará na rede interna do CNPEM. Para acessá-lo de fora do centro, é necessário usar a VPN. Caso não tenha este acesso à VPN, entre em contato com o <strong>DTI</strong>.
 </div>
 
-Na tela de login, use seu e-mail e senha institucional.
-
-<div class="warning">
-Se você é a Marie Skłodowska-Curie, seu email é <code>marie.curie@lnbio.cnpem.br</code>.
-</div>
+Na tela de login, use seu e-mail (p. ex., `marie.curie@lnbio.cnpem.br`) e senha institucional.
 
 <center>
     <img src="images/elab_login.png" alt="eLab @ Firefox"  width="85%"/>

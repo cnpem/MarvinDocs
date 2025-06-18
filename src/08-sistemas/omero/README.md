@@ -21,7 +21,8 @@ Lembre-se que este endereço só funcionará na rede interna do CNPEM. Para aces
 Na tela de login, use seu usuário (sem `@lnbio.cnpem.br`) e senha institucional.
 
 <div class="warning">
-Se você é a Marie Skłodowska-Curie, seu email é <code>marie.curie@lnbio.cnpem.br</code>. Logo, seu usuário é <code>marie.curie</code>.
+Se você é a Marie Skłodowska-Curie, seu email é <code>marie.curie@lnbio.cnpem.br</code>. 
+Logo, seu usuário é <code>marie.curie</code>.
 </div>
 
 <center>
