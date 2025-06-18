@@ -29,6 +29,7 @@
     - [Usando o Job Composer](07-programas-e-aplicativos/np3_ms_workflow/np3_jobcomposer.md)
 - [Sistemas](08-sistemas/README.md)
   - [OMERO](08-sistemas/omero/README.md)
+  - [eLab](08-sistemas/elab/README.md)
 - [Suporte ao usuário](09-suporte/README.md)
 - [Relatórios de uso](10-reports/README.md)
 ---
