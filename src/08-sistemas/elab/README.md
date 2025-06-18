@@ -8,7 +8,7 @@ O [eLab](https://www.elabftw.net/) é um caderno eletrônico de laboratório (EL
 ⚠️ O eLab não está hospedado no HPCC Marvin. Trata-se de um serviço institucional, operado em uma máquina virtual gerenciada pela DTI (Divisão de Tecnologia da Informação) do CNPEM.
 </div>
 
-Para solicitar suporte ou ajuda com o eLab, registre um chamado na <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181" target="_blank">[EDB] Central de serviços de dados</a> do Jira em <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181/group/536/create/2157" target="_blank">eLab: Suporte ao usuário</a>.
+Para solicitar suporte ou ajuda com o eLab, registre um chamado na <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181" target="_blank">[LNBio] Suporte EDB</a> do Jira em <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181/group/536/create/2157" target="_blank">eLab: Suporte ao usuário</a>.
 
 ## Acesso pelo navegador <img src="images/browser_icons.png" alt="Browser Icons"  width="15%"></img>
 

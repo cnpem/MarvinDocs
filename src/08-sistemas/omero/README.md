@@ -4,7 +4,7 @@ Esta seção apresenta o repositório de imagens OMERO do LNBio, que está dispo
 
 O [OMERO](https://www.openmicroscopy.org/omero/) é um sistema de gerenciamento de imagens científicas desenvolvido pelo Open Microscopy Environment (OME), que é uma plataforma de código aberto amplamente utilizada na comunidade científica para o armazenamento, visualização e compartilhamento de imagens de microscopia.
 
-Para solicitar suporte ou ajuda com o OMERO, registre um chamado na <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181" target="_blank">[EDB] Central de serviços de dados</a> do Jira em <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181/group/536/create/2156" target="_blank">OMERO: Suporte ao usuário</a>.
+Para solicitar suporte ou ajuda com o OMERO, registre um chamado na <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181" target="_blank">[LNBio] Suporte EDB</a> do Jira em <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181/group/536/create/2156" target="_blank">OMERO: Suporte ao usuário</a>.
 
 ## Acesso pelo navegador <img src="images/browser_icons.png" alt="Browser Icons"  width="15%"></img>
 

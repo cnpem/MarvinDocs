@@ -1,6 +1,6 @@
 # Suporte ao usuário
 
-O suporte aos usuários do HPCC Marvin é realizado pela <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181" target="_blank">[EDB] Central de serviços de dados</a> do Jira.
+O suporte aos usuários do HPCC Marvin é realizado pela <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181" target="_blank">[LNBio] Suporte EDB</a> do Jira.
 
 Para solicitar ajuda com problemas técnicos, dúvidas sobre o sistema ou pedidos de recursos adicionais, registre um chamado na opção <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181/group/536/create/2155" target="_blank">HPCC Marvin: Suporte ao usuário</a>. 
 

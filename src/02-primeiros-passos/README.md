@@ -33,7 +33,7 @@ Digite `yes` e pressione **enter**. Se tudo correu bem, você verá o cursor pis
 
 Após o primeiro login, você já poderá ler e gravar arquivos na aba <code>Files</code> do Open OnDemand (OOD), porém <strong>ainda não terá permissão para criar jobs, submeter tarefas ao SLURM ou utilizar os <code>Interactive Apps</code></strong>.
 
-Essa autorização é concedida manualmente. Para solicitá-la, registre um chamado na <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181" target="_blank">[EDB] Central de serviços de dados</a> do Jira em <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181/group/536/create/2155" target="_blank">HPCC Marvin: Suporte ao usuário</a>.
+Essa autorização é concedida manualmente. Para solicitá-la, registre um chamado na <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181" target="_blank">[LNBio] Suporte EDB</a> do Jira em <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181/group/536/create/2155" target="_blank">HPCC Marvin: Suporte ao usuário</a>.
 
 </div>
 
