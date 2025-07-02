@@ -63,7 +63,7 @@ rsync -avz file.txt <seu.login.cnpem>@marvin.cnpem.br:/caminho/de/destino/
 Para transferir um diretório (e.g., `directory/`) do seu computador local para o HPCC Marvin, use o comando:
 
 ```bash
-rsync -avz file.txt <seu.login.cnpem>@marvin.cnpem.br:/caminho/de/destino/
+rsync -avz directory <seu.login.cnpem>@marvin.cnpem.br:/caminho/de/destino/
 ```
 
 Para transferir um arquivo (e.g., `file.txt`) do HPCC Marvin para o seu computador local, use o comando:
