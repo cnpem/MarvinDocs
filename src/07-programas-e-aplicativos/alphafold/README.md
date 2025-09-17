@@ -24,7 +24,7 @@ Abaixo, está o conteúdo de um script de submissão (p. ex. `sbatch nova_tarefa
 #SBATCH --gres=gpu:1g.5gb:1
 
 # essa variável aponta para o banco de dados utilizado pelo alphafold (NÃO ALTERE)   
-ALPHAFOLD_DB=/public/alphafold_db_20220825
+ALPHAFOLD_DB=/public/alphafold_db_20231114/
 
 # imagem do singularity onde o alphafold está instalá-do (NÃO ALTERE)
 ALPHAFOLD_SIF=/opt/images/alphafold/alphafold-2_3_2.sif
