@@ -26,7 +26,7 @@ Abaixo, está o conteúdo de um script de submissão (p. ex. `sbatch nova_tarefa
 # essa variável aponta para o banco de dados utilizado pelo alphafold (NÃO ALTERE)   
 ALPHAFOLD_DB=/public/alphafold_db_20231114/
 
-# imagem do singularity onde o alphafold está instalá-do (NÃO ALTERE)
+# imagem do singularity onde o alphafold está instalado
 ALPHAFOLD_SIF=/opt/images/alphafold/alphafold-2_3_2.sif
 
 # essa variável aponta para o arquivo fasta (MUDE PARA O SEU ARQUIVO) 
