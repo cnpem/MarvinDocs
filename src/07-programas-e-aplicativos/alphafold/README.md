@@ -4,7 +4,7 @@ O [AlphaFold](https://alphafold.ebi.ac.uk/) é um programa de modelagem de estru
 
 Para mais informações sobre o AlphaFold, acesse <https://github.com/deepmind/alphafold/>.
 
-## Como executar o AlphaFold no HPCC Marvin
+## Carregando o módulo
 
 Para habilitar o AlphaFold no HPCC Marvin, você deve carregar o módulo `alphafold`:
 
@@ -13,9 +13,9 @@ module load alphafold
 ```
 
 <div class="warning">
-    As versões disponíveis do AlphaFold no HPCC Marvin são:
+    <br>As versões disponíveis do AlphaFold no HPCC Marvin são:
     <ul>
-        <li>2.3.2 (padrão)</li>
+        <li><code>alphafold/2.3.2    (D)</code></li>
     </ul>
 </div>
 
@@ -25,9 +25,9 @@ Para acessar a documentação do modulo, utilize:
 module help alphafold
 ```
 
-Para submeter _jobs_ do AlphaFold no HPCC Marvin, é necessário criar um script de submissão no SLURM. Para isso, você pode usar um editor de texto para criar um arquivo de script, por exemplo, `alphafold.sh`.
+## Submetendo jobs
 
-Abaixo, está o conteúdo básico de um script de submissão (p. ex. `sbatch nova_tarefa_alphafold.sh`) do job no SLURM:
+A execução do AlphaFold no HPCC Marvin é feita por meio de scripts de submissão no SLURM. Crie um arquivo de script, por exemplo `alphafold.sh`, com o seguinte conteúdo:
 
 ```bash
  #!/bin/bash
@@ -54,8 +54,7 @@ Abaixo, está o conteúdo básico de um script de submissão (p. ex. `sbatch nov
 ```
 
 <div class="warning">
-O <code>FASTA_FILE</code> deve apontar para o arquivo FASTA da proteína que você deseja modelar.
-O <code>OUTPUT_DIR</code> é onde os resultados serão salvos.
+<br>O <code>FASTA_FILE</code> deve apontar para o arquivo FASTA da proteína que você deseja modelar. O <code>OUTPUT_DIR</code> é onde os resultados serão salvos.<br>
 </div>
 
 Para submeter o job, salve o script e utilize o comando `sbatch`:
