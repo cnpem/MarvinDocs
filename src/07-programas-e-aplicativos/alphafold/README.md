@@ -6,75 +6,66 @@ Para mais informações sobre o AlphaFold, acesse <https://github.com/deepmind/a
 
 ## Como executar o AlphaFold no HPCC Marvin
 
-Para executar o AlphaFold, são necessários os seguintes passos:
-
-1. Crie uma pasta contendo o arquivo FASTA da(s) proteína(s) que deseja modelar. Exemplo: `fasta_dir`.
-
-2. Crie um script de submissão no SLURM através do `sbatch`
-
-Abaixo, está o conteúdo de um script de submissão (p. ex. `sbatch nova_tarefa_alphafold.sh`) do job no SLURM:
+Para habilitar o AlphaFold no HPCC Marvin, você deve carregar o módulo `alphafold`:
 
 ```bash
-#!/bin/sh
-#SBATCH --job-name=alphafold
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=4
-#SBATCH --partition=short-gpu-small
-#SBATCH --mem-per-cpu=8G
-#SBATCH --gres=gpu:1g.5gb:1
-
-# essa variável aponta para o banco de dados utilizado pelo alphafold (NÃO ALTERE)   
-ALPHAFOLD_DB=/public/alphafold_db_20231114/
-
-# imagem do singularity onde o alphafold está instalado
-ALPHAFOLD_SIF=/opt/images/alphafold/alphafold-2_3_2.sif
-
-# essa variável aponta para o arquivo fasta (MUDE PARA O SEU ARQUIVO) 
-FASTA_FILE=./fasta_dir/P01308.fasta
-
-# nome da pasta onde os modelos e resultados serão salvos (PODE MUDAR PARA UM NOME QUE ESCOLHER)
-OUTPUT_DIR=./results
-
-# comando de execução do AlphaFold
-singularity run --nv -B \$ALPHAFOLD_DB:/database \$ALPHAFOLD_SIF \
-    --fasta_paths=\$FASTA_FILE \
-    --output_dir=\$OUTPUT_DIR \
-    --data_dir=/database/ \
-    --max_template_date=\`date +'%Y-%m-%d'\` \
-    --model_preset=monomer \ ##podendo ser multimer
-    --template_mmcif_dir=/database/pdb_mmcif/mmcif_files/ \
-    --obsolete_pdbs_path=/database/pdb_mmcif/obsolete.dat \
-    --uniref90_database_path=/database/uniref90/uniref90.fasta \
-    --mgnify_database_path=/database/mgnify/mgy_clusters_2022_05.fa \
-    --pdb70_database_path=/database/pdb70/pdb70 \
-    --uniref30_database_path=/database/uniref30/UniRef30_2021_03 \
-    --bfd_database_path=/database/bfd/bfd_metaclust_clu_complete_id30_c90_final_seq.sorted_opt \
-    --use_gpu_relax
+module load alphafold
 ```
 
-3. Subsitua os valores das variáveis `ALPHAFOLD_SIF`, `FASTA_FILE` e `OUTPUT_DIR` conforme necessário. 
+<div class="warning">
+    As versões disponíveis do AlphaFold no HPCC Marvin são:
+    <ul>
+        <li>2.3.2 (padrão)</li>
+    </ul>
+</div>
+
+Para acessar a documentação do modulo, utilize:
+
+```bash
+module help alphafold
+```
+
+Para submeter _jobs_ do AlphaFold no HPCC Marvin, é necessário criar um script de submissão no SLURM. Para isso, você pode usar um editor de texto para criar um arquivo de script, por exemplo, `alphafold.sh`.
+
+Abaixo, está o conteúdo básico de um script de submissão (p. ex. `sbatch nova_tarefa_alphafold.sh`) do job no SLURM:
+
+```bash
+ #!/bin/bash
+  #SBATCH --job-name=alphafold2
+  #SBATCH --partition=short-gpu-big
+  #SBATCH --nodes=1
+  #SBATCH --ntasks-per-node=1
+  #SBATCH --cpus-per-task=8
+  #SBATCH --gres=gpu:a100:1
+  #SBATCH --mem=64G
+  #SBATCH --time=24:00:00
+
+  module load alphafold/2.3.2
+
+  OUTPUT_DIR="resultado_af2"
+  FASTA_FILE="meu_target.fasta"
+
+  alphafold \\
+    --output_dir=$OUTPUT_DIR \\
+    --fasta_paths=$FASTA_FILE \\
+    --max_template_date=2023-11-01 \\
+    --model_preset=monomer_ptm \\
+    --db_preset=full_dbs
+```
 
 <div class="warning">
-
-O <code>ALPHAFOLD_SIF</code> deve apontar para a imagem do Singularity do AlphaFold, que possui as seguintes versões:
-
-- versão 2.3.2: `/opt/images/alphafold-2_3_2.sif`
-- versão 2.2.4: `/opt/images/alphafold-2_2_4.sif`
-- versão 2.2.3: `/opt/images/alphafold-2_2_3.sif`
-
 O <code>FASTA_FILE</code> deve apontar para o arquivo FASTA da proteína que você deseja modelar.
-
 O <code>OUTPUT_DIR</code> é onde os resultados serão salvos.
 </div>
 
-4. Submeta o script de submissão no SLURM. Você pode fazer isso através do comando `sbatch`:
+Para submeter o job, salve o script e utilize o comando `sbatch`:
 
 ```bash
-sbatch nova_tarefa_alphafold.sh
+sbatch alphafold.sh
 ```
 
-Para verificar os argumentos aceitos pelo AlphaFold, você pode executar o seguinte comando:
+Para mais detalhes sobre as opções do AlphaFold, use:
 
 ```bash
-singularity run /opt/images/alphafold/alphafold-2_3_2.sif --helpshort
+alphafold --helpshort
 ```
