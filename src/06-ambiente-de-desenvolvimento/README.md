@@ -1,35 +1,44 @@
-# Ambiente de desenvolvimento
+# Gerenciamento de ambiente
 
-O HPCC Marvin oferece flexibilidade para que os usuários configurem seus próprios ambientes de desenvolvimento. O **gerenciamento de ambientes é feito a nível de usuário**, permitindo que cada usuário personalize seu ambiente de acordo com as necessidades dos seus projetos.
+O HPCC Marvin oferece flexibilidade para que os usuários configurem seus próprios ambientes de desenvolvimento. O gerenciamento de ambientes é feito por meio do **sistema de módulos (Lmod)**, o que permite carregar, combinar e personalizar bibliotecas conforme as necessidades de cada projeto.
 
-<div class="warning"> 
-⚠️ O Marvin ainda <u><b>NÃO</b></u> utiliza módulos de ambiente (como <code>Lmod</code>) para gerenciamento de ambientes e bibliotecas. Cada usuário é responsável pela criação, manutenção e ativação dos seus próprios ambientes.
-</div>
+Para visualizar os módulos disponíveis, utilize:
 
-## Gerenciamento de Ambientes
+```bash
+module avail
+```
 
-Os usuários podem criar e gerenciar seus próprios ambientes utilizando ferramentas como:
+Para carregar um módulo específico, use:
 
-- [conda](https://anaconda.org/anaconda/conda): Ambiente e gerenciamento de pacotes para Python, R, C/C++ e outras linguagens.
-
-- [uv](https://docs.astral.sh/uv/): Gerenciador de ambientes Python extremamente rápido e leve, compatível com `pip` e `pyproject.toml`.
+```bash
+module load <nome>/<versão>
+```
 
 <div class="warning">
-⚠️ Ferramentas como <code>conda</code> e <code>uv</code> não estão pré-instaladas no sistema. Cada usuário deve realizar a instalação dessas ferramentas em seu ambiente pessoal ou no espaço de projeto, conforme necessário.
-
-Para instalar o <code>conda</code>, execute:
-
-```bash
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash Miniconda3-latest-Linux-x86_64.sh
-```
-
-Para instalar o <code>uv</code>, execute:
-
-```bash
-curl -sSL https://astral.sh/uv/install.sh | bash
-```
+    <br>Quando múltiplas versões de um software estão disponíveis, uma delas é definida como padrão (indicada por <code>(D)</code>).<br>
 </div>
+
+Para listar os módulos atualmente carregados:
+
+```bash
+module list
+```
+
+## Ambiente de desenvolvimento
+
+Além dos módulos pré-instalados, os usuários podem criar e gerenciar seus próprios ambientes com ferramentas como:
+
+- [miniforge](https://conda-forge.org/): Ambiente e gerenciamento de pacotes para Python, R, C/C++ e outras linguagens. Para habilitar, carregue o módulo `miniforge`:
+  
+```bash
+module load miniforge
+```
+
+- [uv](https://docs.astral.sh/uv/): Gerenciador de ambientes Python extremamente rápido e leve, compatível com `pip` e `pyproject.toml`. Para habilitar, carregue o módulo `uv`:
+  
+```bash
+module load uv
+```
 
 ## Compiladores
 
@@ -49,7 +58,6 @@ O Marvin oferece suporte para desenvolvimento de aplicações em C, C++, Fortran
 
 Para garantir um ambiente de desenvolvimento eficiente e organizado, recomenda-se:
 
-- Instale seus ambientes no seu diretório pessoal (`/home/marie.curie`) ou no seu espaço de projeto.
-- Utilize ferramentas como `conda`, `mamba` ou `uv` para gerenciar dependências e ambientes virtuais.
-- Mantenha seus ambientes organizados e evite acumular múltiplos ambientes desnecessários.
-- Documente seus ambientes e dependências em um arquivo `README.md`, `pyproject.toml` (`uv`/`pip`), `requirements.txt` (`uv`/`pip`) e/ou `environment.yml` (`conda`/`mamba`), para facilitar o compartilhamento e a reprodução do ambiente por outros usuários.
+- Criar ambientes virtuais reutilizáveis com `uv` e `miniforge`;
+- Manter os ambientes organizados, evitando a criação de múltiplos ambientes redundantes;
+- Documentar dependências em arquivos como `README.md`, `pyproject.toml` (`uv`/`pip`), `requirements.txt` (`uv`/`pip`) e/ou `environment.yml` (`conda`/`mamba`), facilitando o compartilhamento e a reprodução do ambiente por outros usuários.
