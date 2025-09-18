@@ -1,6 +1,6 @@
 # AlphaFold
 
-O [AlphaFold](https://alphafold.ebi.ac.uk/) é um programa de modelagem de estrutura proteicas utilizando redes neurais artificiais (_Deep Learning_). Além de proteínas individuais, ele também permite modelar multímeros e complexos.
+O [AlphaFold](https://alphafold.ebi.ac.uk/) é um programa de modelagem de estruturas proteicas utilizando redes neurais artificiais (_Deep Learning_). Além de proteínas individuais, ele também permite modelar multímeros e complexos.
 
 Para mais informações sobre o AlphaFold, acesse <https://github.com/deepmind/alphafold/>.
 
@@ -17,6 +17,7 @@ module load alphafold
     <ul>
         <li><code>alphafold/2.3.2    (D)</code></li>
     </ul>
+    Onde <code>(D)</code> indica a versão padrão.<br>
 </div>
 
 Para acessar a documentação do modulo, utilize:
@@ -63,8 +64,8 @@ Para submeter o job, salve o script e utilize o comando `sbatch`:
 sbatch alphafold.sh
 ```
 
-Para mais detalhes sobre as opções do AlphaFold, use:
+Para mais detalhes sobre os parâmetros do AlphaFold, use:
 
 ```bash
-alphafold --helpshort
+alphafold --help
 ```
