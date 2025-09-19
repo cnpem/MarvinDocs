@@ -81,8 +81,10 @@ cellprofiler -c -r -p /path/to/your/pipeline.cppipe -o /path/to/output -i /path/
 - <code>-o</code>: Caminho para a pasta onde os resultados serão salvos.
 
 Caso utilize módulos que demandem GPU, selecione uma partição compatível:
+
 - `short-gpu-small`, adicione: `#SBATCH --gres=gpu:a100:1`
 - `short-gpu-big`, adicione: `#SBATCH --gres=gpu:1g.5gb:1`<br>
+
 </div>
 
 Para submeter o job, salve o script e utilize o comando `sbatch`:
