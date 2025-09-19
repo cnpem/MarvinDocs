@@ -8,6 +8,28 @@ Para listar os módulos disponíveis, utilize o comando:
 module avail
 ```
 
+Para listar os módulos com a descrição, utilize:
+
+```bash
+module spider
+```
+
+Para carregar um módulo específico, use:
+
+```bash
+module load <nome>/<versão>
+```
+
+<div class="warning">
+    <br>Quando múltiplas versões de um software estão disponíveis, uma delas é definida como padrão (indicada por <code>(D)</code>).<br>
+</div>
+
+Para listar os módulos carregados na sua sessão, utilize:
+
+```bash
+module list
+```
+
 A documentação dos seguintes aplicativos e programas pode ser acessada nos links abaixo:
 
 - [AlphaFold](./alphafold/index.html)

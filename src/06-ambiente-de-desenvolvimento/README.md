@@ -8,6 +8,12 @@ Para visualizar os módulos disponíveis, utilize:
 module avail
 ```
 
+Para listar os módulos com a descrição, utilize:
+
+```bash
+module spider
+```
+
 Para carregar um módulo específico, use:
 
 ```bash
