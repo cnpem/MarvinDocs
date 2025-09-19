@@ -63,7 +63,7 @@ O CellProfiler também pode ser executado via submissão de jobs no SLURM, permi
 #SBATCH --job-name=cellprofiler
 #SBATCH --partition=short-cpu 
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=8
+#SBATCH --cpus-per-task=4
 #SBATCH --mem-per-cpu=2GB
 
 module load cellprofiler
