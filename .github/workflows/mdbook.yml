@@ -7,7 +7,7 @@ name: Deploy mdBook site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main", "dev"]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -31,7 +31,7 @@ jobs:
     env:
       MDBOOK_VERSION: 0.4.49
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Install mdBook
         run: |
           curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
@@ -44,7 +44,7 @@ jobs:
         run: |
           mdbook build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./book
 
