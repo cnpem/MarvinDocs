@@ -51,6 +51,10 @@ module load cellpose
 cellpose
 ```
 
+<center>
+    <img src="imagens/cellpose-gui.png" alt="Cellpose GUI"  width="85%"/>
+</center>
+
 ## Submetendo jobs do Cellpose
 
 O Cellpose também pode ser executado via submissão de jobs no SLURM, permitindo análises em segundo plano e melhor aproveitamento dos recursos do cluster. Crie um arquivo de script, por exemplo `cellpose.sh`, com o seguinte conteúdo:

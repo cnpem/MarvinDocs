@@ -50,6 +50,10 @@ module load ilastik
 ilastik
 ```
 
+<center>
+    <img src="imagens/ilastik-gui.png" alt="Ilastik GUI"  width="85%"/>
+</center>
+
 ## Submetendo jobs do Ilastik
 
 O Ilastik também pode ser executado via submissão de jobs no SLURM, permitindo análises em segundo plano e melhor aproveitamento dos recursos do cluster. Crie um arquivo de script, por exemplo `ilastik.sh`, com o seguinte conteúdo:

@@ -48,6 +48,10 @@ module load fiji
 fiji
 ```
 
+<center>
+    <img src="imagens/fiji-gui.png" alt="Fiji GUI"  width="85%"/>
+</center>
+
 Para mais detalhes sobre os parâmetros do Fiji, use:
 
 ```bash

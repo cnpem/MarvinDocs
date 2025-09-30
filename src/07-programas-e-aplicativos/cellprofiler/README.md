@@ -50,6 +50,10 @@ module load cellprofiler
 cellprofiler
 ```
 
+<center>
+    <img src="imagens/cellprofiler-gui.png" alt="CellProfiler GUI"  width="85%"/>
+</center>
+
 <div class="warning">
    <br>Para conjuntos de dados muito grandes, recomenda-se utilizar a CLI do CellProfiler (sem interface gráfica) para obter melhor desempenho. O uso da GUI pode ser mais lento e consumir mais recursos, resultando em travamentos ou falhas na análise.<br>
 </div>
