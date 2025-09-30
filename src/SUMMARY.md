@@ -38,7 +38,11 @@
   - [Scipion](07-programas-e-aplicativos/scipion/README.md)
 - [Sistemas](08-sistemas/README.md)
   - [OMERO](08-sistemas/omero/README.md)
+    - [Acesso pelo navegador](08-sistemas/omero/acesso-pelo-navegador.md)
+    - [Acessando os grupos](08-sistemas/omero/acessando-os-grupos.md)
+    - [Carregando imagens via OMERO.insight](08-sistemas/omero/carregando-imagens-via-omero-insight.md)
   - [eLab](08-sistemas/elab/README.md)
 - [Suporte ao usuário](09-suporte/README.md)
 - [Relatórios de uso](10-reports/README.md)
+
 ---
