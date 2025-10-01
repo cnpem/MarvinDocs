@@ -29,7 +29,7 @@
   - [Etomo](07-programas-e-aplicativos/etomo/README.md)
   - [Fiji](07-programas-e-aplicativos/fiji/README.md)
   - [Ilastik](07-programas-e-aplicativos/ilastik/README.md)
-  - [IsoNet](07-programas-e-aplicativos/isonet/README.md)
+  #- [IsoNet](07-programas-e-aplicativos/isonet/README.md)
   - [NP³ MS WORKFLOW](07-programas-e-aplicativos/np3_ms_workflow/README.md)
     - [Criando Sbatch](07-programas-e-aplicativos/np3_ms_workflow/np3_sbatch.md)
     - [Usando o Job Composer](07-programas-e-aplicativos/np3_ms_workflow/np3_jobcomposer.md)
