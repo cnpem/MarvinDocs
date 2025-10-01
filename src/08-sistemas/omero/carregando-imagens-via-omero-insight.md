@@ -61,7 +61,7 @@ Para carregar novas imagens, siga os passos abaixo:
 1. Clique no menu "File" e selecione "Import..."
 
 <center>
-    <img src="imagens/omero-insight-import.png" alt="OMERO.insight import menu"  width="40%"/>
+    <img src="imagens/omero-insight-import.png" alt="OMERO.insight import menu"  width="80%"/>
 </center>
 
 2. Na janela de importação, selecione os arquivos que deseja carregar para o OMERO, e clique em `>` para colocá-los na fila de transferência.
