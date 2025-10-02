@@ -39,7 +39,7 @@ A execução do Fiji no HPCC Marvin é feita por meio de uma sessão VNC (Virtua
 
 5. Uma vez que a VNC estiver ativa, abra um terminal dentro da VNC.
 
-6. No terminal, execute o seguinte comando para iniciar o CellProfiler:
+6. No terminal, execute o seguinte comando para iniciar o Fiji:
 
 ```bash
 # Habilitar o módulo

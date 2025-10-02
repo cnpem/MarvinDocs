@@ -6,16 +6,16 @@ Para mais informações sobre o cisTEM, acesse <https://cistem.org/documentation
 
 ## Carregando o módulo
 
-O cisTEM está disponível dentro do módulo `scipion`. Para utilizá-lo no HPCC Marvin, você deve carregar o módulo `scipion`:
+O cisTEM está disponível dentro do módulo `scipion/3.8.3`. Para utilizá-lo no HPCC Marvin, você deve carregar o módulo `scipion/3.8.3`:
 
 ```bash
-module load scipion
+module load scipion/3.8.3
 ```
 
 Para acessar a documentação do modulo, utilize:
 
 ```bash
-module help scipion
+module help scipion/3.8.3
 ```
 
 ## Como executar o cisTEM no Open OnDemand
@@ -32,11 +32,11 @@ Para executar o cisTEM, são necessários os seguintes passos:
 
 5. Uma vez que a VNC estiver ativa, abra um terminal dentro da VNC.
 
-6. No terminal, execute o seguinte comando para iniciar o Scipion:
+6. No terminal, execute o seguinte comando para iniciar o cisTEM:
 
 ```bash
 # Habilitar o módulo
-module load scipion
+module load scipion/3.8.3
 # Iniciar o cisTEM com interface gráfica
 cistem
 ```

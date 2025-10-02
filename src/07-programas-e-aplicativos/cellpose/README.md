@@ -42,7 +42,7 @@ A execução do Cellpose no HPCC Marvin é feita por meio de uma sessão VNC (Vi
 
 5. Uma vez que a VNC estiver ativa, abra um terminal dentro da VNC.
 
-6. No terminal, execute o seguinte comando para iniciar o CellProfiler:
+6. No terminal, execute o seguinte comando para iniciar o Cellpose:
 
 ```bash
 # Habilitar o módulo

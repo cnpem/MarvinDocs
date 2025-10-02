@@ -17,8 +17,18 @@ module load scipion
 <div class="warning">
     <br>As versões disponíveis do Scipion no HPCC Marvin são:
     <ul>
-        <li><code>scipion/3.8.3</code></li>
+        <li><code>scipion/3.8.3     (D)</code></li>
+        <li><code>scipion/3.0.12</code></li>
     </ul>
+    Onde <code>(D)</code> indica a versão padrão.
+    <p>A versão <code>scipion/3.8.3</code> inclui outros programas integrados, como:
+        <a href="../3dmod/index.html" target="_blank"><code>3dmod</code></a>,
+        <a href="../cistem/index.html" target="_blank"><code>cisTEM</code></a>,
+        <a href="../etomo/index.html" target="_blank"><code>Etomo</code></a>,
+        <a href="../isonet/index.html" target="_blank"><code>IsoNet</code></a>,
+        <a href="../phenix/index.html" target="_blank"><code>Phenix</code></a> e
+        <a href="../relion/index.html" target="_blank"><code>Relion</code></a>.
+    </p>
 </div>
 
 Para acessar a documentação do modulo, utilize:
@@ -51,7 +61,7 @@ scipion
 ```
 
 <center>
-    <img src="./images/scipion-gui.png" alt="Scipion GUI"  width="85%"/>
+    <img src="./imagens/scipion-gui.png" alt="Scipion GUI"  width="85%"/>
 </center>
 
 Para mais detalhes sobre os parâmetros do Scipion, use:
