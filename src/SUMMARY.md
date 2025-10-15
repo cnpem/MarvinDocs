@@ -34,7 +34,7 @@
     - [Criando Sbatch](07-programas-e-aplicativos/np3_ms_workflow/np3_sbatch.md)
     - [Usando o Job Composer](07-programas-e-aplicativos/np3_ms_workflow/np3_jobcomposer.md)
   - [Phenix](07-programas-e-aplicativos/phenix/README.md)
-  - [RELION](07-programas-e-aplicativos/relion/README.md)np3_jobcomposer.md)
+  - [RELION](07-programas-e-aplicativos/relion/README.md)
   - [Scipion](07-programas-e-aplicativos/scipion/README.md)
 - [Sistemas](08-sistemas/README.md)
   - [OMERO](08-sistemas/omero/README.md)
