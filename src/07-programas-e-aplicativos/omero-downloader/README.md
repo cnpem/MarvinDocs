@@ -14,6 +14,14 @@ Para habilitar o OMERO Downloader no HPCC Marvin, você deve carregar o módulo 
 module load omero-downloader
 ```
 
+<div class="warning">
+    <br>As versões disponíveis do OMERO Downloader no HPCC Marvin são:
+    <ul>
+        <li><code>omero-downloader/0.3.3 (D)</code></li>
+    </ul> 
+    Onde <code>(D)</code> indica a versão padrão.<br>
+</div>
+
 Para acessar a documentação do módulo, use:
 
 ```bash

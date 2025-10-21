@@ -42,6 +42,7 @@
     - [Acesso pelo navegador](08-sistemas/omero/acesso-pelo-navegador.md)
     - [Acessando os grupos](08-sistemas/omero/acessando-os-grupos.md)
     - [Carregando imagens via OMERO.insight](08-sistemas/omero/carregando-imagens-via-omero-insight.md)
+    - [Baixando imagens via OMERO Downloader](../../07-programas-e-aplicativos/omero_downloader/README.md)
   - [eLab](08-sistemas/elab/README.md)
 - [Suporte ao usuário](09-suporte/README.md)
 - [Relatórios de uso](10-reports/README.md)
