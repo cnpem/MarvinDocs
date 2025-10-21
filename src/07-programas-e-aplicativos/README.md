@@ -62,6 +62,7 @@ Os programas e aplicativos relacionados a processamento, análise e visualizaç�
 
 - [3dmod](./3dmod/index.html)
 - [cisTEM](./cistem/index.html)
+- [circos](./circos/index.html)
 - [Etomo](./etomo/index.html)
 - [IsoNet](./isonet/index.html)
 - [Phenix](./phenix/index.html)

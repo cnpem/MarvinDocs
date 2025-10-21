@@ -25,6 +25,7 @@
   - [AlphaFold](07-programas-e-aplicativos/alphafold/README.md)
   - [Cellpose](07-programas-e-aplicativos/cellpose/README.md)
   - [CellProfiler](07-programas-e-aplicativos/cellprofiler/README.md)
+  - [Circos](07-programas-e-aplicativos/circos/README.md)
   - [cisTEM](07-programas-e-aplicativos/cistem/README.md)
   - [Etomo](07-programas-e-aplicativos/etomo/README.md)
   - [Fiji](07-programas-e-aplicativos/fiji/README.md)
