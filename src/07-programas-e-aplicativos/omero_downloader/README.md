@@ -56,23 +56,23 @@ omero-downloader -b <output_dir> -s omero-lnbio.cnpem.br -u <user_name> -w <pass
 Para baixar uma imagem, use:
 
 ```bash
-omero-downloader -b /home/joao.santos/pasta_destino -s omero-lnbio.cnpem.br -u joao.santos -w minhasenha123 -f ome-tiff Image:12345678
+omero-downloader -b /home/marie.curie/pasta_destino -s omero-lnbio.cnpem.br -u marie.curie -w minhasenha123 -f ome-tiff Image:123
 ```
 
 Para baixar um _Dataset_, use:
 
 ```bash
-omero-downloader -b /home/joao.santos/pasta_destino -s omero-lnbio.cnpem.br -u joao.santos -w minhasenha123 -f ome-tiff Image:123
+omero-downloader -b /home/marie.curie/pasta_destino -s omero-lnbio.cnpem.br -u marie.curie -w minhasenha123 -f ome-tiff Dataset:123
 ```
 
 Para baixar um projeto, use:
 
 ```bash
-omero-downloader -b /home/joao.santos/pasta_destino -s omero-lnbio.cnpem.br -u joao.santos -w minhasenha123 -f ome-tiff Image:123
+omero-downloader -b /home/marie.curie/pasta_destino -s omero-lnbio.cnpem.br -u marie.curie -w minhasenha123 -f ome-tiff Project:123
 ```
 
 <div class="warning">
-    <br><b>Dica:</b> para descobrir o número de identificação (ID) de uma imagem, dataset ou projeto, acesse a plataforma 
+    <br>Para descobrir o número de identificação (ID) de uma imagem, dataset ou projeto, acesse a plataforma 
     <a href="https://omero-lnbio.cnpem.br">https://omero-lnbio.cnpem.br</a>. 
     Nela, é possível visualizar a organização dos projetos, datasets e imagens aos quais você tem acesso. 
     Ao selecionar o item desejado, o ID correspondente será exibido no painel à direita, na guia <i>“General”</i>.<br>
