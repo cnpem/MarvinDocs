@@ -83,6 +83,7 @@ Os programas e aplicativos relacionados a processamento, análise e visualizaç�
 Os programas e aplicativos relacionados a processamento, análise e visualização de ômicas são:
 
 - [circos](./circos/index.html)
+- [deepTools](./deeptools/index.html)
 - [FastQC](./fastqc/index.html)
 - [procheck](./procheck/index.html)
 
