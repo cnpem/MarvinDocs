@@ -30,6 +30,7 @@
   - [Etomo](07-programas-e-aplicativos/etomo/README.md)
   - [FastQC](07-programas-e-aplicativos/fastqc/README.md)
   - [Fiji](07-programas-e-aplicativos/fiji/README.md)
+  - [HiCExplorer](07-programas-e-aplicativos/hicexplorer/README.md)
   - [Ilastik](07-programas-e-aplicativos/ilastik/README.md)
   - [IsoNet](07-programas-e-aplicativos/isonet/README.md)
   - [NP³ MS WORKFLOW](07-programas-e-aplicativos/np3_ms_workflow/README.md)
