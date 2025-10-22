@@ -28,6 +28,7 @@
   - [Circos](07-programas-e-aplicativos/circos/README.md)
   - [cisTEM](07-programas-e-aplicativos/cistem/README.md)
   - [Etomo](07-programas-e-aplicativos/etomo/README.md)
+  - [FastQC](07-programas-e-aplicativos/fastqc/README.md)
   - [Fiji](07-programas-e-aplicativos/fiji/README.md)
   - [Ilastik](07-programas-e-aplicativos/ilastik/README.md)
   - [IsoNet](07-programas-e-aplicativos/isonet/README.md)
