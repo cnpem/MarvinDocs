@@ -41,6 +41,7 @@
   - [OMERO Downloader](07-programas-e-aplicativos/omero-downloader/README.md)
   - [Phenix](07-programas-e-aplicativos/phenix/README.md)
   - [Procheck](07-programas-e-aplicativos/procheck/README.md)
+  - [pyGenomeTracks](07-programas-e-aplicativos/pygenometracks/README.md)
   - [RELION](07-programas-e-aplicativos/relion/README.md)
   - [Scipion](07-programas-e-aplicativos/scipion/README.md)
 - [Sistemas](08-sistemas/README.md)
