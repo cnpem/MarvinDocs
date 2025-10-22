@@ -60,6 +60,7 @@ Os programas e aplicativos relacionados à descoberta e desenvolvimento de fárm
 
 Os programas e aplicativos relacionados à análise, processamento e visualização de dados de interação cromossômica (Hi-C) são:
 
+- [HiC2Cool](./hic2cool/index.html)
 - [HiCExplorer](./hicexplorer/index.html)
 - [HiCsuntdracones](./hicsuntdracones/index.html)
 
