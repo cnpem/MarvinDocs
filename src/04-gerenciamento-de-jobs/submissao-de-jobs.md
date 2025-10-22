@@ -12,8 +12,6 @@ O script de submissão define as características do trabalho, como nome, parti�
 #!/bin/bash
 #SBATCH --job-name=teste
 #SBATCH --partition=debug-cpu
-#SBATCH --nodes=1
-#SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=1G
 #SBATCH --time=00:10:00
@@ -26,30 +24,72 @@ sleep 60
 echo "Trabalho concluído."
 ```
 
+### Indicando a partição do SLURM (fila)
+
+Para especificar uma partição (fila) use:
+
+```bash
+#SBATCH --partition=<substitua pelo nome da partição>
+```
+
+Cada partição ou fila possui recursos e limites diferentes, elas podem ser consultadas em [Sistema de filas](03-arquitetura/sistema-de-filas).
+
+
 ### Solicitando recursos específicos
 
-* Para solicitar GPUs:
+* Solicite o número de CPUs para a tarefa
 
 ```bash
-#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=<substitua pelo numero de cpus>
 ```
 
-* Para especificar uma partição (fila):
+* A solicitação de GPUs varia de acordo com a partição. Partições `*-gpu-small` possuem GPUs de 5GB de memória, enquanto que partições `*-gpu-big` possuem GPUs A100 com 40GB de memória.
+
+Para as filas `*-gpu-small` use:
+```bash
+#SBATCH --gres=gpu:1g.5gb:1 
+```
+
+Para as filas `*-gpu-big` use:
+```bash
+#SBATCH --gres=gpu:a100:1 
+```
+
+* A solicitação da quantidade de memória pode ser feita em quantidade total para o job ou quantidade por cpu.
+
+Para solicitar a quantidade total use:
 
 ```bash
-#SBATCH --partition=short-gpu-small
+#SBATCH --mem=16G 
 ```
+
+Para solicitar a quantidade por CPU use:
+
+```bash
+#SBATCH --mem-per-cpu=4GB
+```
+
+* Solicitação de tempo
+
+Para um melhor funcionamento do sistema gerenciador de tarefas e recursos (SLURM) __é importante__ que o usuário indique o tempo aproximado de execução da tarefa, mesmo sendo sobreestimado. Através desse tempo, o SLURM conseguirá alocar jobs em janelas ociosas e otimizar o uso dos recursos. 
+
+Exemplo solicitando 10 horas de tempo de processamento.
+
+```bash
+#SBATCH --time=10:00:00 
+```
+
 
 ### Trabalhos interativos
 
 Você pode iniciar uma sessão interativa com:
 
 ```bash
-srun --pty bash -i
+srun -p debug-cpu --pty bash 
 ```
 
 Ou com recursos definidos:
 
 ```bash
-srun --partition=short-gpu-small --gres=gpu:1 --cpus-per-task=4 --mem=8G --time=01:00:00 --pty bash -i
+srun -p short-gpu-small --gres gpu:1g.5gb:1 -c 4 --mem 8G --time 01:00:00 --pty bash 
 ```
