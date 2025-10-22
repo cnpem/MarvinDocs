@@ -57,6 +57,14 @@ Os programas e aplicativos relacionados à descoberta e desenvolvimento de fárm
 - [NP³ MS WORKFLOW](./np3_ms_workflow/index.html)
 <!-- - [NP³ Blob Label](./np3_blob_label/index.html) -->
 
+## HiC
+
+Os programas e aplicativos relacionados à análise, processamento e visualização de dados de interação cromossômica (Hi-C) são:
+
+- [HiC2Cool](./hic2cool/index.html)
+- [HiCExplorer](./hicexplorer/index.html)
+- [HiCsuntdracones](./hicsuntdracones/index.html)
+
 ## Microscopia Eletrônica
 
 Os programas e aplicativos relacionados a processamento, análise e visualização de microscopia eletrônica são:
@@ -68,5 +76,13 @@ Os programas e aplicativos relacionados a processamento, análise e visualizaç�
 - [Phenix](./phenix/index.html)
 - [RELION](./relion/index.html)
 - [Scipion](./scipion/index.html)
+
+## Ômicas
+
+Os programas e aplicativos relacionados a processamento, análise e visualização de ômicas são:
+
+- [circos](./circos/index.html)
+- [FastQC](./fastqc/index.html)
+- [procheck](./procheck/index.html)
 
 ---
