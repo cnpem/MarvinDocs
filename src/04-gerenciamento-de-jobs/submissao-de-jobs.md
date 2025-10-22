@@ -32,7 +32,7 @@ Para especificar uma partição (fila) use:
 #SBATCH --partition=<substitua pelo nome da partição>
 ```
 
-Cada partição ou fila possui recursos e limites diferentes, elas podem ser consultadas em [Sistema de filas](03-arquitetura/sistema-de-filas).
+Cada partição ou fila possui recursos e limites diferentes, elas podem ser consultadas em [Sistema de filas](../03-arquitetura/sistema-de-filas).
 
 
 ### Solicitando recursos específicos
