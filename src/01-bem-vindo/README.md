@@ -15,8 +15,8 @@ HPCC (_High Performance Computing Cluster_) é um sistema de computação que co
 
 Marvin é nome do HPCC do [LNBio](https://lnbio.cnpem.br/)/[CNPEM](https://cnpem.br/), adquirido em 2022 da empresa [Atos](https://atos.net/pt-br/brasil-atos), empresa especializada em soluções de HPC e responsável por alguns dos maiores supercomputadores do Brasil e do mundo, como o [Santos Dumont](https://sdumont.lncc.br/). 
 
-O HPCC Marvin está hospedado no Data Center do [Sirius/LNLS](https://lnls.cnpem.br/sirius/). Para informações sobre a arquitetura do HPCC Marvin, veja a seção [Arquitetura](../descricao-marvin/index.html).
+O HPCC Marvin está hospedado no Data Center do [Sirius/LNLS](https://lnls.cnpem.br/sirius/). Para informações sobre a arquitetura do HPCC Marvin, veja a seção [Arquitetura](../03-arquitetura/index.html).
 
 ### Acesso ao HPCC Marvin
 
-Para começar a utilizar o HPCC Marvin, veja os [Primeiros Passos](../primeiros-passos/index.html).
+Para começar a utilizar o HPCC Marvin, veja os [Primeiros Passos](../02-primeiros-passos/index.html).
