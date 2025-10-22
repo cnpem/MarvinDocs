@@ -44,7 +44,7 @@ Para executar o fastqc, são necessários os seguintes passos:
 
 2. Em `Interactive Apps`, abra uma `VNC`.
 
-3. No formulário da VNC, selecione uma das partições `gui-gpu-small` ou `gui-gpu-big` e defina o número de horas, número de GPUs e número de CPUs conforme necessário. Clique em `Launch`.
+3. No formulário da VNC, selecione uma das partições `gui-cpu`, `gui-gpu-small` ou `gui-gpu-big` e defina o número de horas, número de GPUs e número de CPUs conforme necessário. Clique em `Launch`.
 
 4. Uma nova janela será aberta com a VNC. Aguarde até que a VNC esteja ativa (`Running`) e clique em `Launch VNC`.
 

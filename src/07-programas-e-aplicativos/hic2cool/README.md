@@ -48,7 +48,7 @@ A execução do hic2cool no HPCC Marvin é feita por meio de scripts de submiss�
 #SBATCH --job-name=hic2cool
 #SBATCH --partition=short-cpu
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=8
+#SBATCH --cpus-per-task=4
 #SBATCH --mem-per-cpu=2GB
 
 module load hic2cool/1.0.1

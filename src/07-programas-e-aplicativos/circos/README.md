@@ -70,9 +70,9 @@ A execução do Circos no HPCC Marvin é feita por meio de scripts de submissão
 ```bash
 #!/bin/bash
 #SBATCH --job-name=circos
-#SBATCH --partition=short-gpu-small
+#SBATCH --partition=short-cpu
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=8
+#SBATCH --cpus-per-task=4
 #SBATCH --mem-per-cpu=2GB
 
 module load circos/0.69-10
