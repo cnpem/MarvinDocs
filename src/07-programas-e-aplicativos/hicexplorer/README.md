@@ -75,7 +75,7 @@ Para submeter o job, salve o script e utilize o comando `sbatch`:
 sbatch hicexplorer.sh
 ```
 
-Para mais detalhes sobre os parâmetros do Circos, use:
+Para mais detalhes sobre os parâmetros do HiCExplorer, use:
 
 ```bash
 hicexplorer -h
