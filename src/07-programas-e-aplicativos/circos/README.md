@@ -36,9 +36,11 @@ module help circos
 
 O Circos gera imagens estáticas e o processo de geração das imagens é gerenciado por um arquivo de configurações central. Esse arquivo geralmente importa outros arquivos de configurações, como preferências de fonte e cores.
 
-Para executar o Circos, é necessário passar como argumento um arquivo de configuração com a flag `-conf <conf_file>`.
+<div class="warning">
+<br>Para executar o Circos, é necessário passar como argumento um arquivo de configuração com a flag <code>-conf [conf_file]</code>.
 
-Acesse [Circos: Configuration files](https://circos.ca/documentation/tutorials/configuration/configuration_files/) para mais informações sobre sintaxe dos arquivos de configuração e como organizar os blocos.
+Acesse [Circos: Configuration files](https://circos.ca/documentation/tutorials/configuration/configuration_files/) para mais informações sobre sintaxe dos arquivos de configuração e como organizar os blocos.<br>
+</div>
 
 Durante a execução, caso não seja explicitamente definido o arquivo de configuração, o Circos buscará automaticamente por um `circos.conf` nos seguintes caminhos (entre outros):
 

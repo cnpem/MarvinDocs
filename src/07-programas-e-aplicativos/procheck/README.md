@@ -7,7 +7,7 @@ Ele é comumente utilizado para verificar parâmetros como:
 - Conformidade de resíduos com estruturas cristalográficas conhecidas
 - Geração de gráficos de qualidade e relatórios detalhados
 
-Para mais informações sobre o PROCHECK, acesse: [PROCHECK at EBI](https://www.ebi.ac.uk/thornton-srv/software/PROCHECK/)
+Para mais informações sobre o PROCHECK, acesse <https://www.ebi.ac.uk/thornton-srv/software/PROCHECK/>
 
 ## Carregando o módulo
 

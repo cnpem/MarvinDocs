@@ -71,7 +71,7 @@ fastqc --help
 
 ## Como executar o fastqc via SSH
 
-Ao conectar remotamente no Marvin via SSH, é necessário habilitar o X11 forwarding para exibir a interface gráfica na máquina local. 
+Ao conectar remotamente no Marvin via SSH, é necessário habilitar o X11 forwarding para exibir a interface gráfica na máquina local.
 
 ```bash
 # Iniciar conexão ssh habilitando X11 forwarding
