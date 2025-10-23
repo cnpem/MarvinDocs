@@ -91,5 +91,6 @@ Os programas e aplicativos relacionados a processamento, análise e visualizaç�
 - [FastQC](./fastqc/index.html)
 - [kraken2](./kraken2/index.html)
 - [procheck](./procheck/index.html)
+- [seqrtk](./seqtk/index.html)
 
 ---

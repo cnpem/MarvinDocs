@@ -50,6 +50,7 @@
   - [pyGenomeTracks](07-programas-e-aplicativos/pygenometracks/README.md)
   - [RELION](07-programas-e-aplicativos/relion/README.md)
   - [Scipion](07-programas-e-aplicativos/scipion/README.md)
+  - [seqtk](07-programas-e-aplicativos/seqtk/README.md)
 - [Sistemas](08-sistemas/README.md)
   - [OMERO](08-sistemas/omero/README.md)
     - [Acesso pelo navegador](08-sistemas/omero/acesso-pelo-navegador.md)
