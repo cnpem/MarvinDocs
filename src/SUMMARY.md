@@ -28,6 +28,7 @@
   - [Circos](07-programas-e-aplicativos/circos/README.md)
   - [cisTEM](07-programas-e-aplicativos/cistem/README.md)
   - [Cooler](07-programas-e-aplicativos/cooler/README.md)
+  - [cooltools](07-programas-e-aplicativos/cooltools/README.md)
   - [deepTools](07-programas-e-aplicativos/deeptools/README.md)
   - [Etomo](07-programas-e-aplicativos/etomo/README.md)
   - [FastQC](07-programas-e-aplicativos/fastqc/README.md)
