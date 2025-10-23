@@ -52,7 +52,7 @@ A execução do kraken2 no HPCC Marvin é feita por meio de scripts de submissã
 #SBATCH --partition=short-cpu
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
-#SBATCH --mem-per-cpu=4GB
+#SBATCH --mem-per-cpu=6GB
 
 module load kraken2/2.1.6
 
