@@ -67,6 +67,7 @@ Os programas e aplicativos relacionados à análise, processamento e visualizaç
 - [HiCExplorer](./hicexplorer/index.html)
 - [HiCsuntdracones](./hicsuntdracones/index.html)
 - [Pairix](./pairix/index.html)
+- [pairtools](./pairtools/index.html)
 - [pyGenomeTracks](./pygenometracks/index.html)
 
 ## Microscopia Eletrônica
