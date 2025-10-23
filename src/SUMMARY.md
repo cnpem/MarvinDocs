@@ -41,6 +41,7 @@
     - [Criando Sbatch](07-programas-e-aplicativos/np3_ms_workflow/np3_sbatch.md)
     - [Usando o Job Composer](07-programas-e-aplicativos/np3_ms_workflow/np3_jobcomposer.md)
   - [OMERO Downloader](07-programas-e-aplicativos/omero-downloader/README.md)
+  - [Pairix](07-programas-e-aplicativos/pairix/README.md)
   - [Phenix](07-programas-e-aplicativos/phenix/README.md)
   - [Procheck](07-programas-e-aplicativos/procheck/README.md)
   - [pyGenomeTracks](07-programas-e-aplicativos/pygenometracks/README.md)
