@@ -1,0 +1,1 @@
+- Treinamento 2025 [[slides](../HPC-treinamento-2025.pdf)]
