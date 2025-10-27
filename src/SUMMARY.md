@@ -61,5 +61,6 @@
 - [Suporte ao usuário](09-suporte/README.md)
 - [Relatórios de uso](10-reports/README.md)
 - [LLMs](11-llms/README.md)
+- [Treinamentos](12-treinamentos/README.md)
 
 ---
