@@ -1,10 +1,10 @@
 # Juicer
 
-[Juicer](https://github.com/aidenlab/juicer) é um **pipeline completo para processamento e análise de dados Hi-C**, desenvolvido pelo **Aiden Lab**. Ele automatiza desde o **alinhamento das leituras** até a **geração de mapas de interação genômica** em múltiplas resoluções (arquivos **.hic**).
+[Juicer](https://github.com/aidenlab/juicer) é um pipeline completo para processamento e análise de dados Hi-C, desenvolvido pelo [Aiden Lab](https://aidenlab.org/). Ele automatiza desde o alinhamento das leituras até a geração de mapas de interação genômica em múltiplas resoluções (arquivos **.hic**).
 
-Útil para explorar estruturas 3D do genoma — como **TADs, loops** e **compartimentos** — o Juicer é amplamente adotado em **genômica estrutural**.  
+Útil para explorar estruturas 3D do genoma — como **TADs, loops** e **compartimentos** — o Juicer é amplamente adotado em genômica estrutural.  
 
-Para mais informações: <https://github.com/aidenlab/juicer/wiki>
+Para mais informações, acesse <https://github.com/aidenlab/juicer/wiki>.
 
 ## Carregando o módulo
 
