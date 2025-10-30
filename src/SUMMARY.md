@@ -38,6 +38,7 @@
   - [HiCsuntdracones](07-programas-e-aplicativos/hicsuntdracones/README.md)
   - [Ilastik](07-programas-e-aplicativos/ilastik/README.md)
   - [IsoNet](07-programas-e-aplicativos/isonet/README.md)
+  - [Juicer](07-programas-e-aplicativos/juicer/README.md)
   - [kraken2](07-programas-e-aplicativos/kraken2/README.md)
   - [NP³ MS WORKFLOW](07-programas-e-aplicativos/np3_ms_workflow/README.md)
     - [Criando Sbatch](07-programas-e-aplicativos/np3_ms_workflow/np3_sbatch.md)
