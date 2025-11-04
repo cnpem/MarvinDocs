@@ -93,5 +93,6 @@ Os programas e aplicativos relacionados a processamento, análise e visualizaç�
 - [kraken2](./kraken2/index.html)
 - [procheck](./procheck/index.html)
 - [seqrtk](./seqtk/index.html)
+- [Trimmomatic](./trimmomatic/index.html)
 
 ---
