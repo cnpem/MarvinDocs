@@ -91,6 +91,7 @@ Os programas e aplicativos relacionados a processamento, análise e visualizaç�
 - [circos](./circos/index.html)
 - [deepTools](./deeptools/index.html)
 - [FastQC](./fastqc/index.html)
+- [GTDB-Tk](./gtdbtk/index.html)
 - [kraken2](./kraken2/index.html)
 - [procheck](./procheck/index.html)
 - [seqrtk](./seqtk/index.html)

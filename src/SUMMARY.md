@@ -34,6 +34,7 @@
   - [Etomo](07-programas-e-aplicativos/etomo/README.md)
   - [FastQC](07-programas-e-aplicativos/fastqc/README.md)
   - [Fiji](07-programas-e-aplicativos/fiji/README.md)
+  - [GTDB-Tk](07-programas-e-aplicativos/gtdbtk/README.md)
   - [HiC2Cool](07-programas-e-aplicativos/hic2cool/README.md)
   - [HiCExplorer](07-programas-e-aplicativos/hicexplorer/README.md)
   - [HiCsuntdracones](07-programas-e-aplicativos/hicsuntdracones/README.md)
