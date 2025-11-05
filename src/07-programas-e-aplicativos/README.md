@@ -38,6 +38,7 @@ Para solicitar a instalação ou atualização de um aplicativo ou programa, reg
 
 Os programas e aplicativos relacionados à processamento e análise de imagens biológicas são:
 
+- [3D Slicer](./3dslicer/index.html)
 - [Cellpose](./cellpose/index.html)
 - [CellProfiler](./cellprofiler/index.html)
 - [Fiji](./fiji/index.html)

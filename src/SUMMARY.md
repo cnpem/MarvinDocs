@@ -22,6 +22,7 @@
 - [Ambiente de desenvolvimento](06-ambiente-de-desenvolvimento/README.md)
 - [Aplicativos e Programas](07-programas-e-aplicativos/README.md)
   - [3dmod](07-programas-e-aplicativos/3dmod/README.md)
+  - [3D Slicer](07-programas-e-aplicativos/3dslicer/README.md)
   - [AlphaFold](07-programas-e-aplicativos/alphafold/README.md)
   - [Cellpose](07-programas-e-aplicativos/cellpose/README.md)
   - [CellProfiler](07-programas-e-aplicativos/cellprofiler/README.md)
