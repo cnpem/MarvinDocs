@@ -2,7 +2,7 @@
 
 O [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) é uma ferramenta em linha de comando amplamente utilizada para o pré-processamento de dados de sequenciamento de DNA provenientes de plataformas Illumina. Ela realiza etapas fundamentais de limpeza das leituras (reads), incluindo remoção de adaptadores, filtragem por qualidade, corte de regiões de baixa qualidade e eliminação de leituras curtas, garantindo que apenas dados de alta confiabilidade sejam utilizados em análises posteriores. Altamente flexível e eficiente, suporta tanto dados single-end quanto paired-end, além de permitir o ajuste fino de parâmetros conforme o protocolo experimental.
 
-Para mais informações, acesse: <https://github.com/usadellab/Trimmomatic>
+Para mais informações, acesse: <https://github.com/usadellab/Trimmomatic>.
 
 ## Carregando o módulo
 
