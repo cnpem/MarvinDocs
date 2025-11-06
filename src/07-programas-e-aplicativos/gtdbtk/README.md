@@ -4,7 +4,7 @@ O [GTDB-Tk (Genome Taxonomy Database Toolkit)](https://ecogenomics.github.io/GTD
 
 O GTDB-Tk é amplamente utilizado em estudos de metagenômica e genômica comparativa, integrando-se facilmente a pipelines bioinformáticos para análise em larga escala.
 
-Para mais informações e documentação completa, acesse: <https://ecogenomics.github.io/GTDBTk/>
+Para mais informações e documentação completa, acesse: <https://ecogenomics.github.io/GTDBTk/>.
 
 
 ## Carregando o módulo
@@ -80,7 +80,7 @@ Testing:
   check_install -> Verify third party programs and GTDB reference package
 ```
 
-Consulte todos informações completas sobre os comandos na página de [referência de comandos na documentação oficial do  gtdbtk](https://ecogenomics.github.io/GTDBTk/commands/index.html).
+Consulte todos informações completas sobre os comandos na página de [referência de comandos na documentação oficial do gtdbtk](https://ecogenomics.github.io/GTDBTk/commands/index.html).
 
 ## Submetendo jobs
 
