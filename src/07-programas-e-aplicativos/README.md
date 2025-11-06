@@ -38,6 +38,7 @@ Para solicitar a instalação ou atualização de um aplicativo ou programa, reg
 
 Os programas e aplicativos relacionados à processamento e análise de imagens biológicas são:
 
+- [3D Slicer](./3dslicer/index.html)
 - [Cellpose](./cellpose/index.html)
 - [CellProfiler](./cellprofiler/index.html)
 - [Fiji](./fiji/index.html)
@@ -90,8 +91,10 @@ Os programas e aplicativos relacionados a processamento, análise e visualizaç�
 - [circos](./circos/index.html)
 - [deepTools](./deeptools/index.html)
 - [FastQC](./fastqc/index.html)
+- [GTDB-Tk](./gtdbtk/index.html)
 - [kraken2](./kraken2/index.html)
 - [procheck](./procheck/index.html)
 - [seqrtk](./seqtk/index.html)
+- [Trimmomatic](./trimmomatic/index.html)
 
 ---
