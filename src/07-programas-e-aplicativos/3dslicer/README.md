@@ -2,7 +2,7 @@
 
 O [3D Slicer](https://www.slicer.org/) é uma plataforma de código aberto para análise e visualização de imagens médicas em 3D. Ele oferece ferramentas avançadas para segmentação, reconstrução, registro e modelagem anatômica, sendo amplamente utilizado em pesquisa biomédica, planejamento cirúrgico e aplicações clínicas.
 
-Para mais informações, consulte a documentação oficial do 3D Slicer: <https://slicer.readthedocs.io/en/latest/>
+Para mais informações, consulte a documentação oficial do 3D Slicer: <https://slicer.readthedocs.io/en/latest/>.
 
 ## Carregando o módulo
 
