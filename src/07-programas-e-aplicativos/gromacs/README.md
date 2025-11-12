@@ -28,7 +28,9 @@ module help gromacs
 
 ## Submetendo jobs
 
-A execução do GROMACS no HPCC Marvin é feita por meio de scripts de submissão no SLURM. Crie um arquivo de script, por exemplo `gromacs.sh`, com o seguinte conteúdo:
+A execução do GROMACS no HPCC Marvin é feita por meio de scripts de submissão no SLURM. 
+
+Por padrão, utilize a fila `short-gpu-small` para seus trabalhos. Para isso, crie um arquivo de script, por exemplo `gromacs.sh`, com o seguinte conteúdo:
 
 ```bash
 #!/bin/bash
@@ -43,15 +45,31 @@ A execução do GROMACS no HPCC Marvin é feita por meio de scripts de submissã
 # Load GROMACS module
 module load gromacs/2024.5
 
-# Export necessary environment variables
-export GMX_FORCE_UPDATE_DEFAULT_GPU=true
+# Run molecular dynamics simulation with GPU acceleration
+gmx mdrun -s production.tpr -v -deffnm production -pin off -ntomp $SLURM_CPUS_PER_TASK -nb gpu -pme gpu -update gpu -bonded gpu
+```
+
+Para execuções de maior porte, utilize a fila short-gpu-big e ajuste os parâmetros de recursos conforme o exemplo abaixo:
+
+```bash
+#!/bin/bash
+#SBATCH --job-name=gromacs
+#SBATCH --partition=short-gpu-big
+#SBATCH --ntasks=3
+#SBATCH --cpus-per-task=8
+#SBATCH --mem-per-cpu=2GB
+#SBATCH --gres=gpu:a100:1
+#SBATCH --time=24:00:00
+
+# Load GROMACS module
+module load gromacs/2024.5
 
 # Run molecular dynamics simulation with GPU acceleration
-gmx mdrun -s production.tpr -v -deffnm production -pin on -ntomp $SLURM_CPUS_PER_TASK -nb gpu -pme gpu -update gpu -bonded gpu
+gmx mdrun -s production.tpr -v -deffnm production -pin off -ntomp $SLURM_CPUS_PER_TASK -nb gpu -pme gpu -update gpu -bonded gpu
 ```
 
 <div class="warning">
-    <br>A fila <code>short-gpu-big</code> também pode ser utilizada para execuções de maior porte. Para isso, altere o parâmetro <code>--gres=gpu:a100:1</code> e ajuste os demais recursos conforme a necessidade do seu job.
+    Em ambos os cenários, lembre-se de ajustar os recursos computacionais conforme a necessidade do seu job.
 </div>
 
 Para submeter o job, salve o script e utilize o comando `sbatch`:
