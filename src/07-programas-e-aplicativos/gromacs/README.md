@@ -30,7 +30,7 @@ module help gromacs
 
 A execução do GROMACS no HPCC Marvin é feita por meio de scripts de submissão no SLURM. 
 
-Por padrão, utilize a fila `short-gpu-small` para seus trabalhos. Para isso, crie um arquivo de script, por exemplo `gromacs.sh`, com o seguinte conteúdo:
+Por padrão, recomenda-se utilizar a fila `short-gpu-small` para execuções de pequeno e médio porte. Para isso, crie um arquivo de script, por exemplo `gromacs.sh`, com o seguinte conteúdo:
 
 ```bash
 #!/bin/bash
@@ -49,7 +49,7 @@ module load gromacs/2024.5
 gmx mdrun -s production.tpr -v -deffnm production -pin off -ntomp $SLURM_CPUS_PER_TASK -nb gpu -pme gpu -update gpu -bonded gpu
 ```
 
-Para execuções de maior porte, utilize a fila short-gpu-big e ajuste os parâmetros de recursos conforme o exemplo abaixo:
+Para execuções de maior porte, utilize a fila `short-gpu-big` e ajuste os parâmetros de recursos conforme o exemplo abaixo:
 
 ```bash
 #!/bin/bash
@@ -69,7 +69,7 @@ gmx mdrun -s production.tpr -v -deffnm production -pin off -ntomp $SLURM_CPUS_PE
 ```
 
 <div class="warning">
-    Em ambos os cenários, lembre-se de ajustar os recursos computacionais conforme a necessidade do seu job.
+    Em ambos os cenários, ajuste os recursos computacionais (CPU, GPU, memória e tempo) conforme as necessidades do seu job.
 </div>
 
 Para submeter o job, salve o script e utilize o comando `sbatch`:
