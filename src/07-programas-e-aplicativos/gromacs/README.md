@@ -33,12 +33,12 @@ A execução do GROMACS no HPCC Marvin é feita por meio de scripts de submissã
 ```bash
 #!/bin/bash
 #SBATCH --job-name=gromacs
-#SBATCH --partition=short-gpu-big
+#SBATCH --partition=short-gpu-small
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
-#SBATCH --gres=gpu:a100:1
 #SBATCH --mem-per-cpu=2GB
-#SBATCH --time=5-00:00:00
+#SBATCH --gres=gpu:1g.5gb:1
+#SBATCH --time=24:00:00
 
 # Load GROMACS module
 module load gromacs/2024.5
@@ -46,12 +46,12 @@ module load gromacs/2024.5
 # Export necessary environment variables
 export GMX_FORCE_UPDATE_DEFAULT_GPU=true
 
+# Run molecular dynamics simulation with GPU acceleration
 gmx mdrun -s production.tpr -v -deffnm production -pin on -ntomp $SLURM_CPUS_PER_TASK -nb gpu -pme gpu -update gpu -bonded gpu
 ```
 
 <div class="warning">
-    <br>A partição <code>short-gpu-small</code> também pode ser utilizada para execuções de menor porte. Ajuste os parâmetros de recursos conforme a necessidade do seu job.<br>
-    <br>
+    <br>A fila <code>short-gpu-big</code> também pode ser utilizada para execuções de maior porte. Para isso, altere o parâmetro <code>--gres=gpu:a100:1</code> e ajuste os demais recursos conforme a necessidade do seu job.
 </div>
 
 Para submeter o job, salve o script e utilize o comando `sbatch`:

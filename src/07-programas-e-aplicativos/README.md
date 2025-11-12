@@ -47,9 +47,10 @@ Os programas e aplicativos relacionados à processamento e análise de imagens b
 
 ## Biologia Estrutural
 
-Os programas e aplicativos relacionados à modelagem, predição e análise estrutural de proteínas são:
+Os programas e aplicativos relacionados à modelagem, dinâmica molecular, predição e análise estrutural de proteínas são:
 
 - [AlphaFold](./alphafold/index.html)
+- [GROMACS](./gromacs/index.html)
 
 ## Descoberta de fármacos (_Drug Discovery_)
 
