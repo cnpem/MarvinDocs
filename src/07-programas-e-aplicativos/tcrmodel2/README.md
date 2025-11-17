@@ -59,7 +59,7 @@ TCRB="DGGITQSPKYLFRKEGQNVTLSCEQNLNHDAMYWYRQDPGQGLRLIYYSQIVNDFQKGDIAEGYSVSREKKESF
 
 tcrmodel2_ub_tcr --job_id=test --output_dir=$OUTPUT_DIR --tcra_seq=$TCRA --tcrb_seq=$TCRB --ori_db=/database/ --tp_db=/opt/tcrmodel2/data/databases --relax_structures=True --max_template_date=2100-01-01
 ```
-Ao carregar o módulo tcrmodel2, estará disponível os dois comandos (tcrmodel2 e tcrmodel2_ub_tcr) para modelar complexo inteiro e somente TCRab. Lembrando que para modelar o complexo inteiro, siga as instruções do repositório do TCRmodel2 para configurar as flags e substitua o comando por `tcrmodel2` no script do slurm.
+Ao carregar o módulo tcrmodel2, ficarão disponíveis dois comandos (**tcrmodel2** e **tcrmodel2_ub_tcr**) para modelar, respectivamente, o complexo inteiro ou somente TCRab. Lembrando que, para modelar o complexo inteiro, siga as instruções do repositório do TCRmodel2 para configurar as flags e substitua o comando `tcrmodel2_ub_tcr` por `tcrmodel2` no script do slurm.
 
 Para submeter o job, salve o script e utilize o comando `sbatch`:
 
