@@ -55,6 +55,7 @@
   - [RELION](07-programas-e-aplicativos/relion/README.md)
   - [Scipion](07-programas-e-aplicativos/scipion/README.md)
   - [seqtk](07-programas-e-aplicativos/seqtk/README.md)
+  - [TCRmodel2](07-programas-e-aplicativos/tcrmodel2/README.md)
   - [Trimmomatic](07-programas-e-aplicativos/trimmomatic/README.md)
 - [Sistemas](08-sistemas/README.md)
   - [OMERO](08-sistemas/omero/README.md)
