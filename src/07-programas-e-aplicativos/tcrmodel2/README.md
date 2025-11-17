@@ -20,7 +20,10 @@ module help tcrmodel2
 
 ## Executando o módulo
 
-> O banco de dados e pesos do AF2 estão na pasta  `/public` do HPC e são necessários para execução dos scripts.  
+<div class="warning">
+    <br>O banco de dados e pesos do AF2 estão na pasta <code>/public</code> do HPC e são necessários para execução dos scripts.</br>
+</div>
+
 
 O TCRmodel2 oferece dois principais scripts: 
 
@@ -34,13 +37,11 @@ tcrmodel2 --help  #or
 tcrmodel2_ub_tcr --help
 ```
 
-
 ## Submetendo jobs
 
 A execução do TCRmodel2 no HPCC Marvin é feita por meio de scripts de submissão no SLURM. Para modelar apenas o TCR unbound, crie um arquivo de script, por exemplo `tcrmodel2.sh`, com o seguinte conteúdo:
 
 ```bash
-
 #!/bin/bash
 #SBATCH --job-name=tcrmodel2
 #SBATCH --ntasks=1
