@@ -6,7 +6,7 @@ Para mais informações sobre TCRmodel2, acesse <https://github.com/piercelab/tc
 
 ## Carregando o módulo
 
-Para habilitar o Scipion no HPCC Marvin, você deve carregar o módulo `tcrmodel2`:
+Para habilitar o TCRmodel2 no HPCC Marvin, você deve carregar o módulo `tcrmodel2`:
 
 ```bash
 module load tcrmodel2
@@ -57,7 +57,7 @@ OUTPUT_DIR="/output"
 TCRA="GQQVMQIPQYQHVQEGEDFTTYCNSSTTLSNIQWYKQRPGGHPVFLIQLVKSGEVKKQKRLTFQFGEAKKNSSLHITATQTTDVGTYFCAVSYGGSQGNLIFGKGTKLSVKP"
 TCRB="DGGITQSPKYLFRKEGQNVTLSCEQNLNHDAMYWYRQDPGQGLRLIYYSQIVNDFQKGDIAEGYSVSREKKESFPLTVTSAQKNPTAFYLCASSIRSTDTQYFGPGTRLTVLE"
 
-python3 tcrmodel2 --job_id=test --output_dir=$OUTPUT_DIR --tcra_seq=$TCRA --tcrb_seq=$TCRB --ori_db=/database/ --tp_db=/opt/tcrmodel2/data/databases --relax_structures=True --max_template_date=2100-01-01
+tcrmodel2 run_tcrmodel2_ub_tcr.py --job_id=test --output_dir=$OUTPUT_DIR --tcra_seq=$TCRA --tcrb_seq=$TCRB --ori_db=/database/ --tp_db=/opt/tcrmodel2/data/databases --relax_structures=True --max_template_date=2100-01-01
 ```
 
 Para submeter o job, salve o script e utilize o comando `sbatch`:
@@ -65,3 +65,4 @@ Para submeter o job, salve o script e utilize o comando `sbatch`:
 ```bash
 sbatch tcrmodel2.sh
 ```
+
