@@ -51,6 +51,7 @@ Os programas e aplicativos relacionados à modelagem, dinâmica molecular, predi
 
 - [AlphaFold](./alphafold/index.html)
 - [GROMACS](./gromacs/index.html)
+- [TCRmodel2](./tcrmodel2/index.html)
 
 ## Descoberta de fármacos (_Drug Discovery_)
 
