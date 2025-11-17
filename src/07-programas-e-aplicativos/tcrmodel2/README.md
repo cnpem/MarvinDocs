@@ -20,11 +20,6 @@ module help tcrmodel2
 
 ## Executando o módulo
 
-<div class="warning">
-    <br>O banco de dados e pesos do AF2 estão na pasta <code>/public</code> do HPC e são necessários para execução dos scripts.</br>
-</div>
-
-
 O TCRmodel2 oferece dois principais scripts: 
 
 - `run_tcrmodel2.py`: predição do complexo TCR:pMHC  que pode ser chamado com `tcrmodel2`
@@ -36,6 +31,11 @@ Ambos scripts contém diferentes flags. Para obter informações sobre o uso de 
 tcrmodel2 --help  #or
 tcrmodel2_ub_tcr --help
 ```
+
+<div class="warning">
+    <br>O banco de dados e pesos do AF2 estão na pasta <code>/public</code> do HPC e são necessários para execução dos scripts.</br>
+</div>
+
 
 ## Submetendo jobs
 
