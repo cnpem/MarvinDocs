@@ -1,12 +1,13 @@
 [book]
-title = "MarvinDocs v1.1.8"
+title = "MarvinDocs v1.1.9"
 authors = [
     "José G. C. Pereira",
     "João V. S. Guerra",
     "João V. R. Santos",
     "Luiz F. G. Alves",
     "Pablo W. A. Silva",
-    "Rick H. Hokama"
+    "Rick H. Hokama",
+    "Samuel C. de Assis"
 ]
 description = "Documentação do HPCC Marvin"
 src = "src"
