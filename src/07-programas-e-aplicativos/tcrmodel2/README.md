@@ -24,14 +24,14 @@ module help tcrmodel2
 
 O TCRmodel2 oferece dois principais scripts: 
 
-- `run_tcrmodel2.py`: predição do complexo TCR:pMHC  
-- `run_tcrmodel2_ub_tcr.py`: predição de estruturas unbound de TCRs.
+- `run_tcrmodel2.py`: predição do complexo TCR:pMHC  que pode ser chamado com `tcrmodel2`
+- `run_tcrmodel2_ub_tcr.py`: predição de estruturas unbound de TCRs que pode ser chamado com `tcrmodel2_ub_tcr`
 
 Ambos scripts contém diferentes flags. Para obter informações sobre o uso de cada um, execute:
 
 ```
-python3 run_tcrmodel2.py --help  #or
-python3 run_tcrmodel2_ub_tcr.py --help
+tcrmodel2 --help  #or
+tcrmodel2_ub_tcr --help
 ```
 
 
@@ -51,14 +51,15 @@ A execução do TCRmodel2 no HPCC Marvin é feita por meio de scripts de submiss
 #SBATCH --output=slurm.out
 #SBATCH --error=slurm.error
 
-module load tcrmodel2
+ml load tcrmodel2
 
 OUTPUT_DIR="/output"
 TCRA="GQQVMQIPQYQHVQEGEDFTTYCNSSTTLSNIQWYKQRPGGHPVFLIQLVKSGEVKKQKRLTFQFGEAKKNSSLHITATQTTDVGTYFCAVSYGGSQGNLIFGKGTKLSVKP"
 TCRB="DGGITQSPKYLFRKEGQNVTLSCEQNLNHDAMYWYRQDPGQGLRLIYYSQIVNDFQKGDIAEGYSVSREKKESFPLTVTSAQKNPTAFYLCASSIRSTDTQYFGPGTRLTVLE"
 
-tcrmodel2 run_tcrmodel2_ub_tcr.py --job_id=test --output_dir=$OUTPUT_DIR --tcra_seq=$TCRA --tcrb_seq=$TCRB --ori_db=/database/ --tp_db=/opt/tcrmodel2/data/databases --relax_structures=True --max_template_date=2100-01-01
+tcrmodel2_ub_tcr --job_id=test --output_dir=$OUTPUT_DIR --tcra_seq=$TCRA --tcrb_seq=$TCRB --ori_db=/database/ --tp_db=/opt/tcrmodel2/data/databases --relax_structures=True --max_template_date=2100-01-01
 ```
+Ao carregar o módulo tcrmodel2, estará disponível os dois comandos (tcrmodel2 e tcrmodel2_ub_tcr) para modelar complexo inteiro e somente TCRab. Lembrando que para modelar o complexo inteiro, siga as instruções do repositório do TCRmodel2 para configurar as flags e substitua o comando por `tcrmodel2` no script do slurm.
 
 Para submeter o job, salve o script e utilize o comando `sbatch`:
 
