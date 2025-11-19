@@ -30,13 +30,14 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MDBOOK_VERSION: 0.4.49
+      MDBOOK_TOC_VERSION: 0.14.2
     steps:
       - uses: actions/checkout@v5
       - name: Install mdBook
         run: |
           curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
           cargo install --version ${MDBOOK_VERSION} mdbook
-          cargo install mdbook-toc
+          cargo install --version ${MDBOOK_TOC_VERSION} mdbook-toc
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -50,7 +51,7 @@ jobs:
 
   # Deployment job
   deploy:
-    if: github.ref == 'refs/heads/main'  # Run only if on main branch
+    if: github.ref == 'refs/heads/main' # Run only if on main branch
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
