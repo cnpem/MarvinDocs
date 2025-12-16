@@ -46,9 +46,10 @@ A execução do TCRmodel2 no HPCC Marvin é feita por meio de scripts de submiss
 #SBATCH --job-name=tcrmodel2
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=6
-#SBATCH --partition=short-gpu-small
 #SBATCH --mem-per-cpu=8G
-#SBATCH --gres=gpu:1g.5gb:5
+#SBATCH --time=0-00:15:00
+#SBATCH --partition=short-gpu-big
+#SBATCH --gres=gpu:a100:1
 #SBATCH --output=slurm.out
 #SBATCH --error=slurm.error
 
