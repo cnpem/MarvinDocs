@@ -1,4 +1,4 @@
-# Bem-vindo ao mundo de Marvin! <img src="imagens/banner.png" width=80></img>
+# Bem-vindo ao mundo de Marvin! <img src="imagens/banner.png" width=80>
 
 Este manual foi criado para ajudar os usuários a utilizar o HPCC Marvin. Apesar de ser um pouco mal-humorado às vezes, Marvin está sempre disposto a te ajudar!
 

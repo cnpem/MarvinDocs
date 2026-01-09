@@ -4,7 +4,7 @@ Para ativar seu usuário no HPCC Marvin, é necessário fazer um primeiro acesso
 
 ## Primeiro acesso 🚪
 
-O primeiro acesso ao HPC Marvin é feito através do terminal <img src="imagens/terminal_icon.png" alt="Terminal logo" width="2.3%"></img> (Linux ou MacOS) ou do PowerShell <img src="imagens/powershell_icon.png" alt="PowerShell logo" width="2%"></img> (Windows). Para isso, use o seguinte comando:
+O primeiro acesso ao HPC Marvin é feito através do terminal <img src="imagens/terminal_icon.png" alt="Terminal logo" width="2.3%"> (Linux ou MacOS) ou do PowerShell <img src="imagens/powershell_icon.png" alt="PowerShell logo" width="2%"> (Windows). Para isso, use o seguinte comando:
 
 ```bash
 ssh <seu.login.cnpem>@marvin.cnpem.br
@@ -50,7 +50,7 @@ Na linha:1 caractere:1
     + FullyQualifiedErrorId : CommandNotFoundException
 ```
 
-## Acesso pelo navegador <img src="imagens/browser_icons.png" alt="Browser Icons"  width="15%"></img>
+## Acesso pelo navegador <img src="imagens/browser_icons.png" alt="Browser Icons"  width="15%">
 
 Para acessar o HPCC Marvin pelo navegador, abra seu navegador e acesse:
 

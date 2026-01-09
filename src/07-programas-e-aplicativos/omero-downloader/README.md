@@ -44,7 +44,7 @@ omero-downloader -b <output_dir> -s omero-lnbio.cnpem.br -u <user_name> -w <pass
 
 <div class="warning">
     <br>
-    Substitua as informações indicadas entre colchetes angulares (<code><...></code>):
+    Substitua as informações indicadas entre colchetes angulares (<code>&lt;...&gt;</code>):
     <ul>
         <li><code>&lt;output_dir&gt;</code>: diretório onde os dados serão baixados. É importante que a pasta já exista.</li>
         <li><code>&lt;user_name&gt;</code>: seu nome de usuário institucional, no formato <code>nome.sobrenome</code>.</li>

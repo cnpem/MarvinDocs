@@ -10,7 +10,7 @@ O [eLab](https://www.elabftw.net/) é um caderno eletrônico de laboratório (EL
 
 Para solicitar suporte ou ajuda com o eLab, registre um chamado na <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181" target="_blank">[LNBio] Suporte EDB</a> do Jira em <a href="https://cnpem.atlassian.net/servicedesk/customer/portal/181/group/536/create/2157" target="_blank">eLab: Suporte ao usuário</a>.
 
-## Acesso pelo navegador <img src="images/browser_icons.png" alt="Browser Icons"  width="15%"></img>
+## Acesso pelo navegador <img src="images/browser_icons.png" alt="Browser Icons"  width="15%">
 
 Para acessar o eLab pelo navegador, abra seu navegador e acesse:
 

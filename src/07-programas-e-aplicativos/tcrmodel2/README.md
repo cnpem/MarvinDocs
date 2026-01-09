@@ -33,7 +33,7 @@ tcrmodel2_ub_tcr --help
 ```
 
 <div class="warning">
-    <br>O banco de dados e pesos do AF2 estão na pasta <code>/public</code> do HPC e são necessários para execução dos scripts.</br>
+    <br>O banco de dados e pesos do AF2 estão na pasta <code>/public</code> do HPC e são necessários para execução dos scripts.
 </div>
 
 

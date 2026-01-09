@@ -1,4 +1,4 @@
-## Acesso pelo navegador <img src="images/browser_icons.png" alt="Browser Icons"  width="15%"></img>
+## Acesso pelo navegador <img src="images/browser_icons.png" alt="Browser Icons"  width="15%">
 
 Para acessar o OMERO pelo navegador, abra seu navegador e acesse:
 
