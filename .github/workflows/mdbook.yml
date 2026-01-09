@@ -29,8 +29,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      MDBOOK_VERSION: 0.4.49
-      MDBOOK_TOC_VERSION: 0.14.2
+      MDBOOK_VERSION: 0.5.2
+      MDBOOK_TOC_VERSION: 0.15.2
     steps:
       - uses: actions/checkout@v5
       - name: Install mdBook
