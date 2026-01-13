@@ -53,7 +53,7 @@ Os programas e aplicativos relacionados à modelagem, dinâmica molecular, predi
 - [GROMACS](./gromacs/index.html)
 - [TCRmodel2](./tcrmodel2/index.html)
 
-<h2>Descoberta de fármacos (_Drug Discovery_)</h2>
+<h2>Descoberta de fármacos (<i>Drug Discovery</i>)</h2>
 
 Os programas e aplicativos relacionados à descoberta e desenvolvimento de fármacos são:
 
