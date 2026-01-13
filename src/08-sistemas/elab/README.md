@@ -25,5 +25,5 @@ Lembre-se que este endereço só funcionará na rede interna do CNPEM. Para aces
 Na tela de login, use seu e-mail (p. ex., `marie.curie@lnbio.cnpem.br`) e senha institucional.
 
 <center>
-    <img src="images/elab_login.png" alt="eLab @ Firefox"  width="85%"/>
+    <img src="imagens/elab_login.png" alt="eLab @ Firefox"  width="85%"/>
 </center>
