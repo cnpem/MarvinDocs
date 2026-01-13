@@ -12,7 +12,7 @@ Essa seção apresenta infomações sobre gerenciamento de _jobs_, com informaç
 - [Cancelamento de _jobs_](cancelamento-de-jobs.md)
 - [Boas práticas](boas-praticas.md)
 
-## Referências adicionais
+<h2>Referências adicionais</h2>
 
 - Documentação: <https://slurm.schedmd.com/documentation.html>
 - Tutorial: <https://slurm.schedmd.com/tutorials.html>

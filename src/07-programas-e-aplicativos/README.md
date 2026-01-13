@@ -34,7 +34,7 @@ Para solicitar a instalação ou atualização de um aplicativo ou programa, reg
 
 ---
 
-## Bioimagens
+<h2>Bioimagens</h2>
 
 Os programas e aplicativos relacionados à processamento e análise de imagens biológicas são:
 
@@ -45,7 +45,7 @@ Os programas e aplicativos relacionados à processamento e análise de imagens b
 - [Ilastik](./ilastik/index.html)
 - [OMERO Downloader](./omero-downloader/index.html)
 
-## Biologia Estrutural
+<h2>Biologia Estrutural</h2>
 
 Os programas e aplicativos relacionados à modelagem, dinâmica molecular, predição e análise estrutural de proteínas são:
 
@@ -53,14 +53,14 @@ Os programas e aplicativos relacionados à modelagem, dinâmica molecular, predi
 - [GROMACS](./gromacs/index.html)
 - [TCRmodel2](./tcrmodel2/index.html)
 
-## Descoberta de fármacos (_Drug Discovery_)
+<h2>Descoberta de fármacos (_Drug Discovery_)</h2>
 
 Os programas e aplicativos relacionados à descoberta e desenvolvimento de fármacos são:
 
 - [NP³ MS WORKFLOW](./np3_ms_workflow/index.html)
 <!-- - [NP³ Blob Label](./np3_blob_label/index.html) -->
 
-## HiC
+<h2>HiC</h2>
 
 Os programas e aplicativos relacionados à análise, processamento e visualização de dados de interação cromossômica (Hi-C) são:
 
@@ -74,7 +74,7 @@ Os programas e aplicativos relacionados à análise, processamento e visualizaç
 - [pairtools](./pairtools/index.html)
 - [pyGenomeTracks](./pygenometracks/index.html)
 
-## Microscopia Eletrônica
+<h2>Microscopia Eletrônica</h2>
 
 Os programas e aplicativos relacionados a processamento, análise e visualização de microscopia eletrônica são:
 
@@ -86,7 +86,7 @@ Os programas e aplicativos relacionados a processamento, análise e visualizaç�
 - [RELION](./relion/index.html)
 - [Scipion](./scipion/index.html)
 
-## Ômicas
+<h2>Ômicas</h2>
 
 Os programas e aplicativos relacionados a processamento, análise e visualização de ômicas são:
 

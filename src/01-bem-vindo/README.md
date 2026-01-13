@@ -7,16 +7,16 @@ Este manual foi criado para ajudar os usuários a utilizar o HPCC Marvin. Apesar
   — Marvin, <em>O Guia do Mochileiro das Galáxias</em></p>
 </blockquote>
 
-## O que é HPCC?
+<h2>O que é HPCC?</h2>
 
 HPCC (_High Performance Computing Cluster_) é um sistema de computação que combina múltiplos computadores (chamados nós) para trabalhar juntos em tarefas complexas, que requerem grande poder de processamento. O HPCC é projetado para lidar com grandes volumes de dados e realizar cálculos intensivos, tornando-o ideal para aplicações científicas, simulações, modelagem e análise de dados.
 
-## Sobre o HPCC Marvin
+<h2>Sobre o HPCC Marvin</h2>
 
 Marvin é nome do HPCC do [LNBio](https://lnbio.cnpem.br/)/[CNPEM](https://cnpem.br/), adquirido em 2022 da empresa [Atos](https://atos.net/pt-br/brasil-atos), empresa especializada em soluções de HPC e responsável por alguns dos maiores supercomputadores do Brasil e do mundo, como o [Santos Dumont](https://sdumont.lncc.br/). 
 
 O HPCC Marvin está hospedado no Data Center do [Sirius/LNLS](https://lnls.cnpem.br/sirius/). Para informações sobre a arquitetura do HPCC Marvin, veja a seção [Arquitetura](../03-arquitetura/index.html).
 
-### Acesso ao HPCC Marvin
+<h3>Acesso ao HPCC Marvin</h3>
 
 Para começar a utilizar o HPCC Marvin, veja os [Primeiros Passos](../02-primeiros-passos/index.html).

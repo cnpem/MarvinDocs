@@ -24,7 +24,7 @@ sleep 60
 echo "Trabalho concluído."
 ```
 
-### Indicando a partição do SLURM (fila)
+## Indicando a partição do SLURM (fila)
 
 Para especificar uma partição (fila) use:
 
@@ -35,7 +35,7 @@ Para especificar uma partição (fila) use:
 Cada partição ou fila possui recursos e limites diferentes, elas podem ser consultadas em [Sistema de filas](../03-arquitetura/sistema-de-filas).
 
 
-### Solicitando recursos específicos
+## Solicitando recursos específicos
 
 * Solicite o número de CPUs para a tarefa
 
@@ -80,7 +80,7 @@ Exemplo solicitando 10 horas de tempo de processamento.
 ```
 
 
-### Trabalhos interativos
+## Trabalhos interativos
 
 Você pode iniciar uma sessão interativa com:
 
