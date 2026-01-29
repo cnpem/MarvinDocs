@@ -6,5 +6,6 @@ Os relatórios anuais estão disponíveis no seguinte link: <https://cnpem.githu
 
 | Data de Publicação | Referente ao Ano |
 |:------------------:|:----------------:|
+| 2026-01-29         | 2025             |
 | 2025-05-13         | 2024             |
 | 2024-01-10         | 2023             |
