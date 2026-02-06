@@ -66,8 +66,7 @@
   - [eLab](08-sistemas/elab/README.md)
 - [Suporte ao usuário](09-suporte/README.md)
 - [Relatórios de uso](10-reports/README.md)
-<!-- - [LLMs](11-llms/README.md) -->
-- [AJUDA](11-ajuda/README.md)
+- [Assistente de IA](11-assistente-de-ia/README.md)
 - [Treinamentos](12-treinamentos/README.md)
 
 ---
