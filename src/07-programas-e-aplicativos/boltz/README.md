@@ -97,3 +97,4 @@ properties:
 - affinity:
     binder: B
 ```
+
