@@ -60,7 +60,7 @@ boltz \\
 Para submeter o job, salve o script e utilize o comando `sbatch`
 
 ```bash
-sbatch boltz.sh`
+sbatch boltz.sh
 ```
 
 Para mais detalhes sobre parâmetros de configuração do boltz, use:
