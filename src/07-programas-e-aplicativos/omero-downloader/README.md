@@ -56,7 +56,7 @@ Você será solicitado a inserir senha. Após o login, uma chave de sessão ser�
 Para verificar as suas chaves de sessão, use:
 
 ```bash
-omero session list
+omero sessions list
 ```
 
 Você verá algo como isso:
