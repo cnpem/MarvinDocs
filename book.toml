@@ -1,5 +1,5 @@
 [book]
-title = "MarvinDocs v1.2.4"
+title = "MarvinDocs v1.2.5"
 authors = [
     "José G. C. Pereira",
     "João V. S. Guerra",
@@ -7,7 +7,8 @@ authors = [
     "Luiz F. G. Alves",
     "Pablo W. A. Silva",
     "Rick H. Hokama",
-    "Samuel C. de Assis"
+    "Samuel C. de Assis",
+    "Gabriel F. Totene"
 ]
 description = "Documentação do HPCC Marvin"
 src = "src"
