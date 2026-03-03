@@ -17,8 +17,7 @@ module load omero-downloader
 <div class="warning">
     <br>As versões disponíveis do OMERO Downloader no HPCC Marvin são:
     <ul>
-        <li><code>omero-downloader/0.3.3 (D)</code></li>
-        <li><code>omero-downloader/0.2.2</code></li>
+        <li><code>omero-downloader/0.2.2  (D)</code></li>
     </ul> 
     Onde <code>(D)</code> indica a versão padrão.<br>
 </div>
