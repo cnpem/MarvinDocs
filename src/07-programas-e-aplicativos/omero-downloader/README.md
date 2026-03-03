@@ -36,9 +36,9 @@ omero-downloader --help
 
 ## Realizando login
 
-O OMERO Downloader requer autenticação para acessar os dados armazenados no repositório. Porém, se passarmos os dados como usuário e senha no comando, eles estarão expostos ao analisarmos os processos em execução no sistema, o que pode representar um risco de segurança. Para evitar isso, é recomendado realizar o login usando o comando `omero login` e, em seguida, usar o OMERO Downloader passando uma chave de sessão com a opção `-k`.
+O OMERO Downloader requer autenticação para acessar os dados armazenados no repositório. No entanto, ao informar usuário e senha diretamente no comando, essas informações podem ficar visíveis na listagem de processos do sistema. Para evitar esse cenário, recomenda-se realizar a autenticação previamente com o comando `omero login` e, em seguida, executar o OMERO Downloader utilizando uma chave de sessão por meio da opção `-k`.
 
-Para isso, carregue o módulo do Omero CLI:
+Para isso, carregue o módulo do OMERO CLI:
 
 ```bash
 ml load omero
@@ -89,12 +89,14 @@ omero-downloader -b <output_dir> -k <session_key> -f <file> <type>:<ID>
         <li><code>&lt;file&gt;</code>: formato do arquivo a ser baixado. O formato recomendado é <code>ome-tiff</code>; outros formatos estão disponíveis na documentação de parâmetros do OMERO Downloader.</li>
         <li><code>&lt;type&gt;</code>: tipo de objeto que você deseja baixar:
             <ul>
-                <li><code>Image</code>: arquivo de imagem único.</li>
-                <li><code>Dataset</code>: conjunto de arquivos de imagem.</li>
-                <li><code>Project</code>: conjunto de datasets.</li>
+                <li><code>Image</code>: imagem individual</li>
+                <li><code>Plate</code>: placa de experimentos multi-poços</li>
+                <li><code>Screen</code>: conjunto de placas</li>
+                <li><code>Dataset</code>: conjunto de arquivos de imagem</li>
+                <li><code>Project</code>: conjunto de datasets</li>
             </ul>
         </li>
-        <li><code>&lt;ID&gt;</code>: número de identificação do objeto que deseja baixar.</li>
+        <li><code>&lt;ID&gt;</code>:identificador numérico do objeto no OMERO..</li>
     </ul>
 </div>
 
