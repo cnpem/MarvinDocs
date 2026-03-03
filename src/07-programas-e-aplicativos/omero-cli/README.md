@@ -48,7 +48,7 @@ omero login -s omero-lnbio.cnpem.br -u <user_name> -w <senha>
 
 ## Autenticando para o OMERO Downloader
 
-O OMERO Downloader requer autenticação para acessar os dados armazenados no repositório. Porém, se passarmos os dados como usuário e senha no comando, eles estarão expostos ao analisarmos os processos em execução no sistema, o que pode representar um risco de segurança. Para evitar isso, é recomendado realizar o login usando o comando `omero login` e, em seguida, usar o OMERO Downloader passando uma chave de sessão com a opção `-k`.
+O OMERO Downloader requer autenticação para acessar os dados armazenados no repositório. No entanto, ao informar usuário e senha diretamente no comando, essas informações podem ficar visíveis na listagem de processos do sistema. Para evitar esse cenário, recomenda-se realizar a autenticação previamente com o comando `omero login` e, em seguida, executar o OMERO Downloader utilizando uma chave de sessão por meio da opção `-k`.
 
 Após o login, uma chave de sessão será gerada e armazenada localmente. Para usar essa chave de sessão com o OMERO Downloader, você pode verificar as suas chaves de sessão usando:
 
