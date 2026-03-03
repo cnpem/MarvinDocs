@@ -47,6 +47,7 @@
   - [NP³ MS WORKFLOW](07-programas-e-aplicativos/np3_ms_workflow/README.md)
     - [Criando Sbatch](07-programas-e-aplicativos/np3_ms_workflow/np3_sbatch.md)
     - [Usando o Job Composer](07-programas-e-aplicativos/np3_ms_workflow/np3_jobcomposer.md)
+  - [OMERO-CLI](07-programas-e-aplicativos/omero-cli/README.md)
   - [OMERO Downloader](07-programas-e-aplicativos/omero-downloader/README.md)
   - [Pairix](07-programas-e-aplicativos/pairix/README.md)
   - [pairtools](07-programas-e-aplicativos/pairtools/README.md)

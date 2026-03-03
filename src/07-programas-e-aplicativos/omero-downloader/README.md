@@ -17,7 +17,7 @@ module load omero-downloader
 <div class="warning">
     <br>As versões disponíveis do OMERO Downloader no HPCC Marvin são:
     <ul>
-        <li><code>omero-downloader/0.3.3 (D)</code></li>
+        <li><code>omero-downloader/0.2.2  (D)</code></li>
     </ul> 
     Onde <code>(D)</code> indica a versão padrão.<br>
 </div>
@@ -34,12 +34,49 @@ Para acessar a documentação completa dos parâmetros do OMERO Downloader, exec
 omero-downloader --help
 ```
 
+## Realizando login
+
+O OMERO Downloader requer autenticação para acessar os dados armazenados no repositório. No entanto, ao informar usuário e senha diretamente no comando, essas informações podem ficar visíveis na listagem de processos do sistema. Para evitar esse cenário, recomenda-se realizar a autenticação previamente com o comando `omero login` e, em seguida, executar o OMERO Downloader utilizando uma chave de sessão por meio da opção `-k`.
+
+Para isso, carregue o módulo do OMERO CLI:
+
+```bash
+ml load omero
+```
+
+Em seguida, execute o comando de login:
+
+```bash
+omero login -s omero-lnbio.cnpem.br -u <user_name>
+```
+
+Você será solicitado a inserir senha. Após o login, uma chave de sessão será gerada e armazenada localmente. Para usar essa chave de sessão com o OMERO Downloader.
+
+Para verificar as suas chaves de sessão, use:
+
+```bash
+omero sessions list
+```
+
+Você verá algo como isso:
+
+```bash
+$ omero sessions list
+ Server               | User     | Group | Session                              | Active    | Started
+----------------------+----------+-------+--------------------------------------+-----------+--------------------------
+ omero-lnbio.cnpem.br | analista | LIB   | b22d1f3c-e7f3-4cb4-afea-4ce656d82dab | Logged in | Mon Mar  2 15:29:09 2026
+(1 row)
+```
+
+No exemplo acima, você utilizaria a chave de sessão `b22d1f3c-e7f3-4cb4-afea-4ce656d82dab` com a opção `-k` do OMERO Downloader.
+
+
 ## Baixando dados
 
 O comando base para baixar dados com o OMERO Downloader é o seguinte:
 
 ```bash
-omero-downloader -b <output_dir> -s omero-lnbio.cnpem.br -u <user_name> -w <password> -f <file> <type>:<ID>
+omero-downloader -b <output_dir> -k <session_key> -f <file> <type>:<ID>
 ```
 
 <div class="warning">
@@ -52,31 +89,33 @@ omero-downloader -b <output_dir> -s omero-lnbio.cnpem.br -u <user_name> -w <pass
         <li><code>&lt;file&gt;</code>: formato do arquivo a ser baixado. O formato recomendado é <code>ome-tiff</code>; outros formatos estão disponíveis na documentação de parâmetros do OMERO Downloader.</li>
         <li><code>&lt;type&gt;</code>: tipo de objeto que você deseja baixar:
             <ul>
-                <li><code>Image</code>: arquivo de imagem único.</li>
-                <li><code>Dataset</code>: conjunto de arquivos de imagem.</li>
-                <li><code>Project</code>: conjunto de datasets.</li>
+                <li><code>Image</code>: imagem individual</li>
+                <li><code>Plate</code>: placa de experimentos multi-poços</li>
+                <li><code>Screen</code>: conjunto de placas</li>
+                <li><code>Dataset</code>: conjunto de arquivos de imagem</li>
+                <li><code>Project</code>: conjunto de datasets</li>
             </ul>
         </li>
-        <li><code>&lt;ID&gt;</code>: número de identificação do objeto que deseja baixar.</li>
+        <li><code>&lt;ID&gt;</code>:identificador numérico do objeto no OMERO..</li>
     </ul>
 </div>
 
 Para baixar uma imagem, use:
 
 ```bash
-omero-downloader -b /home/marie.curie/pasta_destino -s omero-lnbio.cnpem.br -u marie.curie -w minhasenha123 -f ome-tiff Image:123
+omero-downloader -b /home/marie.curie/pasta_destino -k <session_key> -f ome-tiff Image:123
 ```
 
 Para baixar um _Dataset_, use:
 
 ```bash
-omero-downloader -b /home/marie.curie/pasta_destino -s omero-lnbio.cnpem.br -u marie.curie -w minhasenha123 -f ome-tiff Dataset:123
+omero-downloader -b /home/marie.curie/pasta_destino -k <session_key> -f ome-tiff Dataset:123
 ```
 
 Para baixar um projeto, use:
 
 ```bash
-omero-downloader -b /home/marie.curie/pasta_destino -s omero-lnbio.cnpem.br -u marie.curie -w minhasenha123 -f ome-tiff Project:123
+omero-downloader -b /home/marie.curie/pasta_destino -k <session_key> -f ome-tiff Project:123
 ```
 
 <div class="warning">

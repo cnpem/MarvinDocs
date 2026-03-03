@@ -43,6 +43,7 @@ Os programas e aplicativos relacionados à processamento e análise de imagens b
 - [CellProfiler](./cellprofiler/index.html)
 - [Fiji](./fiji/index.html)
 - [Ilastik](./ilastik/index.html)
+- [OMERO-CLI](./omero-cli/index.html)
 - [OMERO Downloader](./omero-downloader/index.html)
 
 <h2>Biologia Estrutural</h2>
