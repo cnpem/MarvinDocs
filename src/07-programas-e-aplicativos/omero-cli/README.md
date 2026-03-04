@@ -56,5 +56,5 @@ Após o login, uma chave de sessão será gerada e armazenada localmente. Para u
 omero sessions list
 ```
 
-Para mais detalhes, consulte a página de documentação do [OMERO Downloader](/src/07-programas-e-aplicativos/omero-downloader/README.md).
+Para mais detalhes, consulte a página de documentação do [OMERO Downloader](/07-programas-e-aplicativos/omero-downloader/index.html).
 
