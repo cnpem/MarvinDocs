@@ -25,6 +25,7 @@
   - [3D Slicer](07-programas-e-aplicativos/3dslicer/README.md)
   - [AlphaFold](07-programas-e-aplicativos/alphafold/README.md)
   - [Boltz](07-programas-e-aplicativos/boltz/README.md)
+  - [Cellranger](07-programas-e-aplicativos/cellranger/README.md)
   - [Cellpose](07-programas-e-aplicativos/cellpose/README.md)
   - [CellProfiler](07-programas-e-aplicativos/cellprofiler/README.md)
   - [Circos](07-programas-e-aplicativos/circos/README.md)
