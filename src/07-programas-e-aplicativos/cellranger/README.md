@@ -1,6 +1,6 @@
 # Cellranger
 
-O [Cellranger](https://www.10xgenomics.com/support/software/cell-ranger/latest)  é um conjunto de pipelines de análise desenvolvido pela 10x Genomics para processar dados de sequenciamento de célula única (single-cell). Ele realiza o alinhamento de leituras, atribuição de barcodes, contagem de identificadores moleculares únicos (UMIs) e análise de expressão gênica.
+O [Cellranger](https://www.10xgenomics.com/support/software/cell-ranger/latest) é um conjunto de pipelines de análise desenvolvido pela 10x Genomics para processar dados de sequenciamento de célula única (*single-cell*). Ele realiza o alinhamento de leituras, atribuição de barcodes, contagem de identificadores moleculares únicos (UMIs) e análise de expressão gênica.
 
 Para mais informações e documentação completa, acesse: <https://www.10xgenomics.com/support/software/cell-ranger/latest/getting-started>.
 
@@ -76,9 +76,9 @@ cellranger help [COMMAND]
 
 ## Arquivos de referência
 
-O Cellranger requer arquivos de referência para realizar as análises. Esses arquivos incluem genomas de referência, transcriptomas, index de amostras etc. No HPCC Marvin, as referências são disponibilizadas em `/public/cellranger/`. Os dados foram retirados da [página oficial de downloads do Cellranger](https://www.10xgenomics.com/support/software/cell-ranger/downloads).
+O Cellranger requer arquivos de referência (como genomas, transcriptomas e índices de amostras) para a execução das análises. No HPCC Marvin, essas referências oficiais (obtidas diretamente da [página de downloads do Cellranger](https://www.10xgenomics.com/support/software/cell-ranger/downloads)) já estão centralizadas e prontas para uso no seguinte diretório: `/public/cellranger`.
 
-Além do `/public`, não recomendamos o armazenamento de arquivos de referência em outros diretórios, como as homes de usuários. Caso seja necessária a inclusão de novos arquivos de referência, entre em contato com a EDB.
+Para otimizar o espaço do cluster e evitar redundâncias, não recomendamos o armazenamento de cópias de arquivos de referência em diretórios pessoais (como o seu `/home`). Caso a sua análise exija uma referência ou genoma customizado que ainda não esteja disponível no diretório público, por favor, entre em contato com a equipe da EDB.
 
 Atualmente, essa é a estrutura dos dados de referência do Cellranger:
 
