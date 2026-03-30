@@ -1,21 +1,21 @@
-# OMERO Downloader
+# OMERO.downloader
 
 O repositório de imagens [OMERO](https://www.openmicroscopy.org/omero/) é uma plataforma para armazenamento, gerenciamento e compartilhamento de imagens científicas, especialmente de microscopia.
 
-O OMERO Downloader é uma ferramenta de linha de comando que serve para baixar em massa imagens e metadados de um repositório OMERO, preservando a estrutura de pastas dos _datasets_ e projetos. Essa ferramenta é útil para obter cópias locais das imagens armazenadas no repositório.
+O OMERO.downloader é uma ferramenta de linha de comando que serve para baixar em massa imagens e metadados de um repositório OMERO, preservando a estrutura de pastas dos _datasets_ e projetos. Essa ferramenta é útil para obter cópias locais das imagens armazenadas no repositório.
 
-Para mais informações sobre o OMERO Downloader, acesse <https://github.com/ome/omero-downloader>.
+Para mais informações sobre o OMERO.downloader, acesse <https://github.com/ome/omero-downloader>.
 
 ## Carregando o modulo
 
-Para habilitar o OMERO Downloader no HPCC Marvin, você deve carregar o módulo `omero-downloader`:
+Para habilitar o OMERO.downloader no HPCC Marvin, você deve carregar o módulo `omero-downloader`:
 
 ```bash
 module load omero-downloader
 ```
 
 <div class="warning">
-    <br>As versões disponíveis do OMERO Downloader no HPCC Marvin são:
+    <br>As versões disponíveis do OMERO.downloader no HPCC Marvin são:
     <ul>
         <li><code>omero-downloader/0.2.2  (D)</code></li>
     </ul> 
@@ -28,7 +28,7 @@ Para acessar a documentação do módulo, use:
 module help omero-downloader
 ```
 
-Para acessar a documentação completa dos parâmetros do OMERO Downloader, execute:
+Para acessar a documentação completa dos parâmetros do OMERO.downloader, execute:
 
 ```bash
 omero-downloader --help
@@ -36,7 +36,7 @@ omero-downloader --help
 
 ## Realizando login
 
-O OMERO Downloader requer autenticação para acessar os dados armazenados no repositório. No entanto, ao informar usuário e senha diretamente no comando, essas informações podem ficar visíveis na listagem de processos do sistema. Para evitar esse cenário, recomenda-se realizar a autenticação previamente com o comando `omero login` e, em seguida, executar o OMERO Downloader utilizando uma chave de sessão por meio da opção `-k`.
+O OMERO.downloader requer autenticação para acessar os dados armazenados no repositório. No entanto, ao informar usuário e senha diretamente no comando, essas informações podem ficar visíveis na listagem de processos do sistema. Para evitar esse cenário, recomenda-se realizar a autenticação previamente com o comando `omero login` e, em seguida, executar o OMERO.downloader utilizando uma chave de sessão por meio da opção `-k`.
 
 Para isso, carregue o módulo do OMERO CLI:
 
@@ -50,7 +50,7 @@ Em seguida, execute o comando de login:
 omero login -s omero-lnbio.cnpem.br -u <user_name>
 ```
 
-Você será solicitado a inserir senha. Após o login, uma chave de sessão será gerada e armazenada localmente. Para usar essa chave de sessão com o OMERO Downloader.
+Você será solicitado a inserir senha. Após o login, uma chave de sessão será gerada e armazenada localmente. Para usar essa chave de sessão com o OMERO.downloader.
 
 Para verificar as suas chaves de sessão, use:
 
@@ -68,12 +68,12 @@ $ omero sessions list
 (1 row)
 ```
 
-No exemplo acima, você utilizaria a chave de sessão `b22d1f3c-e7f3-4cb4-afea-4ce656d82dab` com a opção `-k` do OMERO Downloader.
+No exemplo acima, você utilizaria a chave de sessão `b22d1f3c-e7f3-4cb4-afea-4ce656d82dab` com a opção `-k` do OMERO.downloader.
 
 
 ## Baixando dados
 
-O comando base para baixar dados com o OMERO Downloader é o seguinte:
+O comando base para baixar dados com o OMERO.downloader é o seguinte:
 
 ```bash
 omero-downloader -b <output_dir> -k <session_key> -f <file> <type>:<ID>
@@ -86,7 +86,7 @@ omero-downloader -b <output_dir> -k <session_key> -f <file> <type>:<ID>
         <li><code>&lt;output_dir&gt;</code>: diretório onde os dados serão baixados. É importante que a pasta já exista.</li>
         <li><code>&lt;user_name&gt;</code>: seu nome de usuário institucional, no formato <code>nome.sobrenome</code>.</li>
         <li><code>&lt;password&gt;</code>: sua senha institucional.</li>
-        <li><code>&lt;file&gt;</code>: formato do arquivo a ser baixado. O formato recomendado é <code>ome-tiff</code>; outros formatos estão disponíveis na documentação de parâmetros do OMERO Downloader.</li>
+        <li><code>&lt;file&gt;</code>: formato do arquivo a ser baixado. O formato recomendado é <code>ome-tiff</code>; outros formatos estão disponíveis na documentação de parâmetros do OMERO.downloader.</li>
         <li><code>&lt;type&gt;</code>: tipo de objeto que você deseja baixar:
             <ul>
                 <li><code>Image</code>: imagem individual</li>
@@ -124,4 +124,3 @@ omero-downloader -b /home/marie.curie/pasta_destino -k <session_key> -f ome-tiff
     Nela, é possível visualizar a organização dos projetos, datasets e imagens aos quais você tem acesso. 
     Ao selecionar o item desejado, o ID correspondente será exibido no painel à direita, na guia <i>“General”</i>.<br>
 </div>
-
