@@ -42,14 +42,14 @@ No exemplo seguinte, as tags dos *Wells* pertencentes ao *Plate* com `ID 14220` 
 
 ## *Clean Metadata*: remover anotações
 
-O script `annotation_scripts > Clean Metadata` a exclusão rápida e controlada de anotações, facilitando a correção de erros ou a padronização de grandes volumes de dados. Além de limpar os metadados de um objeto alvo, é possível deletar também as anotações de todos os objetos vinculados.
+O script `annotation_scripts > Clean Metadata` permite a exclusão rápida e controlada de anotações, facilitando a correção de erros ou a padronização de grandes volumes de dados. Além de limpar os metadados de um objeto alvo, é possível deletar também as anotações de todos os objetos vinculados.
 
 **Parâmetros**:
 
 - `Data Type`: O tipo de objeto selecionado como origem (`Project`, `Dataset`, `Screen`, `Plate`).
 - `ID`: Identificador(es) do objeto. Para múltiplos alvos, separe os IDs por vírgula.
-- `Annotation Type`: Tipo de metadado a ser copiado (`Tags`, `Key-Value`, `File`, `Comment` ou `All`).
-- `Include Children`: Se marcado, a limpeza será aplicada também a todos os objetos vinculados ao alvo selecionado.
+- `Annotation Type`: Tipo de metadado a ser removido (`Tags`, `Key-Value`, `File`, `Comment` ou `All`).
+- `Include Children`: Se marcado, a remoção será aplicada também a todos os objetos vinculados ao alvo selecionado.
 
 No exemplo abaixo, as tags de um objeto do tipo *Screen* (`ID 1953`) seriam removidas, sem afetar seus objetos vinculados (*Plates*, *Wells* e *Images*).
 
