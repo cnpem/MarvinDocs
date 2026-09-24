@@ -50,10 +50,10 @@ group::--x
 other::--x
 ```
 
-Em seguida, você pode usar o comando `setfacl` para adicionar permissões de acesso a outros usuários. Por exemplo, para conceder permissão de leitura ao usuário "joao.guerra" no diretório "pasta_compartilhada", use o comando:
+Em seguida, você pode usar o comando `setfacl` para adicionar permissões de acesso a outros usuários. Por exemplo, para conceder permissão de leitura ao usuário "albert.einstein" no diretório "pasta_compartilhada", use o comando:
 
 ```bash
-setfacl -m u:joao.guerra:r-x /home/marie.curie/pasta_compartilhada
+setfacl -m u:albert.einstein:r-x /home/marie.curie/pasta_compartilhada
 ```
 
 <div class="warning">
@@ -68,7 +68,7 @@ $ getfacl /home/marie.curie/pasta_compartilhada
 # owner: marie.curie
 # group: domain\040users
 user::rwx
-user:joao.guerra:r-x
+user:albert.einstein:r-x
 group::--x
 mask::r-x
 other::--x
@@ -77,13 +77,13 @@ other::--x
 Caso você queira dar permissões de acesso recursivamente para todos os arquivos e subdiretórios dentro de "pasta_compartilhada", você pode usar a opção `-R`:
 
 ```bash
-setfacl -R -m u:joao.guerra:r-x /home/marie.curie/pasta_compartilhada
+setfacl -R -m u:albert.einstein:r-x /home/marie.curie/pasta_compartilhada
 ```
 
 Caso você queira conceder acesso para todas os arquivos e subdiretórios que podem ser criados dentro de "pasta_compartilhada", você pode usar a opção `-d`:
 
 ```bash
-setfacl -d -m u:joao.guerra:r-x /home/marie.curie/pasta_compartilhada
+setfacl -d -m u:albert.einstein:r-x /home/marie.curie/pasta_compartilhada
 ```
 
 Então, cheque novamente as mudanças com o comando `getfacl`:
@@ -94,21 +94,21 @@ $ getfacl /home/marie.curie/pasta_compartilhada
 # owner: marie.curie
 # group: domain\040users
 user::rwx
-user:joao.guerra:r-x
+user:albert.einstein:r-x
 group::--x
 mask::r-x
 other::--x
 default:user::rwx
-default:user:joao.guerra:r-x
+default:user:albert.einstein:r-x
 default:group::--x
 default:mask::r-x
 default:other::--x
 ```
 
-Para adicionar mais permissões, você pode usar outras opções como `w` para escrita e `x` para execução. Por exemplo, para dar ao usuário "joao.guerra" permissão de escrita e execução na pasta "pasta_compartilhada", use o comando:
+Para adicionar mais permissões, você pode usar outras opções como `w` para escrita e `x` para execução. Por exemplo, para dar ao usuário "albert.einstein" permissão de escrita e execução na pasta "pasta_compartilhada", use o comando:
 
 ```bash
-setfacl -m u:joao.guerra:rwx /home/marie.curie/pasta_compartilhada
+setfacl -m u:albert.einstein:rwx /home/marie.curie/pasta_compartilhada
 ```
 
 Então, cheque novamente as mudanças com o comando `getfacl`:
@@ -119,12 +119,12 @@ $ getfacl /home/marie.curie/pasta_compartilhada
 # owner: marie.curie
 # group: domain\040users
 user::rwx
-user:joao.guerra:rwx
+user:albert.einstein:rwx
 group::--x
 mask::rwx
 other::--x
 default:user::rwx
-default:user:joao.guerra:r-x
+default:user:albert.einstein:r-x
 default:group::--x
 default:mask::r-x
 default:other::--x
@@ -132,10 +132,10 @@ default:other::--x
 
 ### Removendo permissões de acesso
 
-Para remover as permissões de acesso de um usuário específico, utilize o comando `setfacl -x` seguido do usuário desejado. Por exemplo, para remover as permissões de acesso do usuário "joao.guerra" no diretório "pasta_compartilhada", use o comando:
+Para remover as permissões de acesso de um usuário específico, utilize o comando `setfacl -x` seguido do usuário desejado. Por exemplo, para remover as permissões de acesso do usuário "albert.einstein" no diretório "pasta_compartilhada", use o comando:
 
 ```bash
-setfacl -x u:joao.guerra /home/marie.curie/pasta_compartilhada
+setfacl -x u:albert.einstein /home/marie.curie/pasta_compartilhada
 ```
 
 Então, cheque novamente as mudanças com o comando `getfacl`:
@@ -149,7 +149,7 @@ user::rwx
 group::--x
 other::--x
 default:user::rwx
-default:user:joao.guerra:r-x
+default:user:albert.einstein:r-x
 default:group::--x
 default:mask::r-x
 default:other::--x
@@ -158,13 +158,13 @@ default:other::--x
 Caso você queira remover permissões de acesso recursivamente para todos os arquivos e subdiretórios dentro de "pasta_compartilhada", você pode usar a opção `-R`:
 
 ```bash
-setfacl -R -x u:joao.guerra /home/marie.curie/pasta_compartilhada
+setfacl -R -x u:albert.einstein /home/marie.curie/pasta_compartilhada
 ```
 
-Caso você queira remover acesso para todas os arquivos e subdiretórios que podem ser criados dentro de "pasta_compartilhada", você pode usar a opção `-d`:
+Caso você queira remover acesso para todas os arquivos e subdiretórios que podem ser criados dentro de "pasta_compartilhada", você pode usar a opção:
 
 ```bash
-setfacl -d -x u:joao.guerra /home/marie.curie/pasta_compartilhada
+setfacl -d -x u:albert.einstein /home/marie.curie/pasta_compartilhada
 ```
 
 Então, cheque novamente as mudanças com o comando `getfacl`:
