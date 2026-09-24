@@ -80,10 +80,10 @@ Caso você queira dar permissões de acesso recursivamente para todos os arquivo
 setfacl -R -m u:joao.guerra:r-x /home/marie.curie/pasta_compartilhada
 ```
 
-Caso você queira conceder acesso para todas os arquivos e subdiretórios que podem ser criados dentro de "pasta_compartilhada", você pode usar a opção `-d`:
+Caso você queira conceder acesso para todas os arquivos e subdiretórios que podem ser criados dentro de "pasta_compartilhada", você pode usar a opção:
 
 ```bash
-setfacl -d -m u:joao.guerra:r-x /home/marie.curie/pasta_compartilhada
+setfacl -m d:joao.guerra:r-x /home/marie.curie/pasta_compartilhada
 ```
 
 Então, cheque novamente as mudanças com o comando `getfacl`:
@@ -161,10 +161,10 @@ Caso você queira remover permissões de acesso recursivamente para todos os arq
 setfacl -R -x u:joao.guerra /home/marie.curie/pasta_compartilhada
 ```
 
-Caso você queira remover acesso para todas os arquivos e subdiretórios que podem ser criados dentro de "pasta_compartilhada", você pode usar a opção `-d`:
+Caso você queira remover acesso para todas os arquivos e subdiretórios que podem ser criados dentro de "pasta_compartilhada", você pode usar a opção:
 
 ```bash
-setfacl -d -x u:joao.guerra /home/marie.curie/pasta_compartilhada
+setfacl -x d:joao.guerra /home/marie.curie/pasta_compartilhada
 ```
 
 Então, cheque novamente as mudanças com o comando `getfacl`:
