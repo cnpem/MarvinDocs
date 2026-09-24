@@ -18,7 +18,6 @@ As filas de execução do HPCC Marvin são:
 | short-cpu        | 5 dias       |           64           |          1GB          |         4GB          |     Não     | -                |
 | long-cpu         | 15 dias      |           32           |          1GB          |         4GB          |     Não     | -                |
 | debug-gpu-small  | 30 minutos   |           2            |          1GB          |         2GB          |   Sim (5GB) | gpu:1g.5gb:N[^1] |
-| debug-gpu-small  | 30 minutos   |           2            |          1GB          |         2GB          |   Sim (5GB) | gpu:1g.5gb:N[^1] |
 | gui-gpu-small    | 12 horas     |           8            |          1GB          |         4GB          |   Sim (5GB) | gpu:1g.5gb:N[^1] |
 | short-gpu-small  | 5 dias       |           64           |          1GB          |         8GB          |   Sim (5GB) | gpu:1g.5gb:N[^1] |
 | long-gpu-small   | 15 dias      |           32           |          1GB          |         8GB          |   Sim (5GB) | gpu:1g.5gb:N[^1] |
