@@ -22,5 +22,8 @@ build-dir = "book"
 command = "mdbook-toc"
 renderer = ["html"]
 
+[output.html]
+additional-css = ["src/css/custom.css"]
+
 [output.html.fold]
 enable = true
