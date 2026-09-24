@@ -29,8 +29,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      MDBOOK_VERSION: 0.5.2
-      MDBOOK_TOC_VERSION: 0.15.2
+      MDBOOK_VERSION: 0.5.4
+      MDBOOK_TOC_VERSION: 0.15.4
     steps:
       - uses: actions/checkout@v6
       - name: Install mdBook
@@ -40,12 +40,12 @@ jobs:
           cargo install --version ${MDBOOK_TOC_VERSION} mdbook-toc
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Build with mdBook
         run: |
           mdbook build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./book
 
@@ -60,4 +60,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
