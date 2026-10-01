@@ -32,7 +32,7 @@ jobs:
       MDBOOK_VERSION: 0.5.4
       MDBOOK_TOC_VERSION: 0.15.4
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Install mdBook
         run: |
           curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
